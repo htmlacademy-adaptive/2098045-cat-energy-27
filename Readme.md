@@ -2,7 +2,7 @@
 
 * Студент: [Валерия Плюхина](https://up.htmlacademy.ru/adaptive/27/user/2098045).
 * Наставник: `Неизвестно`.
-'Сергей Артемов https://htmlacademy.ru/profile/firefoxic'
+[Сергей Артемов] (https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
