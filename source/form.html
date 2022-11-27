@@ -3,7 +3,107 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="main-form">
+	<h2 class="main-form__title">Подобрать программу</h2>
+	<form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+		<fieldset class="personal-info">
+			<legend class="personal-info__title">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+			<ul class="personal-info__list">
+				<li class="personal-info__item">
+					<label class="Buyer-name" for="your-name">Имя*:</label>
+					<input class="field field-catalog" placeholder="Барсик" type="text" name="newsletter-email" id="your-name" required>
+				</li>
+				<li class="personal-info__item">
+					<label class="Animal-weight" for="cat-weight">Вес (кг):*</label>
+					<input class="field field-catalog" placeholder="7" type="number" name="newsletter-email" id="cat-weight" required>
+				</li>
+				<li class="personal-info__item">
+					<label class="Animal-age" for="cat-age">Вес (кг):*</label>
+					<input class="field field-catalog" placeholder="7" type="number" name="newsletter-email" id="cat-age">
+				</li>
+			</ul>
+		</fieldset>
+
+		<!-- Радиокнопки-->
+		<fieldset class="form-important important">
+			<legend class="visyally-hidden">То что нужно животному</legend>
+			<ul class="important__list">
+				<li class="important__item">
+					<label class="important__title">
+						<input class="radio-button" type="radio" name="important-reason" value="slim" checked>
+						Похудение
+					</label>
+				</li>
+				<li class="important__item">
+					<label class="important__title">
+						<input class="radio-button" type="radio" name="important-reason" value="fat">
+						Набор массы
+					</label>
+				</li>
+				<li class="important__item">
+					<label class="important__title">
+						<input class="radio-button" type="radio" name="important-reason" value="advice">
+						Не знаю (Нужен ваш совет)
+					</label>
+				</li>
+			</ul>
+		</fieldset>
+
+		<!-- Почта и телефон-->
+		<fieldset class="form-contacts">
+			<h2 class="form-title">Контактные данные (владельца кота)</h2>
+			<ul class="form-contacts__list">
+				<li class="form-contacts__item">
+					<label class="visually-hidden" for="your-email">Ваш электропочта:</label>
+					<input class="contact-field field" placeholder="kuklachev@gmail.com" type="email" name="form-email" id="your-email" required>
+				</li>
+				<li class="form-contacts__item">
+					<label class="visually-hidden" for="your-telephone">Ваш телефон:</label>
+					<input class="contact-field field" placeholder="kuklachev@gmail.com" type="number" name="form-telephone" id="your-telephone" required>
+				</li>
+			</ul>
+		</fieldset>
+
+		<!-- Комментарии-->
+		<fieldset class="form-comments">
+			<h2 class="form-comments__title">Комментарий</h2>
+			<label class="visually-hidden" for="your-comments">Ваш комментарий:</label>
+			<textarea class="form-comments__content" placeholder="Расскажите обо всех повАдках кота" id="your-comments"></textarea>
+		</fieldset>
+
+		<!-- Дополнительно-->
+		<fieldset class="form-additional additional">
+			<legend>Дополнительно</legend>
+			<ul class="additional__list">
+				<li class="additional__item">
+					<label class="checkbox-additional">
+						<input type="checkbox" class="additional__element" name="additional" value="сахарозаменитель" checked>
+						Cахарозаменитель
+					</label>
+				</li>
+				<li class="additional__item">
+					<label class="checkbox-additional">
+						<input type="checkbox" class="additional__element" name="additional" value="питьевая вода">
+						Питьевая вода
+					</label>
+				</li>
+				<li class="additional__item">
+					<label class="checkbox-additional">
+						<input type="checkbox" class="additional__element" name="additional" value="молоко">
+						Молоко
+					</label>
+				</li>
+				<li class="additional__item">
+					<label class="checkbox-additional">
+						<input type="checkbox" class="additional__element" name="additional" value="витамины">
+						Витамины
+					</label>
+				</li>
+			</ul>
+			<button class="form-additional__button button" type="submit">Отправить заявку</button>
+			<div class="form-additional__nessesary">* — Обязательные поля</div>
+		</fieldset>
+
+	</form>
 </main>
 {% endblock %}
