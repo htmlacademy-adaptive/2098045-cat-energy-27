@@ -4,21 +4,22 @@
 
 {% block main %}
 <main class="main-form">
-	<h2 class="main-form__title">Подобрать программу</h2>
+	<h1 class="main-form__title">Подобрать программу</h1>
 	<form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+		<h2 class="main-form-title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 		<fieldset class="personal-info">
-			<legend class="personal-info__title">Заполните анкету, и мы подберем программу питания для вашего кота</legend>
+			<legend class="visually-hidden">Форма с информацией о животном</legend>
 			<ul class="personal-info__list">
 				<li class="personal-info__item">
 					<label class="Buyer-name" for="your-name">Имя*:</label>
 					<input class="field field-catalog" placeholder="Барсик" type="text" name="newsletter-email" id="your-name" required>
 				</li>
 				<li class="personal-info__item">
-					<label class="Animal-weight" for="cat-weight">Вес (кг):*</label>
+					<label class="Animal-weight" for="cat-weight">Вес (кг):<span aria-hidden="true">*</span></label>
 					<input class="field field-catalog" placeholder="7" type="number" name="newsletter-email" id="cat-weight" required>
 				</li>
 				<li class="personal-info__item">
-					<label class="Animal-age" for="cat-age">Вес (кг):*</label>
+					<label class="Animal-age" for="cat-age">Вес (кг):<span aria-hidden="true">*</span></label>
 					<input class="field field-catalog" placeholder="7" type="number" name="newsletter-email" id="cat-age">
 				</li>
 			</ul>
@@ -51,7 +52,7 @@
 
 		<!-- Почта и телефон-->
 		<fieldset class="form-contacts">
-			<h2 class="form-title">Контактные данные (владельца кота)</h2>
+			<legend class="form-title">Контактные данные (владельца кота)</legend>
 			<ul class="form-contacts__list">
 				<li class="form-contacts__item">
 					<label class="visually-hidden" for="your-email">Ваш электропочта:</label>
@@ -65,11 +66,10 @@
 		</fieldset>
 
 		<!-- Комментарии-->
-		<fieldset class="form-comments">
-			<h2 class="form-comments__title">Комментарий</h2>
-			<label class="visually-hidden" for="your-comments">Ваш комментарий:</label>
+		<div class="form-comments">
+			<label class="form-title" for="your-comments">Комментарий</label>
 			<textarea class="form-comments__content" placeholder="Расскажите обо всех повАдках кота" id="your-comments"></textarea>
-		</fieldset>
+		</div>
 
 		<!-- Дополнительно-->
 		<fieldset class="form-additional additional">
@@ -100,9 +100,9 @@
 					</label>
 				</li>
 			</ul>
-			<button class="form-additional__button button" type="submit">Отправить заявку</button>
-			<div class="form-additional__nessesary">* — Обязательные поля</div>
 		</fieldset>
+		<button class="catalog-filter__button button" type="submit">Отправить заявку</button>
+		<div class="catalog-filter__nessesary" aria-hidden="true"><span >*</span aria-hidden="true">— Обязательные поля</div>
 
 	</form>
 </main>
