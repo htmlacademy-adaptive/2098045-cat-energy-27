@@ -5,13 +5,13 @@
 {% block main %}
 <main class="main-container">
 
-	<section class="hero">
-		<header class="hero__header">
+
+		<div class="hero">
 			<h2 class="hero__title">Функциональное питание для котов</h2>
 			<p class="hero__slogan">Занялся собой? Займись котом!</p>
+			<img src="./img/hero-food.png" alt="Фото продукта">
 			<button class="hero__button button" type="button">Подобрать программу</button>
-		</header>
-	</section>
+		</div>
 
 	<section class="article">
 		<div class="article-wrapper">
@@ -45,13 +45,18 @@
 		<div class="statistic">
 			<h2 class="visually-hidden">Соотношение потерянных килограмм ко времени</h2>
 			<dl class="statistic-info">
-				<dt class="statistic-info__title">5 кг</dt>
-				<dd class="statistic-info__description">снижение веса</dd>
-			</dl>
-			<dl class="statistic-info">
-				<dt class="statistic-info__title">60 дней</dt>
-				<dd class="statistic-info__description">затречено времени</dd>
-				<dd class="statistic-info__description statistic-info__description--statistic-expenses">Затраты на питание</dd>
+				<div class="statistic-info__list">
+					<dt class="statistic-info__description">снижение веса</dt>
+					<dd class="statistic-info__title">5 кг</dd>
+				</div>
+				<div class="statistic-info__list">
+					<dt class="statistic-info__description">затречено времени</dt>
+					<dd class="statistic-info__title">60 дней</dd>
+				</div>
+				<div class="statistic-info__list">
+					<dt class="statistic-info__description statistic-info__description--statistic-expenses">Затраты на питание</dt>
+					<dd class="statistic-info__title">15000</dd>
+				</div>
 			</dl>
 		</div>
 		<div class="example-cat example-cat--fat"><span class="visyally-hidden">Фото пухлого кота</span></div>

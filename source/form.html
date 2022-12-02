@@ -5,13 +5,13 @@
 {% block main %}
 <main class="main-form">
 	<h1 class="main-form__title">Подобрать программу</h1>
+	<p class="main-form-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 	<form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
-		<h2 class="main-form-title">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
 		<fieldset class="personal-info">
 			<legend class="visually-hidden">Форма с информацией о животном</legend>
 			<ul class="personal-info__list">
 				<li class="personal-info__item">
-					<label class="Buyer-name" for="your-name">Имя*:</label>
+					<label class="Buyer-name" for="your-name">Имя<span aria-hidden="true">*</span>:</label>
 					<input class="field field-catalog" placeholder="Барсик" type="text" name="newsletter-email" id="your-name" required>
 				</li>
 				<li class="personal-info__item">
@@ -102,7 +102,7 @@
 			</ul>
 		</fieldset>
 		<button class="catalog-filter__button button" type="submit">Отправить заявку</button>
-		<div class="catalog-filter__nessesary" aria-hidden="true"><span >*</span aria-hidden="true">— Обязательные поля</div>
+		<div class="catalog-filter__nessesary" aria-hidden="true">* — Обязательные поля</div>
 
 	</form>
 </main>
