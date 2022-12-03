@@ -1,5 +1,5 @@
 .hero {
-	background-color: #68b738;
+	background-color: var(--accent-color);
 	font-family: "Oswald", sans-serif;
 	color: #ffffff;
 	font-weight: 400;
@@ -20,7 +20,7 @@
 }
 
 .hero__button {
-	background-color: #68b738;
+	background-color: var(--accent-color);
 	font-size: 14px;
 	line-height: 14px;
 	border: none;

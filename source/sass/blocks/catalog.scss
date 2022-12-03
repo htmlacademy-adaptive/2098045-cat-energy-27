@@ -31,7 +31,7 @@
 }
 
 .card__button {
-	background-color: #68b738;
+	background-color: var(--accent-color);
 	font-family: "Oswald", sans-serif;
 	color: #ffffff;
 	font-weight: 400;
@@ -76,7 +76,7 @@
 
 .additional-card-text {
 	font-family: "Lato", sans-serif;
-	color: #444444;
+	color: var(--main-color);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 14px;
@@ -84,14 +84,14 @@
 
 .additional-card-prise {
 	font-family: "Lato", sans-serif;
-	color: #444444;
+	color: var(--main-color);
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 14px;
 }
 
 .additional-card-item__button {
-	background-color: #68b738;
+	background-color: var(--accent-color);
 	font-family: "Oswald", sans-serif;
 	color: #ffffff;
 	font-weight: 400;
@@ -101,7 +101,7 @@
 }
 
 .present {
-	background-color: #68b738;
+	background-color: var(--accent-color);
 }
 
 .present-description {
