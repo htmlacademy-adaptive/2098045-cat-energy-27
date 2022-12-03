@@ -6,3 +6,7 @@
 	font-size: 20px;
 	line-height: 20px;
 }
+
+.main-nav__item::marker {
+	color: transparent;
+}

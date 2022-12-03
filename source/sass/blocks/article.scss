@@ -1,9 +1,11 @@
 .article {
 	background-color: #ffffff;
+	margin: 0;
 }
 
 .article-card {
 	background-color: #f2f2f2;
+	margin: 20px 20px 0 20px;
 }
 
 .article__title {
@@ -12,6 +14,7 @@
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 37px;
+	padding-top: 30px;
 }
 
 .article__description {
@@ -20,6 +23,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
+	padding-top: 29px;
 }
 
 .article__link {

@@ -8,11 +8,15 @@
 .hero__title {
 	font-size: 36px;
 	line-height: 36px;
+	margin: 0;
+	margin-top: 27px;
 }
 
 .hero__slogan {
 	font-size: 14px;
 	line-height: 14px;
+	margin: 0;
+	margin-top: 25px;
 }
 
 .hero__button {
@@ -21,4 +25,5 @@
 	line-height: 14px;
 	border: none;
 	padding: 7px 44px;
+	margin: 0 auto;
 }

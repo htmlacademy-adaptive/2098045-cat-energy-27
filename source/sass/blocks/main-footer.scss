@@ -1,3 +1,11 @@
+.main-footer {
+	margin: 0;
+}
+
+.contacts-wrapper {
+	padding: 26px 20px;
+}
+
 .contacts__description {
 	background-color: #ffffff;
 	font-family: "Oswald", sans-serif;
@@ -13,4 +21,18 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
+}
+
+.main-footer__map {
+	margin: 0;
+	padding: 0;
+}
+
+.main-footer__copyright {
+	margin: 0;
+	padding: 39px 20px 20px 20px;
+}
+
+.social__item::marker {
+	color: transparent;
 }
