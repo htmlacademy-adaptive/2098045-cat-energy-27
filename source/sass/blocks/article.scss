@@ -1,11 +1,17 @@
 .article {
 	background-color: #ffffff;
 	margin: 0;
+	padding: 30px 33px 0 20px;
+}
+
+.article-wrapper {
+	display: flex;
+	flex-direction: column;
 }
 
 .article-card {
 	background-color: #f2f2f2;
-	margin: 20px 20px 0 20px;
+	padding-bottom: 20px;
 }
 
 .article__title {
@@ -14,7 +20,7 @@
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 37px;
-	padding-top: 30px;
+	margin: 0;
 }
 
 .article__description {
@@ -23,7 +29,9 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	padding-top: 29px;
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 37px;
 }
 
 .article__link {
@@ -33,5 +41,14 @@
 	font-size: 16px;
 	line-height: 16px;
 	padding: 4px 47px 4px 0;
+	text-transform: uppercase;
 	border: none;
+}
+
+@media #{$not-mobile} {
+	.article-wrapper {
+		display: flex;
+		flex-direction: column;
+		padding: 77px 27px 53px 52px;
+	}
 }

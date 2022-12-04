@@ -1,20 +1,69 @@
 .hero {
-	background-color: var(--accent-color);
 	font-family: "Oswald", sans-serif;
 	color: #ffffff;
 	font-weight: 400;
+}
+
+.hero__description {
+	background-color: var(--accent-color);
+	min-height: 302px;
 }
 
 .hero__title {
 	font-size: 36px;
 	line-height: 36px;
 	margin: 0;
-	margin-top: 27px;
+	padding: 27px 36px 0 35px;
+	text-align: center;
 }
 
 .hero__slogan {
 	font-size: 14px;
 	line-height: 14px;
+	text-transform: uppercase;
 	margin: 0;
 	margin-top: 25px;
+	margin-bottom: 164px;
+	padding: 0 60px 0 62px;
+	text-align: center;
+}
+
+.hero__image {
+	background-color: #ffffff;
+}
+
+.hero__photo {
+	margin-top: -115px;
+}
+
+@media #{$not-mobile} {
+	.hero__title {
+		font-weight: 400;
+		font-size: 60px;
+		line-height: 60px;
+		color: #000000;
+		padding: 62px 237px 0 117px;
+		margin: 0;
+		text-align: left;
+	}
+
+	.hero__slogan {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 20px;
+		color: #000000;
+		text-align: left;
+		margin: 41px 366px 0 119px;
+		padding: 0;
+	}
+
+	.hero__description {
+		min-height: 223px;
+	}
+
+	.hero__image__photo {
+		height: 609px;
+		width: 709px;
+		margin: 20px 29px 0 20px;
+	}
 }

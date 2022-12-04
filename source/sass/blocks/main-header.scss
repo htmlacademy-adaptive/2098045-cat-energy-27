@@ -1,7 +1,32 @@
 .main-header {
 	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 10px 20px 17px 18px;
+}
+
+.main-header__logos {
+	display: flex;
+	justify-content: space-between;
+	width: 174px;
 }
 
 .special__item::marker {
 	color: transparent;
+}
+
+@media #{$not-mobile} {
+	.main-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+}
+
+@media #{$desktop-only} {
+	.main-header {
+		padding-left: 110px;
+	}
 }
