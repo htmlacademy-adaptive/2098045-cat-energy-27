@@ -33,14 +33,16 @@
 	line-height: 24px;
 }
 
-&--statistic-expenses {
-	font-family: "Lato", sans-serif;
-	color: var(--main-color);
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 100%;
-	margin: 0 auto;
-	margin-top: 20px;
+.statistic-info__description {
+	&--statistic-expenses {
+		font-family: "Lato", sans-serif;
+		color: var(--main-color);
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 100%;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
 }
 
 .example-cat {
