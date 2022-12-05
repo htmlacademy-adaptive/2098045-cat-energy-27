@@ -18,3 +18,7 @@
 	font-size: 14px;
 	line-height: 18px;
 }
+
+.special__item::marker {
+	color: transparent;
+}

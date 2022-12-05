@@ -67,3 +67,22 @@
 		margin: 20px 29px 0 20px;
 	}
 }
+
+
+.hero__button {
+	display: flex;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 7px 44px;
+	margin: 0 auto;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 20px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 20px;
+		line-height: 20px;
+	}
+}

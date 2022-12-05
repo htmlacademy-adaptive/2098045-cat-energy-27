@@ -12,10 +12,6 @@
 	width: 174px;
 }
 
-.special__item::marker {
-	color: transparent;
-}
-
 @media #{$not-mobile} {
 	.main-header {
 		display: flex;
