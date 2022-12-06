@@ -7,6 +7,10 @@
 .hero__description {
 	background-color: var(--accent-color);
 	min-height: 302px;
+
+	@media #{$not-mobile} {
+		min-height: 223px;
+	}
 }
 
 .hero__title {
@@ -15,6 +19,16 @@
 	margin: 0;
 	padding: 27px 36px 0 35px;
 	text-align: center;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 60px;
+		line-height: 60px;
+		color: #000000;
+		padding: 62px 237px 0 117px;
+		margin: 0;
+		text-align: left;
+	}
 }
 
 .hero__slogan {
@@ -26,28 +40,8 @@
 	margin-bottom: 164px;
 	padding: 0 60px 0 62px;
 	text-align: center;
-}
 
-.hero__image {
-	background-color: #ffffff;
-}
-
-.hero__photo {
-	margin-top: -115px;
-}
-
-@media #{$not-mobile} {
-	.hero__title {
-		font-weight: 400;
-		font-size: 60px;
-		line-height: 60px;
-		color: #000000;
-		padding: 62px 237px 0 117px;
-		margin: 0;
-		text-align: left;
-	}
-
-	.hero__slogan {
+	@media #{$not-mobile} {
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 20px;
@@ -56,18 +50,21 @@
 		margin: 41px 366px 0 119px;
 		padding: 0;
 	}
+}
 
-	.hero__description {
-		min-height: 223px;
-	}
+.hero__image {
+	background-color: #ffffff;
+}
 
-	.hero__image__photo {
+.hero__photo {
+	margin-top: -115px;
+
+	@media #{$not-mobile} {
 		height: 609px;
 		width: 709px;
 		margin: 20px 29px 0 20px;
 	}
 }
-
 
 .hero__button {
 	display: flex;

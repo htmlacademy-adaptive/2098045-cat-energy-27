@@ -11,26 +11,6 @@
 	color: transparent;
 }
 
-.card-info-item {
-	font-family: "Lato", sans-serif;
-	color: #444444;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 16px;
-}
-
-.card-item__button {
-	&--show-all {
-		background-color: #f2f2f2f2;
-		font-family: "Oswald", sans-serif;
-		color: #444444;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 20px;
-		padding: 10px 94px;
-	}
-}
-
 .card__button {
 	padding: 10px 109px;
 
@@ -40,5 +20,15 @@
 
 	@media #{$desktop-only} {
 		padding: 14px 53px;
+	}
+
+	&--show-all {
+		background-color: #f2f2f2f2;
+		font-family: "Oswald", sans-serif;
+		color: #444444;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		padding: 10px 94px;
 	}
 }

@@ -1,9 +1,9 @@
 
-.additional-card-item::marker {
+.additional-cards__item::marker {
 	color: transparent;
 }
 
-.additional-card-title {
+.additional-cards__title {
 	font-family: "Oswald", sans-serif;
 	color: #222222;
 	font-weight: 400;
@@ -11,7 +11,7 @@
 	line-height: 16px;
 }
 
-.additional-card-text {
+.additional-cards__text {
 	font-family: "Lato", sans-serif;
 	color: var(--main-color);
 	font-weight: 400;
@@ -19,7 +19,7 @@
 	line-height: 14px;
 }
 
-.additional-card-prise {
+.additional-cards__prise {
 	font-family: "Lato", sans-serif;
 	color: var(--main-color);
 	font-weight: 400;
@@ -27,8 +27,7 @@
 	line-height: 14px;
 }
 
-
-.additional-card-item__button {
+.additional-cards__button {
 	padding: 10px 109px;
 
 	@media #{$not-mobile} {
