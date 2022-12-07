@@ -1,5 +1,6 @@
 .example {
 	background-color: #eaeaea;
+	padding: 25px 20px 40px 20px;
 }
 
 .example__title {
@@ -8,7 +9,7 @@
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 40px;
-	margin: 25px 105px 20px 0;
+	margin: 0;
 }
 
 .example__description {
@@ -17,9 +18,9 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	margin: 40px 20px 0 20px;
+	margin-bottom: 10px;
 }
 
-.example-cat {
+.example__cat {
 	margin: 20px 20px 40px 20px;
 }

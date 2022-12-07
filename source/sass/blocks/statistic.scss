@@ -3,7 +3,17 @@
 }
 
 .statistic__item {
-	margin: 20px 20px 0 20px;
+	padding: 16px 43px 15 px 42px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.statistic__list {
+	&--statistic-expenses {
+		grid-column: 1/-1;
+		justify-content: space-between;
+	}
 }
 
 .statistic__title {
@@ -15,12 +25,14 @@
 }
 
 .statistic__description {
-	&--statistic-expenses {
-		font-family: "Lato", sans-serif;
-		color: var(--main-color);
+	text-align: center;
+
+	&--expenses {
+		font-family: "Oswald", sans-serif;
+		color: #000000;
 		font-weight: 400;
-		font-size: 12px;
-		line-height: 100%;
+		font-size: 14px;
+		line-height: 20px;
 		margin: 0 auto;
 		margin-top: 20px;
 	}
