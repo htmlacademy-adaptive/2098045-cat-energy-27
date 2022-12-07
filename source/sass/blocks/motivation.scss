@@ -3,6 +3,7 @@
 	padding: 30px 33px 0 20px;
 	display: flex;
 	flex-direction: column;
+	margin: 0;
 
 	@media #{$not-mobile} {
 		display: flex;
@@ -13,7 +14,12 @@
 
 .motivation__item {
 	background-color: #f2f2f2;
-	padding-bottom: 20px;
+	padding: 30px 33px 20px 20px;
+	margin-bottom: 20px;
+
+	&::marker {
+		color: transparent;
+	}
 }
 
 .motivation__title {
@@ -22,7 +28,9 @@
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 37px;
+	text-transform: uppercase;
 	margin: 0;
+	text-align: center;
 }
 
 .motivation__description {
