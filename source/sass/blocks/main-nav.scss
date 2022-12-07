@@ -2,6 +2,11 @@
 	background-color: #ffffff;
 	font-family: "Oswald", sans-serif;
 	padding: 0;
+
+	@media #{$desktop-only} {
+		width: 478px;
+		margin-right: 110px;
+	}
 }
 
 .main-nav__link {
@@ -11,10 +16,18 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
+
+	@media #{$not-mobile} {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 24px;
+	}
 }
 
-.main-nav__item::marker {
-	color: transparent;
+.main-nav__item {
+	&::marker {
+		color: transparent;
+	}
 }
 
 @media #{$not-mobile} {
@@ -25,26 +38,7 @@
 		width: 440px;
 	}
 
-	.main-nav__link {
-		font-weight: 400;
-		font-size: 18px;
-		line-height: 24px;
-	}
-
 	.main-nav__toogle {
 		display: none;
-	}
-}
-
-@media #{$desktop-only} {
-	.main-nav {
-		width: 478px;
-		margin-right: 110px;
-	}
-
-	.main-nav__link {
-		font-weight: 400;
-		font-size: 20px;
-		line-height: 30px;
 	}
 }
