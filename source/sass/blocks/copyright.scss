@@ -1,0 +1,17 @@
+.copyright {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+}
+
+.copyright__logo {
+	&--academy-text::after {
+		content: "";
+		display: block;
+		width: 60px;
+		height: 60px;
+		mask: url("/icons/htmlacademy.svg") no-repeat center / contain;
+		background-color: currentcolor;
+		box-sizing: border-box;
+	}
+}

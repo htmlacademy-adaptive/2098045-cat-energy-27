@@ -1,6 +1,33 @@
+.social {
+	display: flex;
+	justify-content: center;
+}
 
 .social__item {
 	&::marker {
 		color: transparent;
+	}
+}
+
+
+.social__link::before {
+	content: "";
+	display: block;
+	width: 28px;
+	height: 22px;
+	background: currentcolor;
+	mask: var(--icon) no-repeat center / contain;
+	box-sizing: border-box;
+
+	&--icon_vk {
+		--icon: url("/icons/vk.svg");
+	}
+
+	&--icon_yt {
+		--icon: url("/icons/tg.svg");
+	}
+
+	&--icon_tg {
+		--icon: url("/icons/yt.svg");
 	}
 }

@@ -5,14 +5,22 @@
 .statistic__item {
 	padding: 16px 43px 15 px 42px;
 	display: grid;
+	gap: 18px;
 	grid-template-columns: 1fr 1fr;
 }
 
 
 .statistic__list {
+	display: grid;
+	grid-template-areas:
+		"numbers"
+		"text";
+	margin: 0 auto;
+
 	&--statistic-expenses {
-		grid-column: 1/-1;
-		justify-content: space-between;
+		grid-column: 1 / -1;
+		display: flex;
+		justify-content: center;
 	}
 }
 
@@ -22,18 +30,33 @@
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 24px;
-}
-
-.statistic__description {
+	grid-area: numbers;
+	margin: 0;
+	padding-bottom: 5px;
 	text-align: center;
 
 	&--expenses {
 		font-family: "Oswald", sans-serif;
 		color: #000000;
+		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 14px;
 		line-height: 20px;
-		margin: 0 auto;
-		margin-top: 20px;
+		margin: 0;
+	}
+}
+
+.statistic__description {
+	text-align: center;
+	grid-area: text;
+
+	&--expenses {
+		font-family: "Oswald", sans-serif;
+		color: #000000;
+		text-transform: uppercase;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0;
 	}
 }
