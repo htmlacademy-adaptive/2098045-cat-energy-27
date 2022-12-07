@@ -2,27 +2,23 @@
 	background-color: #ffffff;
 	display: flex;
 	justify-content: space-between;
-	margin: 0;
 	padding: 10px 20px 17px 18px;
-}
 
-.main-header__logos {
-	display: flex;
-	justify-content: space-between;
-	width: 174px;
-}
-
-@media #{$not-mobile} {
-	.main-header {
+	@media #{$not-mobile} {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin: 0 auto;
 	}
-}
 
-@media #{$desktop-only} {
-	.main-header {
+	@media #{$desktop-only} {
 		padding-left: 110px;
 	}
+}
+
+
+.main-header__logos {
+	display: flex;
+	justify-content: space-between;
+	width: 174px;
 }

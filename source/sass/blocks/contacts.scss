@@ -1,4 +1,4 @@
-.contacts-wrapper {
+.contacts {
 	padding: 26px 20px;
 
 	&--bg-lighter {
@@ -21,4 +21,9 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
+}
+
+.contacts__map {
+	margin: 0;
+	padding: 0;
 }

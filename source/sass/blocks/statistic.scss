@@ -1,8 +1,12 @@
-.statistic-info {
+.statistic {
+	background-color: #eaeaea;
+}
+
+.statistic__item {
 	margin: 20px 20px 0 20px;
 }
 
-.statistic-info__title {
+.statistic__title {
 	font-family: "Oswald", sans-serif;
 	color: #000000;
 	font-weight: 400;
@@ -10,7 +14,7 @@
 	line-height: 24px;
 }
 
-.statistic-info__description {
+.statistic__description {
 	&--statistic-expenses {
 		font-family: "Lato", sans-serif;
 		color: var(--main-color);
