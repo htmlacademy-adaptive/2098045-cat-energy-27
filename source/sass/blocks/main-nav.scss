@@ -30,15 +30,17 @@
 	}
 }
 
-@media #{$not-mobile} {
-	.main-nav__list {
+.main-nav__list {
+	@media #{$not-mobile} {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		width: 440px;
 	}
+}
 
-	.main-nav__toogle {
+.main-nav__toogle {
+	@media #{$not-mobile} {
 		display: none;
 	}
 }
