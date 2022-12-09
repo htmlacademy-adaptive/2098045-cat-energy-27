@@ -1,24 +1,40 @@
 .motivation {
 	background-color: #ffffff;
-	padding: 30px 33px 0 20px;
+	padding: 30px 20px 0 20px;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
+	gap: 20px 0;
 
 	@media #{$not-mobile} {
-		display: flex;
-		flex-direction: column;
-		padding: 77px 27px 53px 52px;
+		gap: 30px 0;
+		padding: 0 30px 45px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	@media #{$desktop-only} {
+		gap: 80px;
+		padding: 80px 110px 71px;
+		margin: 0;
 	}
 }
 
 .motivation__item {
 	background-color: #f2f2f2;
 	padding: 30px 33px 20px 20px;
-	margin-bottom: 20px;
 
 	&::marker {
 		color: transparent;
+	}
+
+	@media #{$not-mobile} {
+		padding: 77px 62px 53px 52px;
+	}
+
+	@media #{$desktop-only} {
+		width: 454px;
+		margin: 0;
 	}
 }
 
@@ -31,6 +47,16 @@
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
+
+	@media #{$not-mobile} {
+		text-align: left;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 36px;
+		line-height: 36px;
+		text-align: center;
+	}
 }
 
 .motivation__description {
@@ -42,6 +68,24 @@
 	margin: 0;
 	margin-top: 30px;
 	margin-bottom: 37px;
+
+	@media #{$not-mobile} {
+		font-size: 16px;
+		line-height: 24px;
+		margin: 24px 316px 47px 0;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 16px;
+		line-height: 24px;
+		margin: 73px 0 23px 0;
+
+		&--drscription-pro {
+			font-size: 16px;
+			line-height: 24px;
+			margin: 73px 5px 23px 0;
+		}
+	}
 }
 
 .motivation__link {
@@ -53,4 +97,11 @@
 	padding: 4px 47px 4px 0;
 	text-transform: uppercase;
 	border: none;
+	text-decoration: none;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+		padding: 4px 57px 4px 0;
+	}
 }
