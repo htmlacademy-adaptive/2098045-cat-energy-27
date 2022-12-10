@@ -1,6 +1,10 @@
 .special {
 	background-color: #ffffff;
-	padding: 30px 33px 0 20px;
+	padding: 30px 33px 45px 20px;
+
+	@media #{$desktop-only} {
+		padding-bottom: 0;
+	}
 }
 
 .special__title {
@@ -11,6 +15,12 @@
 	line-height: 40px;
 	margin: 0;
 	margin-bottom: 40px;
+
+	@media #{$not-mobile} {
+		font-size: 60px;
+		line-height: 60px;
+		margin-bottom: 72px;
+	}
 }
 
 
@@ -26,10 +36,63 @@
 	margin: 0;
 	padding-bottom: 53px;
 	gap: 20px;
+
+	@media #{$not-mobile} {
+		font-size: 16px;
+		line-height: 24px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 134px 153px;
+	}
+
+	@media #{$desktop-only} {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 95px 69px;
+	}
 }
 
 .special__item {
+	display: grid;
+
 	&::marker {
 		color: transparent;
+	}
+
+
+	&--icon_leaf {
+		--icon: url("../../icons/stack.svg#leaf");
+	}
+
+	&--icon_pot {
+		--icon: url("../../icons/stack.svg#pot");
+	}
+
+	&--cutlery {
+		--icon: url("../../icons/stack.svg#cutlery");
+	}
+
+	&--clock {
+		--icon: url("../../icons/stack.svg#alarm");
+	}
+
+	&::before {
+		content: "";
+		display: block;
+		width: 61px;
+		height: 60px;
+		background: var(--icon) no-repeat center / contain;
+		box-sizing: border-box;
+	}
+
+	@media #{$not-mobile} {
+		grid-template-columns: 245px;
+		gap: 20px;
+
+		&::before {
+			width: 80px;
+			height: 80px;
+		}
 	}
 }
