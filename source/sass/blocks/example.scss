@@ -1,6 +1,18 @@
 .example {
 	background-color: #eaeaea;
 	padding: 25px 20px 40px 20px;
+
+	@media #{$not-mobile} {
+		background-color: #ffffff;
+		padding: 149px 30px 40px 30px;
+	}
+
+	@media #{$desktop-only} {
+		background-color: #f2f2f2;
+		padding: 82px 110px 40px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .example__title {
@@ -10,6 +22,16 @@
 	font-size: 36px;
 	line-height: 40px;
 	margin: 0;
+
+	@media #{$not-mobile} {
+		font-size: 60px;
+		line-height: 60px;
+		margin-top: -150px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: -211px;
+	}
 }
 
 .example__description {
@@ -18,9 +40,25 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 18px;
-	margin-bottom: 10px;
+	margin-bottom: 38px;
+	margin-top: 40px;
+
+	@media #{$not-mobile} {
+		font-size: 16px;
+		line-height: 24px;
+		margin-top: 63px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 20px;
+		grid-column: 1 / 1;
+	}
 }
 
 .example__cat {
 	margin: 20px 20px 40px 20px;
+
+	@media #{$desktop-only} {
+		grid-column: 2 / -1;
+	}
 }
