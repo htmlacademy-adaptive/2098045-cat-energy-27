@@ -1,7 +1,16 @@
+.card-info {
+	grid-column: 2/3;
+	grid-row: 2/3;
+}
+
+
 .card-info__item {
 	font-family: "Lato", sans-serif;
 	color: #444444;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 16px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
 }

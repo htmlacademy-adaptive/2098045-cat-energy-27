@@ -1,18 +1,8 @@
-
-.card__title {
-	font-family: "Oswald", sans-serif;
-	color: #222222;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-}
-
-.card__item::marker {
-	color: transparent;
-}
-
 .card__button {
 	padding: 10px 109px;
+	grid-column: 1/-1;
+	grid-row: 3/4;
+	text-decoration: none;
 
 	@media #{$not-mobile} {
 		padding: 14px 94px;
@@ -30,5 +20,7 @@
 		font-size: 16px;
 		line-height: 20px;
 		padding: 10px 94px;
+		grid-row: 5/6;
+		text-decoration: none;
 	}
 }

@@ -8,4 +8,16 @@
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
+	margin: 0;
+	padding: 27px 42px 41px 20px;
+
+	@media #{$not-mobile} {
+		padding: 65px 308px 82px 30px;
+		font-size: 60px;
+		line-height: 60px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 74px 900px 84px 110px;
+	}
 }
