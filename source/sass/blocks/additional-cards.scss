@@ -3,6 +3,11 @@
 	display: flex;
 	flex-direction: column;
 	width: 1fr;
+
+	@media #{$not-mobile} {
+		box-shadow: 0 0 1px 1px #f2f2f2;
+		padding: 26px 38px;
+	}
 }
 
 .additional-cards__item {
@@ -13,6 +18,10 @@
 
 	&:marker {
 		color: transparent;
+	}
+
+	@media #{$not-mobile} {
+		grid-template-columns: 2fr 1fr 1fr;
 	}
 }
 
@@ -26,6 +35,15 @@
 	margin: 0;
 	margin-top: 13px;
 	grid-column: 1 / -1;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 26px;
+		grid-column: 1 / 2;
+		grid-row: 1 / 1;
+		margin-top: 26px;
+		margin-bottom: 25px;
+	}
 }
 
 .additional-cards__text {
@@ -36,6 +54,16 @@
 	line-height: 14px;
 	grid-column: 1 / 2;
 	text-align: left;
+
+	@media #{$not-mobile} {
+		grid-column: 2 / 3;
+		grid-row: 1 / 2;
+		margin-top: 26px;
+		margin-bottom: 30px;
+		text-align: right;
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 
 .additional-cards__prise {
@@ -46,11 +74,22 @@
 	line-height: 14px;
 	grid-column: 2 / 3;
 	text-align: right;
+
+	@media #{$not-mobile} {
+		grid-column: 3 / 4;
+		grid-row: 1 / 2;
+		margin-top: 26px;
+		margin-bottom: 30px;
+		text-align: right;
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 
 .additional-cards__button {
 	padding: 10px 109px;
 	grid-column: 1 /-1;
+	text-decoration: none;
 
 	@media #{$not-mobile} {
 		padding: 14px 94px;

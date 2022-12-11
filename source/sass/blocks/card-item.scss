@@ -10,6 +10,21 @@
 		text-align: center;
 		padding: 11px 20px 14px;
 	}
+
+	@media #{$not-mobile} {
+		grid-template-columns: 126px 126px;
+		padding: 34px 36px;
+		background-color: #f2f2f2f2;
+		margin: 30px;
+		grid-row: 3/4;
+
+		&--different-card {
+			grid-template-columns: 258px;
+			padding-right: 30px;
+			background-color: #ffffff;
+			box-shadow: 0 0 2px 2px #f2f2f2;
+		}
+	}
 }
 
 .card-item::marker {
@@ -31,6 +46,10 @@
 	&--different-title {
 		padding: 0;
 	}
+
+	@media #{$not-mobile} {
+		padding: 34px 37px 21px 42px;
+	}
 }
 
 .card-item__link {
@@ -46,6 +65,19 @@
 	&--different-card-link {
 		grid-column: 1/-1;
 		padding-top: 10px;
+	}
+
+	@media #{$not-mobile} {
+		grid-column: 1 / -1;
+		grid-row: 2 / 3;
+		text-align: center;
+
+		&--product-image {
+			grid-column: 1 / -1;
+			grid-row: 1/2;
+			width: 60px;
+			height: 100%;
+		}
 	}
 }
 

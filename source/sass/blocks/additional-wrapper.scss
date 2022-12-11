@@ -2,6 +2,10 @@
 .additional-wrapper {
 	background-color: #ffffff;
 	padding: 25px 20px 26px;
+
+	@media #{$not-mobile} {
+		padding: 25px 30px 26px;
+	}
 }
 
 .additional-wrapper__title {
@@ -11,4 +15,10 @@
 	font-size: 24px;
 	line-height: 24px;
 	padding-bottom: 36px;
+
+	@media #{$not-mobile} {
+		font-size: 36px;
+		line-height: 36px;
+		padding-left: 37px;
+	}
 }
