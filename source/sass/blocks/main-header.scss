@@ -1,6 +1,5 @@
 .main-header {
 	background-color: #ffffff;
-	padding: 0 20px 0;
 	height: 65px;
 
 	@media #{$not-mobile} {
@@ -18,6 +17,8 @@
 .main-header__logos {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 20px;
+	padding-right: 20px;
 
 	@media #{$not-mobile} {
 		padding-top: 24px;
