@@ -59,28 +59,17 @@
 	left: 20px;
 	margin: -20px;
 
-	&::before,
-	&::after {
+	&::before {
 		content: "";
 		position: absolute;
-		top: 24px;
-		left: 18px;
+		display: block;
+		mask: url("/img/close-button.png") no-repeat center / cover;
 		width: 36px;
-		height: 2px;
+		height: 36px;
 		background-color: #000000;
 	}
 
-	&::before {
-		transform: rotate(45deg);
-		box-shadow: none;
-	}
-
-	&::after {
-		transform: rotate(-45deg);
-	}
-
-	&:active::before,
-	&:active::after {
+	&:active::before {
 		background-color: fade(#000000, 30%);
 	}
 }
