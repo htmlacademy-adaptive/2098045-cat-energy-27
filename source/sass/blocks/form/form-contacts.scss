@@ -23,6 +23,10 @@
 		font-size: 36px;
 		line-height: 36px;
 	}
+
+	@media #{$desktop-only} {
+		padding: 69px 0 76px;
+	}
 }
 
 .form-contacts__list {
@@ -34,6 +38,12 @@
 
 	@media #{$not-mobile} {
 		gap: 20px;
+	}
+
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 78px;
 	}
 }
 
@@ -51,6 +61,22 @@
 	&::marker {
 		color: transparent;
 	}
+
+	@media #{$not-mobile} {
+		grid-template-columns: 70px 1fr;
+
+		&--phone {
+			grid-template-columns: 100px 1fr;
+		}
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 70px 1fr;
+
+		&--phone {
+			grid-template-columns: 100px 1fr;
+		}
+	}
 }
 
 .form-contacts__text {
@@ -60,6 +86,17 @@
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
+	padding-top: 15px;
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 20px;
+		line-height: 30px;
+	}
 }
 
 .form-contacts__field {
@@ -76,5 +113,10 @@
 
 	&--phone {
 		padding: 14px 69px 14px 15px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 20px;
+		line-height: 30px;
 	}
 }

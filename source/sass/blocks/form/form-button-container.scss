@@ -6,6 +6,10 @@
 	@media #{$not-mobile} {
 		gap: 64px;
 	}
+
+	@media #{$desktop-only} {
+		gap: 84px;
+	}
 }
 
 .form-button-container__button {
@@ -19,6 +23,12 @@
 	text-transform: uppercase;
 	text-align: center;
 	padding: 7px 44px;
+
+	@media #{$desktop-only} {
+		padding: 14px 44px;
+		font-size: 20px;
+		line-height: 20px;
+	}
 }
 
 .form-button-container__nessesary {
@@ -35,5 +45,11 @@
 		text-align: left;
 		margin: 0;
 		padding-top: 10px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 16px;
+		line-height: 16px;
+		padding-top: 17px;
 	}
 }

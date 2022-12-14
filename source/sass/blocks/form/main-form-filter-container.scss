@@ -1,0 +1,7 @@
+.main-form-filter-container {
+	@media #{$desktop-only} {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
+	}
+}
