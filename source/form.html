@@ -5,29 +5,29 @@
 {% block main %}
 <main class="main-form">
 	<h1 class="main-form__title">Подобрать программу</h1>
-	<p class="main-form-title">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-	<form class="catalog-filter" action="https://echo.htmlacademy.ru" method="get">
+	<p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+	<form class="main-form-filter" action="https://echo.htmlacademy.ru" method="get">
 		<fieldset class="personal-info">
 			<legend class="visually-hidden">Форма с информацией о животном</legend>
 			<ul class="personal-info__list">
 				<li class="personal-info__item">
-					<label class="Buyer-name" for="your-name">Имя<span aria-hidden="true">*</span>:</label>
-					<input class="field field-catalog" placeholder="Барсик" type="text" name="newsletter-email" id="your-name" required>
+					<label class="personal-information personal-information--questien" for="your-name">Имя<span aria-hidden="true">*</span>:</label>
+					<input class="personal-information personal-information--answer field" placeholder="Барсик" type="text" name="newsletter-email" id="your-name" required>
 				</li>
 				<li class="personal-info__item">
-					<label class="Animal-weight" for="cat-weight">Вес (кг):<span aria-hidden="true">*</span></label>
-					<input class="field field-catalog" placeholder="7" type="number" name="newsletter-email" id="cat-weight" required>
+					<label class="personal-information personal-information--questien" for="cat-weight">Вес (кг):<span aria-hidden="true">*</span></label>
+					<input class="personal-information personal-information--answer field" placeholder="7" type="number" name="newsletter-email" id="cat-weight" required>
 				</li>
 				<li class="personal-info__item">
-					<label class="Animal-age" for="cat-age">Вес (кг):<span aria-hidden="true">*</span></label>
-					<input class="field field-catalog" placeholder="7" type="number" name="newsletter-email" id="cat-age">
+					<label class="personal-information personal-information--questien" for="cat-age">Вес (кг):<span aria-hidden="true">*</span></label>
+					<input class="personal-information personal-information--answer field" placeholder="7" type="number" name="newsletter-email" id="cat-age">
 				</li>
 			</ul>
 		</fieldset>
 
 		<!-- Радиокнопки-->
 		<fieldset class="form-important important">
-			<legend class="visyally-hidden">То что нужно животному</legend>
+			<legend class="visually-hidden">То что нужно животному</legend>
 			<ul class="important__list">
 				<li class="important__item">
 					<label class="important__title">
@@ -52,57 +52,57 @@
 
 		<!-- Почта и телефон-->
 		<fieldset class="form-contacts">
-			<legend class="form-title">Контактные данные (владельца кота)</legend>
+			<legend class="form-contacts__title">Контактные данные (владельца кота)</legend>
 			<ul class="form-contacts__list">
 				<li class="form-contacts__item">
-					<label class="visually-hidden" for="your-email">Ваш электропочта:</label>
-					<input class="contact-field field" placeholder="kuklachev@gmail.com" type="email" name="form-email" id="your-email" required>
+					<label class="form-contacts__text" for="your-email" >E-mail:<span aria-hidden="true">*</span></label>
+					<input class="form-contacts__field  field" placeholder="kuklachev@gmail.com" type="email" name="form-email" id="your-email" required>
 				</li>
 				<li class="form-contacts__item">
-					<label class="visually-hidden" for="your-telephone">Ваш телефон:</label>
-					<input class="contact-field field" placeholder="kuklachev@gmail.com" type="number" name="form-telephone" id="your-telephone" required>
+					<label class="form-contacts__text" for="your-telephone">Телефон:<span aria-hidden="true">*</span></label>
+					<input class="form-contacts__field form-contacts__field--phone field" placeholder="8 (960) 900-60-90" type="number" name="form-telephone" id="your-telephone" required>
 				</li>
 			</ul>
 		</fieldset>
 
 		<!-- Комментарии-->
 		<div class="form-comments">
-			<label class="form-title" for="your-comments">Комментарий</label>
+			<label class="form-comments__title" for="your-comments">Комментарий</label>
 			<textarea class="form-comments__content" placeholder="Расскажите обо всех повАдках кота" id="your-comments"></textarea>
 		</div>
 
 		<!-- Дополнительно-->
-		<fieldset class="form-additional additional">
-			<legend>Дополнительно</legend>
-			<ul class="additional__list">
-				<li class="additional__item">
-					<label class="checkbox-additional">
-						<input type="checkbox" class="additional__element" name="additional" value="сахарозаменитель" checked>
+		<fieldset class="form-optional optional">
+			<legend class="optional__title">Дополнительно</legend>
+			<ul class="optional__list">
+				<li class="optional__item">
+					<label class="optional__checkbox">
+						<input type="checkbox" class="optional__element" name="optional" value="сахарозаменитель" checked>
 						Cахарозаменитель
 					</label>
 				</li>
-				<li class="additional__item">
-					<label class="checkbox-additional">
-						<input type="checkbox" class="additional__element" name="additional" value="питьевая вода">
+				<li class="optional__item">
+					<label class="optional__checkbox">
+						<input type="checkbox" class="optional__element" name="additional" value="питьевая вода">
 						Питьевая вода
 					</label>
 				</li>
-				<li class="additional__item">
-					<label class="checkbox-additional">
-						<input type="checkbox" class="additional__element" name="additional" value="молоко">
+				<li class="optional__item">
+					<label class="optional__checkbox">
+						<input type="checkbox" class="optional__element" name="optional" value="молоко">
 						Молоко
 					</label>
 				</li>
-				<li class="additional__item">
-					<label class="checkbox-additional">
-						<input type="checkbox" class="additional__element" name="additional" value="витамины">
+				<li class="optional__item">
+					<label class="optional__checkbox">
+						<input type="checkbox" class="optional__element" name="optional" value="витамины">
 						Витамины
 					</label>
 				</li>
 			</ul>
 		</fieldset>
-		<button class="catalog-filter__button button" type="submit">Отправить заявку</button>
-		<div class="catalog-filter__nessesary" aria-hidden="true">* — Обязательные поля</div>
+		<button class="main-form-filter__button" type="submit">Отправить заявку</button>
+		<div class="main-form-filter__nessesary" aria-hidden="true">* — Обязательные поля</div>
 
 	</form>
 </main>

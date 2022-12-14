@@ -12,12 +12,12 @@
 	padding: 27px 40px 41px 20px;
 
 	@media #{$not-mobile} {
-		padding: 65px 308px 82px 30px;
+		padding: 65px 30px 82px;
 		font-size: 60px;
 		line-height: 60px;
 	}
 
 	@media #{$desktop-only} {
-		padding: 74px 900px 84px 110px;
+		padding: 74px 110px 0 110px;
 	}
 }

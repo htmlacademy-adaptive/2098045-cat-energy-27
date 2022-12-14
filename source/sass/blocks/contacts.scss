@@ -51,6 +51,10 @@
 		font-size: 20px;
 		line-height: 26px;
 	}
+
+	@media #{$desktop-only} {
+		background-color: #ffffff;
+	}
 }
 
 .contacts__adress {
@@ -69,5 +73,9 @@
 	@media #{$not-mobile} {
 		font-size: 16px;
 		line-height: 20px;
+	}
+
+	@media #{$desktop-only} {
+		background-color: #ffffff;
 	}
 }

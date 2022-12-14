@@ -1,0 +1,28 @@
+.personal-info {
+	border: none;
+	padding: 7px 20px 24px 20px;
+}
+
+.personal-info__list {
+	display: flex;
+	flex-direction: column;
+	width: 1fr;
+	padding: 0;
+}
+
+.personal-info__item {
+	font-family: "Oswald", sans-serif;
+	color: var(--main-color);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 16px;
+	text-transform: uppercase;
+
+	&::marker {
+		color: transparent;
+	}
+}
+
+input::placeholder {
+	padding: 30px;
+}

@@ -9,4 +9,8 @@
 		flex-wrap: wrap;
 		width: 1fr;
 	}
+
+	@media #{$desktop-only} {
+		padding: 85px 110px;
+	}
 }

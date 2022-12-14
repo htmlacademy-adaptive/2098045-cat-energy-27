@@ -8,6 +8,11 @@
 		box-shadow: 0 0 1px 1px #f2f2f2;
 		padding: 26px 38px;
 	}
+
+	@media #{$desktop-only} {
+		margin-right: 79px;
+		gap: 0;
+	}
 }
 
 .additional-cards__item {
@@ -22,6 +27,10 @@
 
 	@media #{$not-mobile} {
 		grid-template-columns: 2fr 1fr 1fr;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 270px 200px 100px 244px;
 	}
 }
 
@@ -44,6 +53,13 @@
 		margin-top: 26px;
 		margin-bottom: 25px;
 	}
+
+	@media #{$desktop-only} {
+		grid-column: 1/2;
+		margin: 0;
+		font-size: 20px;
+		line-height: 20px;
+	}
 }
 
 .additional-cards__text {
@@ -63,6 +79,12 @@
 		text-align: right;
 		font-size: 16px;
 		line-height: 20px;
+	}
+
+	@media #{$desktop-only} {
+		grid-column: 2/3;
+		margin: 0;
+		text-align: left;
 	}
 }
 
@@ -84,6 +106,12 @@
 		font-size: 16px;
 		line-height: 20px;
 	}
+
+	@media #{$desktop-only} {
+		grid-column: 3/4;
+		margin: 0;
+		text-align: left;
+	}
 }
 
 .additional-cards__button {
@@ -96,6 +124,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 14px 287px;
+		grid-column: 4/5;
+		margin: 0;
 	}
 }
