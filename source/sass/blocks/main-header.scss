@@ -1,8 +1,7 @@
 .main-header {
 	background-color: #ffffff;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 20px 17px 18px;
+	padding: 0 20px 0;
+	height: 65px;
 
 	@media #{$not-mobile} {
 		display: flex;
@@ -17,17 +16,27 @@
 }
 
 .main-header__logos {
-	display: flex;
-	justify-content: space-between;
-	width: 174px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	@media #{$not-mobile} {
+		padding-top: 24px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media #{$desktop-only} {
+		padding-top: 53px;
+	}
 }
 
 .main-header__logo img {
 	width: 38px;
 	height: 39px;
+	padding-top: 10px;
 }
 
 .main-header__logo2 img {
 	width: 109px;
 	height: 19px;
+	padding-top: 20px;
 }
