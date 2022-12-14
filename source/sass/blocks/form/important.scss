@@ -1,6 +1,8 @@
 .important {
 	border: none;
+	padding: 0;
 	padding-bottom: 19px;
+	margin: 0;
 }
 
 .important__list {
@@ -18,8 +20,6 @@
 }
 
 .important__item {
-	padding: 6px;
-
 	&::marker {
 		color: transparent;
 	}

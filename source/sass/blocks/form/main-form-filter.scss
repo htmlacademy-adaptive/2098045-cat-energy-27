@@ -1,3 +1,19 @@
 .main-form-filter {
-	padding-bottom: 32px;
+	padding: 0 20px 32px;
+	display: flex;
+	flex-direction: column;
+	width: 1fr;
+}
+
+.main-form-filter__button {
+	background-color: var(--accent-color);
+	color: #ffffff;
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	border: none;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 7px 44px;
 }

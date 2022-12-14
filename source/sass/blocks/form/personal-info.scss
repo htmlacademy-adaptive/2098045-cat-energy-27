@@ -1,12 +1,13 @@
 .personal-info {
 	border: none;
-	padding: 7px 20px 24px 20px;
+	padding: 7px 0 24px 0;
 }
 
 .personal-info__list {
 	display: flex;
 	flex-direction: column;
 	width: 1fr;
+	gap: 14px;
 	padding: 0;
 }
 
@@ -14,9 +15,19 @@
 	font-family: "Oswald", sans-serif;
 	color: var(--main-color);
 	font-weight: 400;
-	font-size: 18px;
-	line-height: 16px;
+	font-size: 16px;
+	line-height: 18px;
 	text-transform: uppercase;
+	display: grid;
+	grid-template-columns: 55px 1fr;
+
+	&--weight {
+		grid-template-columns: 75px 1fr;
+	}
+
+	&--age {
+		grid-template-columns: 115px 1fr;
+	}
 
 	&::marker {
 		color: transparent;

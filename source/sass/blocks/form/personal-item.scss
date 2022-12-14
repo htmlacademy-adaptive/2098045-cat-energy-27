@@ -1,0 +1,22 @@
+.personal-item {
+	text-align: left;
+	font-family: "Oswald", sans-serif;
+	color: var(--main-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	&--name {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	&--field {
+		padding: 14px 20px;
+	}
+
+	&marker {
+		color: transparent;
+	}
+}
