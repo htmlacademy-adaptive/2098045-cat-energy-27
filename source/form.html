@@ -4,8 +4,8 @@
 
 {% block main %}
 <main class="main-form">
-	<h1 class="main-form__title">Подобрать программу</h1>
-	<p class="main-form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+	<h1 class="main-form__title">Подбор программы</h1>
+	<p class="main-form__description">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
 	<form class="main-form-filter" action="https://echo.htmlacademy.ru" method="get">
 		<fieldset class="personal-info">
 			<legend class="visually-hidden">Форма с информацией о животном</legend>
@@ -20,7 +20,7 @@
 				</li>
 				<li class="personal-info__item personal-info__item--age">
 					<label class="personal-item personal-item--name" for="cat-age">Возраст&nbsp;(лет):<span aria-hidden="true">*</span></label>
-					<input class="personal-item personal-item--field" placeholder="7" type="number" name="newsletter-email" id="cat-age">
+					<input class="personal-item personal-item--field" placeholder="7" type="number" name="newsletter-email" id="cat-age" required>
 				</li>
 			</ul>
 		</fieldset>
@@ -101,8 +101,10 @@
 				</li>
 			</ul>
 		</fieldset>
-		<button class="main-form-filter__button" type="submit">Отправить заявку</button>
-		<div class="main-form-filter__nessesary" aria-hidden="true">* — Обязательные поля</div>
+		<div class="form-button-container">
+			<button class="form-button-container__button" type="submit">Отправить заявку</button>
+			<div class="form-button-container__nessesary" aria-hidden="true">* — Обязательные поля</div>
+		</div>
 
 	</form>
 </main>

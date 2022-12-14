@@ -16,6 +16,13 @@
 	text-transform: uppercase;
 	margin: 0;
 	padding: 26px 110px 35px 0;
+
+
+	@media #{$not-mobile} {
+		padding: 71px 0 65px;
+		font-size: 36px;
+		line-height: 36px;
+	}
 }
 
 .form-contacts__list {
@@ -23,6 +30,11 @@
 	flex-direction: column;
 	gap: 14px;
 	padding: 0;
+	width: 1fr;
+
+	@media #{$not-mobile} {
+		gap: 20px;
+	}
 }
 
 .form-contacts__item {
@@ -58,12 +70,11 @@
 	line-height: 18px;
 	text-transform: uppercase;
 	padding: 14px 52px 14px 15px;
-	width: 220px;
+	width: 1fr;
 	border: 1px solid #cdcdcd;
 	text-align: left;
 
 	&--phone {
-		width: 185px;
 		padding: 14px 69px 14px 15px;
 	}
 }

@@ -14,9 +14,17 @@
 
 	&--field {
 		padding: 14px 20px;
+		border: none;
+		box-shadow: 0 0 1px 1px #e7e7e7;
 	}
 
 	&marker {
 		color: transparent;
+	}
+
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
 	}
 }

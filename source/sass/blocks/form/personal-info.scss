@@ -1,6 +1,6 @@
 .personal-info {
 	border: none;
-	padding: 7px 0 24px 0;
+	padding: 7px 0 72px 0;
 }
 
 .personal-info__list {
@@ -31,6 +31,19 @@
 
 	&::marker {
 		color: transparent;
+	}
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+
+		&--weight {
+			grid-template-columns: 90px 1fr;
+		}
+
+		&--age {
+			grid-template-columns: 130px 1fr;
+		}
 	}
 }
 
