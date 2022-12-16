@@ -11,6 +11,7 @@
 
 	@media #{$not-mobile} {
 		min-height: 223px;
+		background-color: #ffffff;
 	}
 }
 
@@ -30,6 +31,15 @@
 		margin: 0;
 		text-align: left;
 	}
+}
+
+.hero__title::before {
+	content: "";
+	display: block;
+	height: 302px;
+	width: 100%;
+	background-image: url("../../img/catalog-cat.jpg") no-repeat center / cover;
+	box-sizing: border-box;
 }
 
 .hero__slogan {

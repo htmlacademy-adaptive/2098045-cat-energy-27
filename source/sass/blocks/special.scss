@@ -1,6 +1,10 @@
 .special {
 	background-color: #ffffff;
-	padding: 30px 33px 105px 20px;
+	padding: 30px 20px 105px 20px;
+
+	@media #{$not-mobile} {
+		padding: 30px 30px 105px 30px;
+	}
 
 	@media #{$desktop-only} {
 		padding: 30px 110px 205px 110px;
@@ -43,6 +47,8 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 134px 153px;
+		position: relative;
+		counter-reset: index;
 	}
 
 	@media #{$desktop-only} {
@@ -55,6 +61,7 @@
 
 .special__item {
 	display: grid;
+	counter-increment: index;
 
 	&::marker {
 		color: transparent;
@@ -93,6 +100,18 @@
 		&::before {
 			width: 80px;
 			height: 80px;
+		}
+
+		&::after {
+			content: counters(index, ".", decimal);
+			position: absolute;
+			font-family: "Oswald", sans-serif;
+			font-size: 280px;
+			line-height: 280px;
+			color: #f2f2f2;
+			z-index: 1;
+			margin-left: 106px;
+			margin-top: -30px;
 		}
 	}
 }
