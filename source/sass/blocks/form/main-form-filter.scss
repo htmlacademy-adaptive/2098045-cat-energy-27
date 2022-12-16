@@ -1,14 +1,7 @@
-.main-form-filter {
-	padding-right: 20px;
-	padding-left: 20px;
-
-	@media #{$not-mobile} {
-		padding-right: 67px;
-		padding-left: 71px;
-	}
-
+.main-form-filter-container {
 	@media #{$desktop-only} {
-		padding-right: 110px;
-		padding-left: 110px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 80px;
 	}
 }

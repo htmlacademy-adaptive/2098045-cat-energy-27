@@ -1,14 +1,13 @@
 .card-item {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	padding: 11px 20px 14px;
+	margin-bottom: 19px;
 
 	&--different-card {
 		display: grid;
 		grid-template-columns: 1fr;
-		margin: 0 auto;
 		text-align: center;
-		padding: 11px 20px 14px;
+		padding: 11px 0 14px;
 	}
 
 	@media #{$not-mobile} {
@@ -20,14 +19,14 @@
 
 		&--different-card {
 			grid-template-columns: 258px;
-			padding-right: 46px 30px 40px 35px;
+			padding-right: 46px 0 40px;
 			background-color: #ffffff;
 			box-shadow: 0 0 2px 2px #f2f2f2;
 		}
 
 		@media #{$desktop-only} {
 			grid-template-columns: 90px 90px;
-			padding: 0 36px 30px;
+			padding: 0 0 30px;
 			background-color: #f2f2f2f2;
 			margin: 30px;
 			grid-row: 3/4;

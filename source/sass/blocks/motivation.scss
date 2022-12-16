@@ -1,22 +1,19 @@
 .motivation {
 	background-color: #ffffff;
-	padding: 30px 20px 0 20px;
-	display: flex;
-	flex-direction: column;
-	margin: 0;
+	padding: 30px 0 24px;
+	display: grid;
+	grid-template-columns: 1fr;
 	gap: 20px 0;
 
 	@media #{$not-mobile} {
 		gap: 30px 0;
-		padding: 0 30px 45px;
-		flex-direction: row;
-		flex-wrap: wrap;
+		padding: 0 0 45px;
 	}
 
 	@media #{$desktop-only} {
 		gap: 80px;
-		padding: 80px 110px 71px;
-		margin: 0;
+		padding: 80px 0 71px;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
