@@ -5,6 +5,27 @@
 	display: flex;
 	flex-direction: column;
 	width: 1fr;
+	overflow: hidden;
+}
+
+.form-contacts::before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background-color: #68b738;
+	position: absolute;
+	margin-top: -74px;
+
+	@media #{$not-mobile} {
+		margin-top: -80px;
+		margin-left: -43px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: -91px;
+		margin-left: -117px;
+	}
 }
 
 .form-contacts__title {
@@ -15,7 +36,9 @@
 	line-height: 26px;
 	text-transform: uppercase;
 	margin: 0;
-	padding: 26px 110px 35px 0;
+	padding: 6px 110px 35px 0;
+	position: relative;
+	display: block;
 
 
 	@media #{$not-mobile} {
