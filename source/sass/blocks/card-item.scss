@@ -13,7 +13,7 @@
 	@media #{$not-mobile} {
 		grid-template-columns: 126px 126px;
 		padding: 34px 36px;
-		background-color: #f2f2f2f2;
+		background-color: #f2f2f2;
 		margin: 30px;
 		grid-row: 3/4;
 
@@ -27,7 +27,7 @@
 		@media #{$desktop-only} {
 			grid-template-columns: 90px 90px;
 			padding: 0 0 30px;
-			background-color: #f2f2f2f2;
+			background-color: #f2f2f2;
 			margin: 30px;
 			grid-row: 3/4;
 		}
