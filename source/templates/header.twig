@@ -1,5 +1,5 @@
-<header class="main-header page__centerer">
-	<div class="main-header__logos">
+<header class="main-header">
+	<div class="main-header__logos page__centerer">
 		<a class="main-header__logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
 			<img src="/img/logo-mobile.svg"  class="main-header__logo" width="39" height="38" alt="Кэт энерджи">
 		</a>
@@ -7,17 +7,17 @@
 			<img  src="/img/logo-2.svg" class="main-header__logo main-header__logo--text" width="102" height="19" alt="Наименование фирмы">
 		</a>
 	</div>
-		<nav class="main-nav main-nav--opened main-nav--nojs">
-			<button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-			<ul class="main-nav__list">
-				<!-- Цикл и условие -->
-				{% for page in pages %}
-				<li class="main-nav__item">
-					<a class="main-nav__link" href="{{page.path}}"  {% if permalink == page.path %}aria-current="page"{% endif %}>{{page.name}}</a>
-				</li>
-				{% endfor %}
+	<nav class="main-nav main-nav--opened main-nav--nojs">
+		<button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+		<ul class="main-nav__list">
+			<!-- Цикл и условие -->
+			{% for page in pages %}
+			<li class="main-nav__item">
+				<a class="main-nav__link" href="{{page.path}}"  {% if permalink == page.path %}aria-current="page"{% endif %}>{{page.name}}</a>
+			</li>
+			{% endfor %}
 
-			</ul>
-		</nav>
+		</ul>
+	</nav>
 
 </header>
