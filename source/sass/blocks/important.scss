@@ -69,8 +69,40 @@
 	}
 }
 
+.important__title {
+	display: flex;
+	gap: 19px;
+	align-items: center;
+}
+
 .important__item {
 	&::marker {
 		color: transparent;
 	}
+}
+
+
+.radio-button[type="radio"] {
+	appearance: none;
+	background-color: #ffffff;
+	font: inherit;
+	color: currentcolor;
+	height: 40px;
+	width: 40px;
+	margin: 0;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	border: 1px solid #cdcdcd;
+	display: grid;
+	place-content: center;
+}
+
+.radio-button[type="radio"]:checked::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #68b738;
 }
