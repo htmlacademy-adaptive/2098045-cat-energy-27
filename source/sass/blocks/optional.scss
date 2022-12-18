@@ -54,7 +54,39 @@
 }
 
 .optional__item {
+	display: grid;
+
 	&::marker {
 		color: transparent;
 	}
+}
+
+.optional__element[type="checkbox"] {
+	appearance: none;
+	background-color: #ffffff;
+	margin: 0;
+	margin-right: 4px;
+	font: inherit;
+	color: currentColor;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #cdcdcd;
+	border-radius: 4px;
+	place-content: center;
+}
+
+.optional__element[type="checkbox"]:checked::before {
+	content: "";
+	width: 24px;
+	height: 19px;
+	display: block;
+	mask: url("/icons/checkbox.svg") no-repeat center / cover;
+	background-color: #68b738;
+	margin: auto;
+}
+
+.optional__checkbox {
+	display: grid;
+	grid-template-columns: 65px 1fr;
+	align-items: center;
 }

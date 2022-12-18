@@ -1,31 +1,30 @@
 .main-header {
 	background-color: #ffffff;
-	height: 65px;
 
 	@media #{$not-mobile} {
-		display: flex;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 244px 1fr;
 		justify-content: space-between;
 	}
 
 	@media #{$desktop-only} {
-		padding-left: 110px;
+		gap: 420px;
 	}
 }
 
 .main-header__logos {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	padding-left: 20px;
-	padding-right: 20px;
 
 	@media #{$not-mobile} {
 		padding-top: 24px;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 60px 154px;
 	}
 
 	@media #{$desktop-only} {
 		padding-top: 53px;
+		grid-template-columns: 60px 200px;
+		justify-content: left;
 	}
 }
 
