@@ -1,8 +1,7 @@
 .additional-cards {
 	padding: 0;
-	display: flex;
-	flex-direction: column;
-	width: 1fr;
+	display: grid;
+	grid-template-columns: 1fr;
 
 	@media #{$not-mobile} {
 		box-shadow: 0 0 1px 1px #f2f2f2;
@@ -10,8 +9,10 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-right: 79px;
+		padding: 0;
+		padding-right: 79px;
 		gap: 0;
+		box-shadow: none;
 	}
 }
 
@@ -31,7 +32,12 @@
 
 	@media #{$desktop-only} {
 		grid-template-columns: 270px 200px 100px 244px;
+		border-top: 1px solid #cdcdcd;
 	}
+}
+
+.additional-cards__item:last-child {
+	border-bottom: 1px solid #cdcdcd;
 }
 
 .additional-cards__title {
@@ -56,7 +62,6 @@
 
 	@media #{$desktop-only} {
 		grid-column: 1/2;
-		margin: 0;
 		font-size: 20px;
 		line-height: 20px;
 	}
@@ -83,7 +88,6 @@
 
 	@media #{$desktop-only} {
 		grid-column: 2/3;
-		margin: 0;
 		text-align: left;
 	}
 }
@@ -109,7 +113,6 @@
 
 	@media #{$desktop-only} {
 		grid-column: 3/4;
-		margin: 0;
 		text-align: left;
 	}
 }
@@ -125,6 +128,7 @@
 
 	@media #{$desktop-only} {
 		grid-column: 4/5;
-		margin: 0;
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 }
