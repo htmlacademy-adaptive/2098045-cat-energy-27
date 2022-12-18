@@ -7,6 +7,7 @@
 
 	@media #{$desktop-only} {
 		width: 478px;
+		background-color: transparent;
 	}
 }
 
@@ -87,6 +88,23 @@
 	}
 }
 
+.main-nav__link[aria-current="page"]::after {
+	content: "";
+	position: absolute;
+	z-index: 3;
+	height: 2px;
+	inset: auto 180px -2px;
+	background-color: #68b738;
+
+	@media #{$not-mobile} {
+		inset: auto 180px -2px;
+	}
+
+	@media #{$desktop-only} {
+		inset: auto 180px -2px;
+	}
+}
+
 .main-nav__item {
 	border-bottom: 1px solid #e6e6e6;
 	padding-bottom: 24px;
@@ -134,5 +152,6 @@
 		justify-content: space-between;
 		gap: 0;
 		padding: 69px 0 8px;
+		background-color: transparent;
 	}
 }
