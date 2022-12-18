@@ -126,3 +126,12 @@
 		display: none;
 	}
 }
+
+.motivation__link::after {
+	content: "";
+	display: block;
+	width: 24px;
+	height: 12px;
+	mask: url("./icons/arrow.svg") no-repeat center / cover;
+	background-color: currentColor;
+}
