@@ -1,6 +1,6 @@
 .special {
 	background-color: #ffffff;
-	padding: 30px 0 105px;
+	padding: 30px 0 0;
 
 	@media #{$not-mobile} {
 		padding: 30px 0 105px;
@@ -63,6 +63,7 @@
 	display: grid;
 	grid-template-columns: 70px 1fr;
 	counter-increment: index;
+	align-items: center;
 
 	&::marker {
 		color: transparent;
@@ -77,11 +78,11 @@
 		--icon: url("../../icons/stack.svg#pot");
 	}
 
-	&--cutlery {
+	&--icon_cutlery {
 		--icon: url("../../icons/stack.svg#cutlery");
 	}
 
-	&--clock {
+	&--icon_alarm {
 		--icon: url("../../icons/stack.svg#alarm");
 	}
 
