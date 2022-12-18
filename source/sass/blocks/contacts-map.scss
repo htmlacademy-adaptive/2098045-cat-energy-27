@@ -1,8 +1,13 @@
 
 .contacts-map {
-	margin: 0;
-	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
 	background: url("/img/location.jpg") no-repeat center / cover;
-	width: auto;
 	height: 362px;
+}
+
+.contacts-map iframe {
+	border: none;
+	display: block;
+	width: 390px;
 }
