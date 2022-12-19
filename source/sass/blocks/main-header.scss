@@ -8,7 +8,7 @@
 	}
 
 	@media #{$desktop-only} {
-		gap: 592px;
+		gap: 662px;
 		background-color: transparent;
 	}
 }
@@ -16,10 +16,12 @@
 .main-header__logos {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin-left: 20px;
 
 	@media #{$not-mobile} {
 		padding-top: 24px;
 		grid-template-columns: 60px 154px;
+		margin-left: 30px;
 	}
 
 	@media #{$desktop-only} {

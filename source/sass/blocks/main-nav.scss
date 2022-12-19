@@ -80,6 +80,11 @@
 	line-height: 20px;
 	text-transform: uppercase;
 	text-decoration: none;
+	--air-gap: -100%;
+	--line-color: #68b738;
+	--line-thickness: 2px;
+	position: relative;
+	inline-size: fit-content;
 
 	@media #{$not-mobile} {
 		font-weight: 400;
@@ -90,6 +95,16 @@
 	@media #{$desktop-only} {
 		color: #ffffff;
 	}
+}
+
+.main-nav__link[aria-current="page"]::after {
+	content: "";
+	position: absolute;
+	inset-block: calc((100% - var(--line-thickness)) * 1.5);
+	block-size: var(--line-thickness);
+	inset-inline-end: calc(100% + var(--air-gap));
+	inline-size: calc(100%);
+	background-color: var(--line-color);
 }
 
 .main-nav__item {
@@ -124,11 +139,13 @@
 	gap: 22px;
 	padding: 11px 0 0;
 	margin: 0;
+	margin-right: 20px;
 
 	@media #{$not-mobile} {
 		grid-template-columns: 1fr 1fr 1fr;
 		justify-content: space-between;
 		padding: 42px 0 12px;
+		margin-right: 30px;
 	}
 
 	@media #{$desktop-only} {
