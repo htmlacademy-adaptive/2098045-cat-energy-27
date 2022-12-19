@@ -8,37 +8,20 @@
 	overflow: hidden;
 }
 
-.form-contacts::before {
-	content: "";
-	display: block;
-	width: 100%;
-	height: 2px;
-	background-color: #68b738;
-	position: absolute;
-	margin-top: -74px;
-
-	@media #{$not-mobile} {
-		margin-top: -80px;
-		margin-left: -43px;
-	}
-
-	@media #{$desktop-only} {
-		margin-top: -91px;
-		margin-left: -117px;
-	}
-}
-
 .form-contacts__title {
 	font-family: "Oswald", sans-serif;
 	color: #222222;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 26px;
-	text-transform: uppercase;
 	margin: 0;
 	padding: 6px 110px 35px 0;
-	position: relative;
 	display: block;
+	--air-gap: 20px;
+	--line-color: #68b738;
+	--line-thickness: 2px;
+	position: relative;
+	inline-size: fit-content;
 
 
 	@media #{$not-mobile} {
@@ -52,21 +35,36 @@
 	}
 }
 
+.form-contacts__title::before {
+	content: "";
+	position: absolute;
+	inset-block: calc((100% - var(--line-thickness)) / 2);
+	inset-inline-end: calc(100% + var(--air-gap));
+	block-size: var(--line-thickness);
+	inline-size: calc(100vw - 100% - var(--air-gap));
+	background-color: var(--line-color);
+	box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
+}
+
 .form-contacts__list {
 	display: flex;
 	flex-direction: column;
 	gap: 14px;
 	padding: 0;
 	width: 1fr;
+	margin-bottom: 24px;
+
 
 	@media #{$not-mobile} {
 		gap: 20px;
+		margin-bottom: 65px;
 	}
 
 	@media #{$desktop-only} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 78px;
+		margin-bottom: 67px;
 	}
 }
 

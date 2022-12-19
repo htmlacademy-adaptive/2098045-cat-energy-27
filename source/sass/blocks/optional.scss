@@ -14,12 +14,27 @@
 	font-size: 24px;
 	line-height: 26px;
 	padding: 0;
+	--air-gap: 20px;
+	--line-color: #68b738;
+	--line-thickness: 2px;
+	position: relative;
+	inline-size: fit-content;
 
 	@media #{$not-mobile} {
-		padding-top: 65px;
 		font-size: 36px;
 		line-height: 36px;
 	}
+}
+
+.optional__title::before {
+	content: "";
+	position: absolute;
+	inset-block: calc((100% - var(--line-thickness)) / 2);
+	inset-inline-end: calc(100% + var(--air-gap));
+	block-size: var(--line-thickness);
+	inline-size: calc(100vw - 100% - var(--air-gap));
+	background-color: var(--line-color);
+	box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
 }
 
 .optional__list {

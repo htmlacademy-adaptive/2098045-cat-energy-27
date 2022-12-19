@@ -92,23 +92,6 @@
 	}
 }
 
-.main-nav__link[aria-current="page"]::after {
-	content: "";
-	position: absolute;
-	z-index: 3;
-	height: 2px;
-	inset: auto 180px -2px;
-	background-color: #68b738;
-
-	@media #{$not-mobile} {
-		inset: auto 180px -2px;
-	}
-
-	@media #{$desktop-only} {
-		inset: auto 180px -2px;
-	}
-}
-
 .main-nav__item {
 	border-bottom: 1px solid #e6e6e6;
 	padding-bottom: 24px;
