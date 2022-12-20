@@ -1,16 +1,17 @@
 .product-card-list {
 	padding: 0;
-	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr;
 
 	@media #{$not-mobile} {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+		column-gap: clamp(60px, 30px + 100vw / 25.6, 60px);
 	}
 
 	@media #{$desktop-only} {
 		padding: 85px 0;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+		column-gap: clamp(60px, 30px + 100vw / 25.6, 80px);
 	}
 }
