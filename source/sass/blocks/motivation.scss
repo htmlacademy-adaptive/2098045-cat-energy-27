@@ -13,13 +13,16 @@
 	@media #{$desktop-only} {
 		gap: 80px;
 		padding: 64px 0 71px;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: (repeat(auto-fill, minmax(570px, 1fr)));
+		column-gap: clamp(60px, 30px + 100vw /25.6, 80px);
 	}
 }
 
 .motivation__item {
 	background-color: #f2f2f2;
 	padding: 30px 33px 20px 20px;
+	display: grid;
+	grid-template-columns: 80px 1fr;
 
 	&::marker {
 		color: transparent;
@@ -27,11 +30,12 @@
 
 	@media #{$not-mobile} {
 		padding: 77px 62px 53px 52px;
+		grid-template-columns: 1fr 200px;
 	}
 
 	@media #{$desktop-only} {
-		width: 454px;
-		margin: 0;
+		grid-template-columns: 110px 1fr;
+		padding: 41px 52px 55px;
 	}
 }
 
@@ -43,38 +47,60 @@
 	line-height: 37px;
 	text-transform: uppercase;
 	margin: 0;
-	text-align: center;
+	grid-column: 2/-1;
+	grid-row: 1/2;
 
 	@media #{$not-mobile} {
 		text-align: left;
 		font-size: 36px;
 		line-height: 36px;
+		grid-column: 1/1;
 	}
 
 	@media #{$desktop-only} {
 		font-size: 36px;
 		line-height: 36px;
 		text-align: center;
+		grid-column: 2/-1;
+		grid-row: 1/2;
 	}
 }
 
 .motivation__pic {
+	grid-column: 1/2;
+	grid-row: 1/2;
+
 	&--icon-slim {
-		background: url("../../icons/stack.svg#cat-slim");
+		--icon: url("../../icons/stack.svg#cat-slim");
 	}
 
 	&--icon-pro {
-		background: url("../../icons/stack.svg#cat-pro");
+		--icon: url("../../icons/stack.svg#cat-pro");
+	}
+
+	@media #{$not-mobile} {
+		grid-column: 2/-1;
+		grid-row: 1/3;
+	}
+
+	@media #{$desktop-only} {
+		grid-column: 1/2;
+		grid-row: 1/2;
 	}
 }
 
 .motivation__pic::before {
 	content: "";
 	display: block;
-	width: 50px;
-	height: 53px;
+	width: 67px;
+	height: 57px;
 	background: var(--icon) no-repeat left / contain;
 	box-sizing: border-box;
+
+	@media #{$not-mobile} {
+		width: 200px;
+		height: 211px;
+	}
 }
 
 
@@ -87,22 +113,25 @@
 	margin: 0;
 	margin-top: 30px;
 	margin-bottom: 23px;
+	grid-column: 1/-1;
 
 	@media #{$not-mobile} {
 		font-size: 16px;
 		line-height: 24px;
-		margin: 24px 316px 47px 0;
+		padding-right: 54px;
+		grid-column: 1/1;
 	}
 
 	@media #{$desktop-only} {
 		font-size: 16px;
 		line-height: 24px;
-		margin: 73px 0 23px 0;
+		margin: 0 0 23px 0;
+		grid-column: 1/-1;
 
 		&--drscription-pro {
 			font-size: 16px;
 			line-height: 24px;
-			margin: 73px 5px 23px 0;
+			margin: 0 0 23px 0;
 		}
 	}
 }
@@ -132,7 +161,8 @@
 	border: none;
 	text-decoration: none;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 109px 1fr;
+	grid-column: 1/-1;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
@@ -140,6 +170,11 @@
 		padding: 4px 57px 4px 0;
 		grid-template-columns: 138px 60px;
 		align-items: center;
+		grid-column: 1/1;
+	}
+
+	@media #{$desktop-only} {
+		grid-column: 1/-1;
 	}
 }
 
