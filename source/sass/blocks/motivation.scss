@@ -136,6 +136,6 @@
 	display: block;
 	width: 24px;
 	height: 12px;
-	background: url("../../icons/arrow.svg") no-repeat / cover;
+	mask: url("../../icons/stack.svg#icons_arrow") no-repeat / contain;
 	background-color: currentColor;
 }
