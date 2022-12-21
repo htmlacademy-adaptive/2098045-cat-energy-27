@@ -11,20 +11,14 @@
 	}
 
 	@media #{$not-mobile} {
-		grid-template-columns: 126px 126px;
-		padding: 34px 36px;
+		padding: 34px 38px 39px 36px;
 		background-color: #f2f2f2;
 
 		&--different-card {
-			grid-template-columns: 258px;
 			padding-right: 46px 0 40px;
 			background-color: #ffffff;
 			box-shadow: 0 0 2px 2px #f2f2f2;
-		}
-
-		@media #{$desktop-only} {
-			grid-template-columns: 90px 90px;
-			background-color: #f2f2f2;
+			inline-size: fit-content;
 		}
 	}
 }
@@ -50,7 +44,15 @@
 	}
 
 	@media #{$not-mobile} {
-		padding: 34px 37px 21px 42px;
+		padding: 34px 72px 21px 77px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 34px 40px 21px 50px;
+
+		&--different-title {
+			padding: 34px 28px 21px 33px;
+		}
 	}
 }
 

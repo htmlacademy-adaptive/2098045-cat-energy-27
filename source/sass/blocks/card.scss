@@ -5,12 +5,12 @@
 	text-decoration: none;
 
 	@media #{$not-mobile} {
-		padding: 14px 94px;
+		padding: 10px 94px;
 		grid-row: 5/6;
 	}
 
 	@media #{$desktop-only} {
-		padding: 14px 53px;
+		padding: 10px 53px;
 	}
 
 	&--show-all {
@@ -29,7 +29,7 @@
 	@media #{$not-mobile} {
 		&--show-all {
 			grid-column: 1/-1;
-			padding: 10px 50px;
+			padding: 10px 39px;
 			grid-row: 4/5;
 		}
 	}
