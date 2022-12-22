@@ -12,7 +12,7 @@
 }
 
 .special__title {
-	font-family: "Oswald", sans-serif;
+	font-family: var(--accent-font);
 	color: #000000;
 	font-weight: 400;
 	font-size: 36px;
@@ -29,7 +29,7 @@
 
 
 .special__list {
-	font-family: "Lato", sans-serif;
+	font-family: var(--main-font);
 	color: var(--main-color);
 	font-weight: 400;
 	font-size: 14px;
@@ -107,7 +107,7 @@
 		&::after {
 			content: counters(index, ".", decimal);
 			position: absolute;
-			font-family: "Oswald", sans-serif;
+			font-family: var(--accent-font);
 			font-size: 280px;
 			line-height: 280px;
 			color: #f2f2f2;

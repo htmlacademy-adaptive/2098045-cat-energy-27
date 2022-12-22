@@ -35,7 +35,7 @@
 
 .contacts__description {
 	background-color: #ffffff;
-	font-family: "Oswald", sans-serif;
+	font-family: var(--main-font);
 	color: #111111;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -58,7 +58,7 @@
 }
 
 .contacts__adress {
-	font-family: "Lato", sans-serif;
+	font-family: var(--main-font);
 	color: var(--main-color);
 	font-weight: 400;
 	font-size: 14px;
