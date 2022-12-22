@@ -1,7 +1,16 @@
 .copyright {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
 	justify-content: space-between;
+	padding: 21px 0 23px;
+
+	@media #{$not-mobile} {
+		justify-content: space-around;
+	}
+
+	@media #{$desktop-only} {
+		justify-content: right;
+		gap: 15px;
+	}
 }
 
 .copyright__logo {
@@ -10,7 +19,19 @@
 		display: block;
 		box-sizing: border-box;
 		width: 113px;
-		height: 19px;
-		mask: url("/img/logo-academy.svg") no-repeat center / contain;
+		height: 34px;
+		mask: url("../../img/logo-academy.png") no-repeat center / contain;
+		background-color: #444444;
+		align-items: center;
+	}
+
+	&--academy-pic::after {
+		content: "";
+		display: block;
+		box-sizing: border-box;
+		width: 27px;
+		height: 34px;
+		mask: url("../../img/logo-academy-pic.svg") no-repeat center / contain;
+		background-color: #444444;
 	}
 }

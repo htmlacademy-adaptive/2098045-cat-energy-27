@@ -1,6 +1,7 @@
 .social {
 	display: flex;
 	justify-content: center;
+	gap: 28px;
 }
 
 .social__item {
@@ -9,25 +10,26 @@
 	}
 }
 
+.social__link {
+	&--icon_vk {
+		--icon: url("../../icons/stack.svg#vk");
+	}
+
+	&--icon_yt {
+		--icon: url("../../icons/stack.svg#tg");
+	}
+
+	&--icon_tg {
+		--icon: url("../../icons/stack.svg#yt");
+	}
+}
 
 .social__link::before {
 	content: "";
 	display: block;
 	width: 28px;
 	height: 22px;
-	background: currentColor;
 	mask: var(--icon) no-repeat center / contain;
 	box-sizing: border-box;
-
-	&--icon_vk {
-		--icon: url("./icons/vk.svg");
-	}
-
-	&--icon_yt {
-		--icon: url("/icons/tg.svg");
-	}
-
-	&--icon_tg {
-		--icon: url("/icons/yt.svg");
-	}
+	background: #666666;
 }
