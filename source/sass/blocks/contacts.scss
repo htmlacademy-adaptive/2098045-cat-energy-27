@@ -79,3 +79,16 @@
 		background-color: #ffffff;
 	}
 }
+
+.contacts__map {
+	display: grid;
+	grid-template-columns: 1fr;
+	background: url("../../img/location.jpg") no-repeat center / cover;
+	height: 362px;
+}
+
+.contacts__map iframe {
+	border: none;
+	display: block;
+	width: 100%;
+}
