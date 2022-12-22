@@ -82,7 +82,7 @@
 }
 
 
-.radio-button[type="radio"] {
+.important__radio-button[type="radio"] {
 	appearance: none;
 	background-color: #ffffff;
 	font: inherit;
@@ -97,7 +97,7 @@
 	place-content: center;
 }
 
-.radio-button[type="radio"]:checked::before {
+.important__radio-button[type="radio"]:checked::before {
 	content: "";
 	width: 20px;
 	height: 20px;
