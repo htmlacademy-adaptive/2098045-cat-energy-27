@@ -7,13 +7,13 @@
 			<img  src="/img/logo-2.svg" class="main-header__logo main-header__logo--text" width="102" height="19" alt="Наименование фирмы">
 		</a>
 	</div>
-	<nav class="main-nav main-nav--opened main-nav--nojs">
+	<nav class="main-nav main-nav--opened main-nav--nojs {% if permalink == "form.html" %}main-nav--text-invert{% endif %}{% if permalink == "catalog.html" %}main-nav--text-invert{% endif %}" >
 		<button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
 		<ul class="main-nav__list">
 			<!-- Цикл и условие -->
 			{% for page in pages %}
 			<li class="main-nav__item">
-				<a class="main-nav__link main-nav__link--text-invert" href="{{page.path}}"  {% if permalink == page.path %}aria-current="page"{% endif %}>{{page.name}} {% if permalink == index.html %}main-nav__link="main-nav__link--text-invert"{% endif %}</a>
+				<a class="main-nav__link" href="{{page.path}}"  {% if permalink == page.path %}aria-current="page"{% endif %}>{{page.name}}</a>
 			</li>
 			{% endfor %}
 

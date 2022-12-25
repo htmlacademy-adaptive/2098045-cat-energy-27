@@ -5,9 +5,17 @@
 	font-family: var(--accent-font);
 	padding: 0;
 
+	&--text-invert {
+		color: #000000;
+	}
+
 	@media #{$desktop-only} {
 		width: 478px;
 		background-color: transparent;
+
+		&--text-invert a {
+			color: #000000;
+		}
 	}
 }
 
@@ -86,10 +94,6 @@
 	position: relative;
 	inline-size: fit-content;
 
-	&--text-invert {
-		color: #000000;
-	}
-
 	@media #{$not-mobile} {
 		font-weight: 400;
 		font-size: 18px;
@@ -145,6 +149,7 @@
 	padding: 11px 0 0;
 	margin: 0;
 	margin-right: 20px;
+
 
 	@media #{$not-mobile} {
 		grid-template-columns: 1fr 1fr 1fr;
