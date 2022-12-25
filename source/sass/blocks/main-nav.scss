@@ -4,17 +4,20 @@
 	background-color: #ffffff;
 	font-family: var(--accent-font);
 	padding: 0;
-
-	&--text-invert {
-		color: #000000;
-	}
+	color: #000000;
 
 	@media #{$desktop-only} {
 		width: 478px;
 		background-color: transparent;
 
-		&--text-invert a {
+		a {
 			color: #000000;
+			--line-color: #68b738;
+		}
+
+		&--text-invert a {
+			color: #ffffff;
+			--line-color: #ffffff;
 		}
 	}
 }
