@@ -9,6 +9,10 @@
 	width: 1fr;
 	gap: 14px;
 	padding: 0;
+
+	@media #{$desktop-only} {
+		gap: 20px;
+	}
 }
 
 .personal-info__item {
@@ -45,8 +49,43 @@
 			grid-template-columns: 130px 1fr;
 		}
 	}
+
+	@media #{$desktop-only} {
+		gap: 27px;
+	}
 }
 
-input::placeholder {
-	padding: 30px;
+.personal-info__text {
+	text-align: left;
+	font-family: var(--accent-font);
+	color: var(--main-color);
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	&--name {
+		padding-top: 14px;
+		padding-bottom: 14px;
+	}
+
+	&--field {
+		padding: 14px 20px;
+		border: none;
+		box-shadow: 0 0 1px 1px #e7e7e7;
+	}
+
+	&marker {
+		color: transparent;
+	}
+
+
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 11px 20px;
+	}
 }

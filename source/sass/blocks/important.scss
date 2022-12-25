@@ -65,7 +65,8 @@
 	}
 
 	@media #{$desktop-only} {
-		box-shadow: 0 0 1px #e7e7e7;
+		border: 1px solid #e7e7e7;
+		padding: 25px 39px;
 	}
 }
 
@@ -95,6 +96,11 @@
 	border: 1px solid #cdcdcd;
 	display: grid;
 	place-content: center;
+
+
+	@media #{$desktop-only} {
+		margin: 0;
+	}
 }
 
 .important__radio-button[type="radio"]:checked::before {
