@@ -1,7 +1,10 @@
 <header class="main-header">
 	<div class="main-header__logos">
 		<a class="main-header__logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-			<img src="/img/logo-mobile.svg"  class="main-header__logo" width="39" height="38" alt="Кэт энерджи">
+			<picture>
+				<source media="(min-width:768px)" srcset="img/logo-tablet.svg" width="182" height="50">
+				<img src="img/logo-mobile.svg"  class="main-header__logo" width="39" height="38" alt="Кэт энерджи">
+			</picture>
 		</a>
 		<a class="main-header__logo2" href="index.html" {% if permalink == page.path %}aria-current="page"{% endif %}>
 			<img  src="/img/logo-2.svg" class="main-header__logo main-header__logo--text" width="102" height="19" alt="Наименование фирмы">

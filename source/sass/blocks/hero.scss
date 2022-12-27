@@ -16,7 +16,7 @@
 	content: "";
 	display: block;
 	height: 302px;
-	width: 50%;
+	width: 100%;
 	position: absolute;
 	background:
 		linear-gradient(
@@ -31,6 +31,7 @@
 
 	@media #{$not-mobile} {
 		display: none;
+		width: 50%;
 	}
 
 	@media #{$desktop-only} {
@@ -52,9 +53,12 @@
 }
 
 .hero__description {
+	margin-top: 315px;
+
 	@media #{$not-mobile} {
 		min-height: 223px;
 		background-color: #ffffff;
+		margin-top: 0;
 	}
 
 	@media #{$desktop-only} {
