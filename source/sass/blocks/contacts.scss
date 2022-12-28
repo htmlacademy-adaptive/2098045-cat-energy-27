@@ -11,6 +11,7 @@
 	display: grid;
 	grid-template-columns: 139px 139px;
 	justify-content: center;
+	gap: 10px;
 
 	&--bg-lighter {
 		background-color: #f2f2f2;
@@ -35,7 +36,7 @@
 
 .contacts__description {
 	background-color: #ffffff;
-	font-family: var(--main-font);
+	font-family: var(--accent-font);
 	color: #111111;
 	text-transform: uppercase;
 	font-weight: 400;
