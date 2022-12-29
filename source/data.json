@@ -27,12 +27,27 @@
 			"maxdppx": 2,
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
-		"test": {
+		"index-can": {
 			"ext": "png",
-			"width": 320,
-			"height": 320,
 			"maxdppx": 2,
-			"viewports": ["desktop", "tablet", "mobile"]
+			"sizes": [
+				{
+				"viewport": "desktop",
+				"width": 552,
+				"height": 499
+				},
+				{
+				"viewport": "tablet",
+				"width": 708,
+				"height": 609
+			},
+				{
+				"viewport": "mobile",
+				"width": 280,
+				"height": 270
+			}
+
+			]
 		}
 	}
 }
