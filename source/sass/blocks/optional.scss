@@ -92,10 +92,10 @@
 
 .optional__element[type="checkbox"]:checked::before {
 	content: "";
-	width: 24px;
-	height: 19px;
+	width: 19px;
+	height: 15px;
 	display: block;
-	mask: url("../../icons/checkbox.svg") no-repeat center / content;
+	mask: url("../../icons/checkbox.svg") no-repeat center / contain;
 	background-color: #68b738;
 	margin: auto;
 }

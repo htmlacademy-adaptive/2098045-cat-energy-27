@@ -19,6 +19,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 74px 110px 0 110px;
+		padding: 74px 0 0;
+		margin-bottom: 90px;
 	}
 }
