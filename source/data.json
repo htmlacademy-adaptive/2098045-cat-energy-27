@@ -103,6 +103,154 @@
 					"height": 256
 				}
 			]
+		},
+		"products/product-1": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 161,
+					"height": 172
+				},
+				{
+					"viewport": "tablet",
+					"width": 161,
+					"height": 172
+				},
+				{
+					"viewport": "mobile",
+					"width": 68,
+					"height": 86
+				}
+			]
+		},
+		"products/product-2": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 168,
+					"height": 206
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 206
+				},
+				{
+					"viewport": "mobile",
+					"width": 84,
+					"height": 100
+				}
+			]
+		},
+		"products/product-3": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "tablet",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "mobile",
+					"width": 68,
+					"height": 78
+				}
+			]
+		},
+		"products/product-4": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 84,
+					"height": 100
+				}
+			]
+		},
+		"products/product-5": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 161,
+					"height": 171
+				},
+				{
+					"viewport": "tablet",
+					"width": 161,
+					"height": 171
+				},
+				{
+					"viewport": "mobile",
+					"width": 68,
+					"height": 78
+				}
+			]
+		},
+		"products/product-6": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "tablet",
+					"width": 168,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 84,
+					"height": 100
+				}
+			]
+		}
+		,
+		"products/product-7": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "tablet",
+					"width": 163,
+					"height": 174
+				},
+				{
+					"viewport": "mobile",
+					"width": 72,
+					"height": 84
+				}
+			]
 		}
 	}
 }

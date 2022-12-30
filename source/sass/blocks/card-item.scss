@@ -79,14 +79,14 @@
 		&--product-image {
 			grid-column: 1 / -1;
 			grid-row: 1/2;
-			width: 60px;
 			height: 100%;
+			margin-top: -93px;
 		}
 	}
 
 	@media #{$desktop-only} {
 		&--product-image {
-			margin-top: -29px;
+			margin-top: -84px;
 		}
 
 		&--different-card-link {
