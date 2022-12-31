@@ -84,7 +84,9 @@
 .contacts__map {
 	display: grid;
 	grid-template-columns: 1fr;
-	background: url("../../img/location.jpg") no-repeat center / cover;
+	background: var(--bg-image) no-repeat center / contain;
+
+	@include bg-image("map");
 	height: 362px;
 }
 

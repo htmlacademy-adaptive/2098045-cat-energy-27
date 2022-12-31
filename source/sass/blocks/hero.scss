@@ -23,7 +23,9 @@
 			rgb(105 183 56 / 0.85),
 			rgb(105 183 56 / 0.85)
 		),
-		url("../../img/index-hero-cat.png") no-repeat center/ cover;
+		var(--bg-image) no-repeat center/ cover;
+
+	@include bg-image("hero-cat");
 	padding: 0;
 	margin: 0;
 	z-index: -1;
@@ -43,7 +45,9 @@
 				rgb(105 183 56 / 0.85),
 				rgb(105 183 56 / 0.85)
 			),
-			url("../../img/index-hero-cat.png") no-repeat top right / cover;
+			var(--bg-image) no-repeat top right / cover;
+
+		@include bg-image("hero-cat");
 		padding: 0;
 		margin-top: -135px;
 		z-index: -1;
