@@ -251,6 +251,64 @@
 					"height": 84
 				}
 			]
+		},
+		"logo": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 70,
+					"height": 60
+				},
+				{
+					"viewport": "tablet",
+					"width": 62,
+					"height": 54
+				},
+				{
+					"viewport": "mobile",
+					"width": 33,
+					"height": 38
+				}
+			]
+		},
+		"hero-cat": {
+			"ext": "png",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 720,
+					"height": 694
+				},
+				{
+					"viewport": "mobile",
+					"width": 320,
+					"height": 302
+				}
+			]
+		},
+		"catalog-cat": {
+			"ext": "jpg",
+			"maxdppx": 2,
+			"sizes": [
+				{
+					"viewport": "desktop",
+					"width": 245,
+					"height": 289
+				},
+				{
+					"viewport": "tablet",
+					"width": 707,
+					"height": 200
+				},
+				{
+					"viewport": "mobile",
+					"width": 280,
+					"height": 290
+				}
+			]
 		}
 	}
 }

@@ -1,23 +1,28 @@
 .hero {
+	position: relative;
 	font-family: var(--accent-font);
 	color: #ffffff;
 	font-weight: 400;
 	padding: 0;
 
+	@include bg-image("hero-cat");
+
 	@media #{$desktop-only} {
-		position: relative;
+		position: static;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		height: 509px;
 	}
 }
 
-.hero::before {
+&::before {
 	content: "";
-	display: block;
-	height: 302px;
-	width: 100%;
 	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 302px;
 	background:
 		linear-gradient(
 			rgb(105 183 56 / 0.85),
@@ -25,33 +30,13 @@
 		),
 		var(--bg-image) no-repeat center/ cover;
 
-	@include bg-image("hero-cat");
-	padding: 0;
-	margin: 0;
-	z-index: -1;
-
 
 	@media #{$not-mobile} {
-		display: none;
-		width: 50%;
+		content: none;
 	}
 
 	@media #{$desktop-only} {
-		content: "";
-		display: block;
-		width: 100%;
-		background:
-			linear-gradient(
-				rgb(105 183 56 / 0.85),
-				rgb(105 183 56 / 0.85)
-			),
-			var(--bg-image) no-repeat top right / cover;
-
-		@include bg-image("hero-cat");
-		padding: 0;
-		margin-top: -135px;
-		z-index: -1;
-		grid-column: 2/-1;
+		left: 50vw;
 		height: 631px;
 	}
 }
