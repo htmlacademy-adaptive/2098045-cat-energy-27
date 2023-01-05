@@ -11,11 +11,11 @@
 		position: static;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		height: 509px;
+		height: 542px;
 	}
 }
 
-&::before {
+.hero::before {
 	content: "";
 	position: absolute;
 	z-index: -1;
@@ -36,6 +36,7 @@
 	}
 
 	@media #{$desktop-only} {
+		content: "";
 		left: 50vw;
 		height: 631px;
 	}
@@ -150,7 +151,7 @@
 	@media #{$desktop-only} {
 		font-size: 20px;
 		line-height: 20px;
-		margin-top: -169px;
-		margin-left: -602px;
+		margin-top: 102px;
+		margin-left: -3px;
 	}
 }

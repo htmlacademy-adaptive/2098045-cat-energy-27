@@ -1,15 +1,15 @@
 
 .present {
 	height: 100%;
-	z-index: -1;
 
-	@include bg-image("catalog-cat");
 	background:
 		linear-gradient(
 			rgb(105 183 56 / 0.85),
 			rgb(105 183 56 / 0.85)
 		),
 		var(--bg-image) no-repeat center/ cover;
+
+	@include bg-image("catalog-cat");
 
 
 	@media #{$not-mobile} {
@@ -18,7 +18,6 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 50px;
-		background-position: 50% -366px;
 	}
 
 	@media #{$desktop-only} {

@@ -82,12 +82,8 @@
 }
 
 .contacts__map {
-	display: grid;
-	grid-template-columns: 1fr;
-	background: var(--bg-image) no-repeat center / contain;
-
-	@include bg-image("map");
-	height: 362px;
+	display: block;
+	width: 100vw;
 }
 
 .contacts__map iframe {
