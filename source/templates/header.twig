@@ -1,10 +1,10 @@
 <header class="main-header">
 	<div class="main-header__logos">
-		<a href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-			<img class="main-header__logo" src="img/logo.svg#logo-pic-mobile" alt="Логотип сайта с картинкой"></img>
+		<a class="main-header__logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+			<img src="img/logo.svg#logo-pic-mobile" alt="Логотип сайта с картинкой"></img>
 		</a>
-		<a href="index.html" {% if permalink == page.path %}aria-current="page"{% endif %}>
-			<img class="main-header__logo main-header__logo--text" src="img/logo.svg#logo-text" alt="Логотип сайта с текстом"></img>
+		<a class="main-header__logo main-header__logo--text" href="index.html" {% if permalink == page.path %}aria-current="page"{% endif %}>
+			<img src="img/logo.svg#logo-text" alt="Логотип сайта с текстом"></img>
 		</a>
 	</div>
 	<nav class="main-nav main-nav--opened main-nav--nojs {% if permalink == "index.html" %}main-nav--text-invert{% endif %}" >
