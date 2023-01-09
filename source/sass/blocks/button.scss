@@ -9,8 +9,24 @@
 	text-transform: uppercase;
 	text-align: center;
 
-	&----show-all-different {
+	&--show-all-different {
 		background-color: #f2f2f2;
 		color: var(--main-color);
 	}
+}
+
+.button:hover {
+	background-color: #5eaa2f;
+}
+
+.button:active {
+	color: hsl(0 0% 100% / 0.3);
+}
+
+.button--show-all-different:hover {
+	background-color: #ebebeb;
+}
+
+.button--show-all-different:active {
+	color: hsl(0 0% 27% / 0.3);
 }

@@ -103,7 +103,6 @@
 	}
 }
 
-
 .motivation__description {
 	font-family: var(--main-font);
 	color: var(--main-color);
@@ -178,12 +177,20 @@
 	}
 }
 
+.motivation__link:active {
+	opacity: 0.3;
+}
+
 .motivation__link::after {
 	content: "";
 	display: block;
-	width: 24px;
+	width: 18px;
 	height: 12px;
-	mask: url("../../icons/stack.svg#arrow") no-repeat center / contain;
+	mask: url("../../icons/stack.svg#arrow") no-repeat center / cover;
 	background-color: currentColor;
 	box-sizing: border-box;
+}
+
+.motivation__link:hover::after {
+	width: 32px;
 }

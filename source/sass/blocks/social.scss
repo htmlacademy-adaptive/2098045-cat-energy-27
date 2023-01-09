@@ -33,3 +33,13 @@
 	box-sizing: border-box;
 	background: #666666;
 }
+
+
+.social__link:hover::before {
+	background-color: #68b738;
+}
+
+.social__link:active::before {
+	background-color: #68b738;
+	opacity: 0.3;
+}

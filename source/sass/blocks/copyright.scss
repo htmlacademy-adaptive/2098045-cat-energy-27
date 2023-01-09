@@ -35,3 +35,19 @@
 		background-color: #444444;
 	}
 }
+
+.copyright__logo--academy-text:hover::after {
+	background-color: #68b738;
+}
+
+.copyright__logo--academy-text:active::after {
+	opacity: 0.3;
+}
+
+.copyright__logo--academy-pic:hover::after {
+	background-color: #68b738;
+}
+
+.copyright__logo--academy-pic:active::after {
+	opacity: 0.3;
+}

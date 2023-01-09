@@ -32,6 +32,14 @@
 	}
 }
 
+.footer-inf__img:hover {
+	opacity: 0.8;
+}
+
+.footer-inf__img:active {
+	opacity: 0.6;
+}
+
 .footer-inf__img::after {
 	content: "";
 	display: block;

@@ -70,9 +70,11 @@
 	}
 
 	&--field {
+		display: block;
 		padding: 14px 20px;
 		border: none;
 		box-shadow: 0 0 1px 1px #e7e7e7;
+		box-sizing: border-box;
 	}
 
 	&marker {
@@ -88,4 +90,10 @@
 	@media #{$desktop-only} {
 		padding: 11px 20px;
 	}
+}
+
+input:hover {
+	display: block;
+	border: 1px solid #cdcdcd;
+	box-sizing: border-box;
 }
