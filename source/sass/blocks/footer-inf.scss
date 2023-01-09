@@ -20,20 +20,6 @@
 	align-items: center;
 }
 
-.footer-inf__logo::before {
-	content: "";
-	display: block;
-	box-sizing: border-box;
-	width: 128px;
-	height: 24px;
-	background: url("../../img/logo-2.svg") no-repeat center / contain;
-	margin: 0 auto;
-
-	@media #{$desktop-only} {
-		margin: 0;
-	}
-}
-
 .footer-inf__logo::after {
 	content: "";
 	display: block;
