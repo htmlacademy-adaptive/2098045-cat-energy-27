@@ -9,19 +9,6 @@
 	}
 }
 
-.footer-inf__copyright {
-	margin: 0;
-	padding: 39px 20px 0 20px;
-
-	@media #{$not-mobile} {
-		padding: 11px 20px 0;
-	}
-
-	@media #{$desktop-only} {
-		padding: 11px 0 0;
-	}
-}
-
 .footer-inf__logo {
 	display: grid;
 	grid-template-columns: 1fr;
