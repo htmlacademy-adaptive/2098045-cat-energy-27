@@ -64,6 +64,7 @@
 	grid-template-columns: 70px 1fr;
 	counter-increment: index;
 	align-items: center;
+	z-index: 1;
 
 
 	&::marker {
@@ -114,9 +115,9 @@
 			font-size: 280px;
 			line-height: 280px;
 			color: #f2f2f2;
-			z-index: 1;
 			margin-left: 106px;
 			margin-top: -30px;
+			z-index: -1;
 		}
 	}
 }
