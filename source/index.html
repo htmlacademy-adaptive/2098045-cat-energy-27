@@ -64,10 +64,17 @@
 					</div>
 				</dl>
 			</div>
-			<div class="example-cat">
-				{% include "./templates/picture.twig" with {name: "fat-cat", class: "example-cat__fat", alt: "Фото пухлого кота."} %}
+			<div class="example-cat slider" style="--curtain-place: 0.5;">
+				<div class="slider__before">{% include "./templates/picture.twig" with {name: "fat-cat", class: "example-cat__fat slider__image slider__image--state_before", alt: "Фото пухлого кота."} %}</div>
 
-				{% include "./templates/picture.twig" with {name: "slim-cat", class: "example-cat__slim", alt: "Фото стройного кота."} %}
+				<div class="slider__curtain">
+					<button class="slider__thumb" type="button">
+						<span class="visually-hidden">Ползунок слайдера</span>
+					</button>
+				</div>
+
+				<div class="slider__after">{% include "./templates/picture.twig" with {name: "slim-cat", class: "example-cat__slim slider__image slider__image--state_after", alt: "Фото стройного кота."} %}</div>
+
 			</div>
 		</div>
 	</section>
