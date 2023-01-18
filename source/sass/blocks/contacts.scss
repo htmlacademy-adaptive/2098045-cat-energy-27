@@ -13,10 +13,6 @@
 	justify-content: center;
 	gap: 10px;
 
-	&--bg-lighter {
-		background-color: #f2f2f2;
-	}
-
 	@media #{$not-mobile} {
 		grid-template-columns: 172px 160px;
 		padding: 60px 70px 56px;
@@ -28,14 +24,16 @@
 		width: 405px;
 		padding: 60px 80px 56px;
 		position: absolute;
-		background-color: #ffffff;
 		margin-top: 96px;
 		margin-left: 110px;
+
+		&--bg-lighter {
+			background-color: #ffffff;
+		}
 	}
 }
 
 .contacts__description {
-	background-color: #ffffff;
 	font-family: var(--accent-font);
 	color: #111111;
 	text-transform: uppercase;
@@ -43,18 +41,12 @@
 	font-size: 16px;
 	line-height: 20px;
 	margin: 0;
+	background-color: #ffffff;
 
-	&--bg-lighter {
-		background-color: #f2f2f2;
-	}
 
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 26px;
-	}
-
-	@media #{$desktop-only} {
-		background-color: #ffffff;
 	}
 }
 
@@ -64,20 +56,12 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	background-color: #ffffff;
 	margin: 0;
-
-	&--bg-lighter {
-		background-color: #f2f2f2;
-	}
+	background-color: #ffffff;
 
 	@media #{$not-mobile} {
 		font-size: 16px;
 		line-height: 20px;
-	}
-
-	@media #{$desktop-only} {
-		background-color: #ffffff;
 	}
 }
 

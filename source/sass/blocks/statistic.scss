@@ -1,22 +1,30 @@
 .statistic {
 	background-color: #eaeaea;
 	grid-column: 1/2;
-}
-
-.statistic__item {
-	padding: 16px 43px 15 px 42px;
-	display: grid;
-	gap: 18px;
-	grid-template-columns: 1fr 1fr;
-
-	@media #{$not-mobile} {
-		background-color: #ffffff;
-		grid-template-columns: 1fr 1fr 1fr;
-	}
 
 	@media #{$desktop-only} {
 		background-color: #f2f2f2;
+	}
+}
+
+.statistic__item {
+	padding: 16px 0 135px;
+	display: grid;
+	grid-template-columns: 40% 20% 40%;
+
+	@media #{$not-mobile} {
+		background-color: #ffffff;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding-right: 30px;
+		padding-left: 30px;
+		padding-bottom: 203px;
+	}
+
+	@media #{$desktop-only} {
+		grid-template-columns: 1fr 1fr 1fr;
+		background-color: #f2f2f2;
 		margin: 0;
+		padding: 0 0 0 87px;
 	}
 }
 
@@ -29,12 +37,11 @@
 	margin: 0 auto;
 	border: 1px solid #cdcdcd;
 
-
 	&--statistic-expenses {
 		grid-column: 1 / -1;
 		display: flex;
 		justify-content: center;
-		margin-top: 20px;
+		margin-top: 41px;
 		border: none;
 	}
 
@@ -46,6 +53,7 @@
 	&--days {
 		padding: 14px 19px 27px 22px;
 		text-transform: uppercase;
+		grid-column: 3/-1;
 	}
 
 	@media #{$not-mobile} {
@@ -61,6 +69,7 @@
 		}
 
 		&--days {
+			grid-column: 2/3;
 			padding: 14px 37px 27px 30px;
 		}
 	}

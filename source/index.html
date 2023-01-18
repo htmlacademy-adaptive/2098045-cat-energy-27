@@ -43,7 +43,6 @@
 	</section>
 
 	<section class="example">
-		<div class="page__centerer">
 			<h2 class="example__title">Живой пример</h2>
 			<p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
@@ -64,17 +63,19 @@
 					</div>
 				</dl>
 			</div>
+
 			<div class="example-cat slider" style="--curtain-place: 0.5;">
-				<div class="slider__before">{% include "./templates/picture.twig" with {name: "fat-cat", class: "example-cat__fat slider__image slider__image--state_before", alt: "Фото пухлого кота."} %}</div>
+				<div class="slider__wrapper">
+					<div class="slider__before">{% include "./templates/picture.twig" with {name: "fat-cat", class: "example-cat__fat slider__image slider__image--state_before", alt: "Фото пухлого кота."} %}</div>
 
-				<div class="slider__curtain">
-					<button class="slider__thumb" type="button">
-						<span class="visually-hidden">Ползунок слайдера</span>
-					</button>
+					<div class="slider__curtain">
+						<button class="slider__thumb" type="button">
+							<span class="visually-hidden">Ползунок слайдера</span>
+						</button>
+					</div>
+
+					<div class="slider__after">{% include "./templates/picture.twig" with {name: "slim-cat", class: "example-cat__slim slider__image slider__image--state_after", alt: "Фото стройного кота."} %}</div>
 				</div>
-
-				<div class="slider__after">{% include "./templates/picture.twig" with {name: "slim-cat", class: "example-cat__slim slider__image slider__image--state_after", alt: "Фото стройного кота."} %}</div>
-
 			</div>
 		</div>
 	</section>
