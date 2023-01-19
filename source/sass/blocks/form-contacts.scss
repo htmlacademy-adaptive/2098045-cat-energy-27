@@ -129,8 +129,9 @@
 	text-transform: uppercase;
 	padding: 14px 52px 14px 15px;
 	width: 1fr;
-	border: 1px solid #cdcdcd;
+	border: none;
 	text-align: left;
+
 
 	&--phone {
 		padding: 14px 69px 14px 15px;
@@ -140,4 +141,36 @@
 		font-size: 20px;
 		line-height: 30px;
 	}
+}
+
+.form-contacts__icon {
+	position: relative;
+	border: 1px solid #cdcdcd;
+
+
+	&--phone {
+		--icon: url("../../icons/stack.svg#phone") no-repeat center;
+	}
+
+	&--email {
+		--icon: url("../../icons/stack.svg#message") no-repeat center;
+	}
+}
+
+.form-contacts__icon::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 16px;
+	margin: auto 0;
+	width: 20px;
+	height: 20px;
+	background: var(--icon);
+	background-size: cover;
+	z-index: 1;
+}
+
+input {
+	width: 100%;
 }

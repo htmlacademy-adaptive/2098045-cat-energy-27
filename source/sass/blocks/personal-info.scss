@@ -63,6 +63,7 @@
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
+	box-sizing: border-box;
 
 	&--name {
 		padding-top: 14px;
@@ -74,6 +75,7 @@
 		padding: 14px 20px;
 		border: none;
 		box-shadow: 0 0 1px 1px #e7e7e7;
+		appearance: textfield;
 		box-sizing: border-box;
 	}
 
@@ -94,6 +96,6 @@
 
 input:hover {
 	display: block;
-	border: 1px solid #cdcdcd;
+	outline: 1px solid #cdcdcd;
 	box-sizing: border-box;
 }
