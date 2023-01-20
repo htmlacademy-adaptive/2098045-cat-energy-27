@@ -23,10 +23,18 @@
 	color: hsl(0 0% 100% / 0.3);
 }
 
+.button:focus {
+	background-color: #5eaa2f;
+}
+
 .button--show-all-different:hover {
 	background-color: #ebebeb;
 }
 
 .button--show-all-different:active {
 	color: hsl(0 0% 27% / 0.3);
+}
+
+.button--show-all-different:focus {
+	background-color: #ebebeb;
 }

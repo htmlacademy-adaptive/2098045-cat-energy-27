@@ -27,6 +27,10 @@
 	opacity: 0.6;
 }
 
+.footer-inf__img:focus-visible {
+	opacity: 0.8;
+}
+
 .footer-inf__img::after {
 	content: "";
 	display: block;

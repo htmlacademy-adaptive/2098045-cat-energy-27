@@ -43,3 +43,13 @@
 	background-color: #68b738;
 	opacity: 0.3;
 }
+
+.social__link:focus::before {
+	background-color: #68b738;
+}
+
+@supports not selector(:focus-visible) {
+	.select-control:focus {
+		outline: none;
+	}
+}
