@@ -1,17 +1,12 @@
 
 .card__button {
-	padding: 10px 109px;
+	padding: 10px 20px;
 	grid-column: 1/-1;
 	grid-row: 3/4;
 	text-decoration: none;
 
 	@media #{$not-mobile} {
-		padding: 10px 94px;
 		grid-row: 5/6;
-	}
-
-	@media #{$desktop-only} {
-		padding: 10px 53px;
 	}
 
 	&--show-all {
@@ -21,7 +16,7 @@
 		font-weight: 400;
 		font-size: 16px;
 		line-height: 20px;
-		padding: 10px 94px;
+		padding: 10px 20px;
 		grid-row: 5/6;
 		grid-column: 1/-1;
 		text-decoration: none;
@@ -30,7 +25,7 @@
 	@media #{$not-mobile} {
 		&--show-all {
 			grid-column: 1/-1;
-			padding: 10px 39px;
+			padding: 10px 20px;
 			grid-row: 4/5;
 		}
 	}

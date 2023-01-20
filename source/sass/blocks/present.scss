@@ -21,18 +21,30 @@
 	}
 
 	@media #{$desktop-only} {
-		width: 245px;
 		height: 100%;
+		display: grid;
+		grid-template-columns: 1fr;
 	}
+}
+
+.present__icon {
+	position: relative;
 }
 
 .present__icon::before {
 	content: "";
 	display: block;
+	position: absolute;
 	width: 78px;
 	height: 80px;
 	mask: url("../../icons/stack.svg#icon-gift") no-repeat center/ cover;
 	background-color: #ffffff;
+	top: 57px;
+	left: 100px;
+
+	@media #{$not-mobile} {
+		left: 77px;
+	}
 }
 
 .present__description {
@@ -43,12 +55,15 @@
 	line-height: 20px;
 	padding: 187px 61px 43px 58px;
 	margin: 0;
+	text-align: center;
 
 	@media #{$not-mobile} {
 		padding: 71px 124px 69px 58px;
+		text-align: left;
 	}
 
 	@media #{$desktop-only} {
 		padding: 184px 43px 42px 40px;
+		text-align: center;
 	}
 }

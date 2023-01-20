@@ -19,7 +19,12 @@
 			background-color: #ffffff;
 			box-shadow: 0 0 2px 2px #f2f2f2;
 			inline-size: fit-content;
+			grid-template-rows: 90px 90px 139px 40px;
 		}
+	}
+
+	@media #{$desktop-only} {
+		grid-template-rows: 90px 90px 169px 40px;
 	}
 }
 
@@ -91,7 +96,7 @@
 
 		&--different-card-link {
 			margin: 0 auto;
-			padding-top: 51px;
+			padding-top: 0;
 			padding-bottom: 0;
 		}
 	}
@@ -99,4 +104,16 @@
 
 .card-item__description {
 	grid-column: 1/-1;
+}
+
+.card-item__image {
+	&--different {
+		width: 60px;
+		margin-top: 10px;
+	}
+
+	@media #{$not-mobile} {
+		width: 93px;
+		margin-top: 78px;
+	}
 }
