@@ -12,6 +12,7 @@
 		padding: 0;
 		padding-right: 79px;
 		gap: 0;
+		margin: 0;
 		box-shadow: none;
 	}
 }
@@ -33,6 +34,7 @@
 	@media #{$desktop-only} {
 		grid-template-columns: 270px 200px 100px 244px;
 		border-top: 1px solid #cdcdcd;
+		margin: 0;
 	}
 }
 
