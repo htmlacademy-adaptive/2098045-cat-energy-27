@@ -108,12 +108,18 @@
 
 .card-item__image {
 	&--different {
-		width: 60px;
 		margin-top: 10px;
 	}
 
 	@media #{$not-mobile} {
-		width: 93px;
-		margin-top: 78px;
+		margin-top: -35px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: -14px;
+
+		&--different {
+			margin-top: 20px;
+		}
 	}
 }

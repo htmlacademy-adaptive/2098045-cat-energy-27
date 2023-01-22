@@ -166,12 +166,44 @@
 	margin: auto 0;
 	width: 20px;
 	height: 20px;
-	background: var(--icon);
+	mask: var(--icon);
+	background-color: currentColor;
 	background-size: cover;
 	z-index: 1;
+}
+
+@supports not selector(:focus-visible) {
+	.select-control:focus {
+		outline: none;
+	}
+}
+
+.form-contacts__icon:focus-visible::before {
+	background-color: #68b738;
+	outline: 1px solid #444444;
+}
+
+.form-contacts__icon:hover {
+	outline: 1px solid #cdcdcd;
+}
+
+.form-contacts__icon:focus::before {
+	background-color: var(--main-color);
 }
 
 input {
 	width: 100%;
 	box-sizing: border-box;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	appearance: textfield;
 }

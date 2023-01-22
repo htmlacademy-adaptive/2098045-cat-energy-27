@@ -5,7 +5,7 @@
 
 	@media #{$not-mobile} {
 		box-shadow: 0 0 1px 1px #f2f2f2;
-		padding: 26px 38px;
+		padding: 26px 0;
 	}
 
 	@media #{$desktop-only} {
