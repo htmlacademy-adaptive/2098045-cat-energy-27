@@ -45,6 +45,10 @@
 	@media #{$not-mobile} {
 		left: 77px;
 	}
+
+	@media #{$desktop-only} {
+		left: 110px;
+	}
 }
 
 .present__description {
