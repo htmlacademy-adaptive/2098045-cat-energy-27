@@ -189,8 +189,11 @@
 	mask: url("../../icons/stack.svg#arrow") no-repeat center / cover;
 	background-color: currentColor;
 	box-sizing: border-box;
+	transform: scaleX(1);
+	transform-origin: center left;
+	transition: transform 0.5s;
 }
 
 .motivation__link:hover::after {
-	width: 32px;
+	transform: scaleX(1.4);
 }
