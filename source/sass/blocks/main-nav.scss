@@ -98,13 +98,15 @@
 }
 
 .main-nav__link[aria-current="page"]::after {
-	content: "";
-	position: absolute;
-	inset-block: calc((100% - var(--line-thickness)) * 1.5);
-	block-size: var(--line-thickness);
-	inset-inline-end: calc(100% + var(--air-gap));
-	inline-size: calc(100%);
-	background-color: var(--line-color);
+	@media #{$not-mobile} {
+		content: "";
+		position: absolute;
+		inset-block: calc((100% - var(--line-thickness)) * 1.5);
+		block-size: var(--line-thickness);
+		inset-inline-end: calc(100% + var(--air-gap));
+		inline-size: calc(100%);
+		background-color: var(--line-color);
+	}
 }
 
 .main-nav__item {
