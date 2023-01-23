@@ -1,0 +1,44 @@
+.logo {
+	display: grid;
+	grid-template-columns: 1fr auto 1fr;
+	text-decoration: none;
+	gap: 12px;
+	align-items: center;
+
+	@media #{$not-mobile} {
+		grid-template-columns: auto 1fr;
+	}
+}
+
+.logo__image {
+	display: block;
+
+	@media #{$mobile-only} {
+		padding-top: 10px;
+		padding-right: 56px;
+		padding-bottom: 17px;
+	}
+}
+
+.logo__text {
+	--fill: #111111;
+	display: block;
+
+	@media #{$mobile-only} {
+		padding-top: 23px;
+		padding-bottom: 24px;
+	}
+
+	@media #{$desktop-only} {
+		width: 118px;
+		height: 22px;
+	}
+
+	&:hover {
+		opacity: 80%;
+	}
+
+	&:active {
+		opacity: 60%;
+	}
+}

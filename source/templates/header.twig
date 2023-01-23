@@ -1,25 +1,24 @@
-<header class="main-header">
-	<div class="main-header__logos">
-		<a class="main-header__logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
-			<img src="img/logo.svg#logo-pic-mobile" alt="Логотип сайта с картинкой"></img>
-		</a>
-		<a href="index.html" {% if permalink == page.path %}aria-current="page"{% endif %}>
-			<svg class="main-header__logo main-header__logo--text" width="101" height="18">
-				<use xlink:href="img/logo.svg#logo-text"></use>
-			</svg>
-		</a>
-	</div>
-	<nav class="main-nav main-nav--closed main-nav--nojs {% if permalink == "index.html" %}main-nav--text-invert{% endif %}" >
-		<button class="main-nav__toogle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+<header class="main-header page__centerer {% if permalink == "index.html" %}main-header--has-no-separator{% endif %}">
+	<a class="main-header__logo logo" href="index.html" {% if permalink == "index.html" %}aria-current="page"{% endif %}>
+		<picture>
+			<source media="(min-width: 1280px)" srcset="./img/logo.svg#mark-desktop" width="71" height="59">
+			<source media="(min-width: 768px)" srcset="./img/logo.svg#mark-tablet" width="61" height="52">
+			<img class="logo__image" src="./img/logo.svg#mark-mobile" width="34" height="38" alt="Фирменный знак Cat Energy.">
+		</picture>
+		<svg class="logo__text" width="101" height="18" role="img" aria-label="Логотип Cat Energy.">
+			<use href="img/logo.svg#logotype" aria-hidden="true" />
+		</svg>
+	</a>
+	<nav class="main-nav main-nav--nojs {% if permalink == "index.html" %}main-nav--color-invert{% endif %}" >
+		<button class="main-nav__toogle" type="button">
+			<span class="visually-hidden">Открыть меню</span>
+		</button>
 		<ul class="main-nav__list">
-			<!-- Цикл и условие -->
 			{% for page in pages %}
 			<li class="main-nav__item">
 				<a class="main-nav__link" href="{{page.path}}"  {% if permalink == page.path %}aria-current="page"{% endif %}>{{page.name}}</a>
 			</li>
 			{% endfor %}
-
 		</ul>
 	</nav>
-
 </header>
