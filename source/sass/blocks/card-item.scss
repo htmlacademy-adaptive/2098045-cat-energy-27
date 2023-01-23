@@ -15,9 +15,11 @@
 		#f2f2f2 81px);
 
 		&--different-card {
+			position: relative;
 			padding-right: 46px 0 40px;
-			background-color: #ffffff;
-			box-shadow: 0 0 2px 2px #f2f2f2;
+			background: linear-gradient(transparent 81px,
+			#ffffff 81px);
+			box-shadow: 0 2px 0 0 #f2f2f2;
 			inline-size: fit-content;
 			grid-template-rows: 90px 90px 139px 40px;
 		}
@@ -26,6 +28,16 @@
 	@media #{$desktop-only} {
 		grid-template-rows: 170px 90px 105px 40px;
 	}
+}
+
+.card-item--different-card::after {
+	content: "";
+	position: absolute;
+	width: 324px;
+	height: 2px;
+	background-color: #f2f2f2;
+	top: 82px;
+	box-shadow: 0 8px 0 0 #f2f2f2, -2px 0 0 #f2f2f2;
 }
 
 .card-item::marker {
