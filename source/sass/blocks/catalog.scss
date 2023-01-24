@@ -13,14 +13,13 @@
 	padding: 27px 40px 41px 20px;
 
 	@media #{$not-mobile} {
-		padding: 65px 30px 59px;
 		font-size: 60px;
 		line-height: 60px;
 		margin: 0;
 	}
 
 	@media #{$desktop-only} {
-		padding: 74px 0 0;
+		padding: 0 0;
 	}
 }
 
