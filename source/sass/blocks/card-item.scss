@@ -44,20 +44,6 @@
 	}
 }
 
-.card-item::after {
-	content: "";
-	display: block;
-	width: 10000%;
-	height: 1px;
-	background-color: #ebebeb;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
-	@media #{$not-mobile} {
-		content: none;
-	}
-}
-
 .card-item::marker {
 	color: transparent;
 }

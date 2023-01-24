@@ -9,15 +9,32 @@
 	font-size: 36px;
 	line-height: 36px;
 	margin: 0;
+	margin-bottom: 35px;
 	padding: 27px 40px 41px 20px;
 
 	@media #{$not-mobile} {
 		padding: 65px 30px 59px;
 		font-size: 60px;
 		line-height: 60px;
+		margin: 0;
 	}
 
 	@media #{$desktop-only} {
 		padding: 74px 0 0;
+	}
+}
+
+.catalog__title::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	bottom: 59px;
+	top: 165px;
+	height: 1px;
+	width: 100vw;
+	background: #d9d9d9;
+
+	@media #{$not-mobile} {
+		content: none;
 	}
 }

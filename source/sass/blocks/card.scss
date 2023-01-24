@@ -3,9 +3,12 @@
 	grid-column: 1/-1;
 	grid-row: 3/4;
 	text-decoration: none;
+	position: relative;
+	margin-bottom: 50px;
 
 	@media #{$not-mobile} {
 		grid-row: 5/6;
+		margin-bottom: 0;
 	}
 
 	&--show-all {
@@ -27,6 +30,21 @@
 			padding: 10px 20px;
 			grid-row: 4/5;
 		}
+	}
+}
+
+.card__button::after {
+	content: "";
+	position: absolute;
+	width: 100vw;
+	right: 0;
+	left: -20px;
+	height: 1px;
+	top: 70px;
+	background-color: #ebebeb;
+
+	@media #{$not-mobile} {
+		content: none;
 	}
 }
 
