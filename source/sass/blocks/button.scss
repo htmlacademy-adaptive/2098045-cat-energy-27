@@ -9,32 +9,32 @@
 	text-transform: uppercase;
 	text-align: center;
 
+	&:focus-visible {
+		background-color: #5eaa2f;
+	}
+
+	&:hover {
+		background-color: #5eaa2f;
+	}
+
+	&:active {
+		color: hsl(0 0% 100% / 0.3);
+	}
+
 	&--show-all-different {
 		background-color: #f2f2f2;
 		color: var(--main-color);
+
+		&:focus-visible {
+			background-color: #ebebeb;
+		}
+
+		&:hover {
+			background-color: #ebebeb;
+		}
+
+		&:active {
+			color: hsl(0 0% 27% / 0.3);
+		}
 	}
-}
-
-.button:hover {
-	background-color: #5eaa2f;
-}
-
-.button:active {
-	color: hsl(0 0% 100% / 0.3);
-}
-
-.button:focus {
-	background-color: #5eaa2f;
-}
-
-.button--show-all-different:hover {
-	background-color: #ebebeb;
-}
-
-.button--show-all-different:active {
-	color: hsl(0 0% 27% / 0.3);
-}
-
-.button--show-all-different:focus {
-	background-color: #ebebeb;
 }

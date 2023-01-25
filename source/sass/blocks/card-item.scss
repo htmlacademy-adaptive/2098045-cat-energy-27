@@ -2,18 +2,23 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
-	&--different-card {
-		display: grid;
-		grid-template-columns: 1fr;
-		text-align: center;
-	}
-
 	@media #{$not-mobile} {
 		padding: 34px 38px 39px 36px;
 		background: linear-gradient(transparent 81px,
 		#f2f2f2 81px);
+	}
 
-		&--different-card {
+	@media #{$desktop-only} {
+		grid-template-rows: 170px 90px 105px 40px;
+	}
+
+	&--different-card {
+		display: grid;
+		grid-template-columns: 1fr;
+		text-align: center;
+
+		@media #{$not-mobile} {
+			--border: "";
 			position: relative;
 			padding-right: 46px 0 40px;
 			background: linear-gradient(transparent 81px,
@@ -23,28 +28,17 @@
 		}
 	}
 
-	@media #{$desktop-only} {
-		grid-template-rows: 170px 90px 105px 40px;
-	}
-}
-
-.card-item--different-card::before {
-	@media #{$not-mobile} {
-		content: "";
+	&::before {
+		content: var(--border, none);
 		position: absolute;
-		width: 345px;
-		height: 438px;
-		border: 2px solid #f2f2f2;
+		inset: 0;
 		top: 82px;
+		border: 2px solid #f2f2f2;
 	}
 
-	@media #{$desktop-only} {
-		width: 243px;
+	&::marker {
+		color: transparent;
 	}
-}
-
-.card-item::marker {
-	color: transparent;
 }
 
 .card-item__title {
@@ -59,20 +53,20 @@
 	padding-right: 101px;
 	margin: 0;
 
-	&--different-title {
-		padding: 0;
-	}
-
 	@media #{$not-mobile} {
 		padding: 34px 72px 21px 77px;
-
-		&--different-title {
-			grid-row: 2/3;
-		}
 	}
 
 	@media #{$desktop-only} {
 		padding: 34px 40px 21px 50px;
+	}
+
+	&--different-title {
+		padding: 0;
+
+		@media #{$not-mobile} {
+			grid-row: 2/3;
+		}
 	}
 }
 
@@ -80,31 +74,29 @@
 	text-decoration: none;
 	grid-column: 2/-1;
 
-	&--product-image {
-		grid-column: 1/2;
-		grid-row: 1/3;
-		margin: 0 auto;
-	}
-
-	&--different-card-link {
-		grid-column: 1/-1;
-		padding-top: 10px;
-	}
-
 	@media #{$not-mobile} {
 		grid-column: 1 / -1;
 		grid-row: 2 / 3;
 		text-align: center;
+	}
 
-		&--product-image {
+	&--product-image {
+		grid-column: 1/2;
+		grid-row: 1/3;
+		margin: 0 auto;
+
+		@media #{$not-mobile} {
 			grid-column: 1 / -1;
 			grid-row: 1/2;
 			height: 100%;
 		}
 	}
 
-	@media #{$desktop-only} {
-		&--different-card-link {
+	&--different-card-link {
+		grid-column: 1/-1;
+		padding-top: 10px;
+
+		@media #{$desktop-only} {
 			margin: 0 auto;
 			padding-top: 0;
 			padding-bottom: 0;
@@ -122,9 +114,11 @@
 	}
 }
 
-.card-item__image--different {
-	@media #{$not-mobile} {
-		margin-top: 80px;
-		grid-row: 1/2;
+.card-item__image {
+	&--different {
+		@media #{$not-mobile} {
+			margin-top: 80px;
+			grid-row: 1/2;
+		}
 	}
 }

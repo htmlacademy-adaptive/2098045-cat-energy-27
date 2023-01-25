@@ -70,18 +70,17 @@
 	}
 }
 
-.important__title {
-	display: flex;
-	gap: 19px;
-	align-items: center;
-}
-
 .important__item {
 	&::marker {
 		color: transparent;
 	}
 }
 
+.important__title {
+	display: flex;
+	gap: 19px;
+	align-items: center;
+}
 
 .important__radio-button[type="radio"] {
 	appearance: none;
@@ -97,18 +96,17 @@
 	display: grid;
 	place-content: center;
 
-
 	@media #{$desktop-only} {
 		margin: 0;
 	}
-}
 
-.important__radio-button[type="radio"]:checked::before {
-	content: "";
-	width: 40px;
-	height: 40px;
-	display: block;
-	mask: url("../../icons/stack.svg#tick-radio") no-repeat center / cover;
-	background-color: #68b738;
-	margin: auto;
+	&:checked::before {
+		content: "";
+		margin: auto;
+		display: block;
+		width: 40px;
+		height: 40px;
+		background-color: #68b738;
+		mask: url("../../icons/stack.svg#tick-radio") no-repeat center / cover;
+	}
 }

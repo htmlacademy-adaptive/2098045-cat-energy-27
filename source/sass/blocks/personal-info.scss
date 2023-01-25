@@ -25,33 +25,33 @@
 	display: grid;
 	grid-template-columns: 55px 1fr;
 
-	&--weight {
-		grid-template-columns: 75px 1fr;
-	}
-
-	&--age {
-		grid-template-columns: 115px 1fr;
-	}
-
-	&::marker {
-		color: transparent;
-	}
-
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;
-
-		&--weight {
-			grid-template-columns: 90px 1fr;
-		}
-
-		&--age {
-			grid-template-columns: 130px 1fr;
-		}
 	}
 
 	@media #{$desktop-only} {
 		gap: 27px;
+	}
+
+	&--weight {
+		grid-template-columns: 75px 1fr;
+
+		@media #{$not-mobile} {
+			grid-template-columns: 90px 1fr;
+		}
+	}
+
+	&--age {
+		grid-template-columns: 115px 1fr;
+
+		@media #{$not-mobile} {
+			grid-template-columns: 130px 1fr;
+		}
+	}
+
+	&::marker {
+		color: transparent;
 	}
 }
 
@@ -65,6 +65,15 @@
 	text-transform: uppercase;
 	box-sizing: border-box;
 
+	@media #{$not-mobile} {
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 11px 20px;
+	}
+
 	&--name {
 		padding-top: 14px;
 		padding-bottom: 14px;
@@ -77,25 +86,15 @@
 		box-shadow: 0 0 1px 1px #e7e7e7;
 		appearance: textfield;
 		box-sizing: border-box;
+
+		&:hover {
+			display: block;
+			outline: 1px solid #cdcdcd;
+			box-sizing: border-box;
+		}
 	}
 
-	&marker {
+	&::marker {
 		color: transparent;
 	}
-
-
-	@media #{$not-mobile} {
-		font-size: 20px;
-		line-height: 30px;
-	}
-
-	@media #{$desktop-only} {
-		padding: 11px 20px;
-	}
-}
-
-input:hover {
-	display: block;
-	outline: 1px solid #cdcdcd;
-	box-sizing: border-box;
 }

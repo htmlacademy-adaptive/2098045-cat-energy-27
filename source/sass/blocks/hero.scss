@@ -8,10 +8,13 @@
 	}
 
 	@media #{$tablet-only} {
+		--bg-visible: none;
 		margin-bottom: -2px;
 	}
 
 	@media #{$desktop-only} {
+		--bg-height: 694px;
+		--bg-width-decrement: 50%;
 		--cat-position: left 0px;
 		--cat-size: 1040px 694px;
 		position: static;
@@ -21,11 +24,13 @@
 	@include bg-image("hero-cat");
 
 	&::before {
-		content: "";
+		content: var(--bg-visible, "");
 		position: absolute;
-		left: 0;
+		z-index: -1;
+		top: 0;
 		right: 0;
-		height: 302px;
+		left: var(--bg-width-decrement, 0);
+		height: var(--bg-height, 302px);
 		background:
 			linear-gradient(
 				rgb(104 183 56 / 0.85),
@@ -37,19 +42,6 @@
 				#54555a 50%,
 				#434248 50%
 			);
-		z-index: -1;
-
-		@media #{$tablet-only} {
-			content: none;
-		}
-
-		@media #{$desktop-only} {
-			height: 694px;
-			top: 0;
-			left: 50%;
-			right: 0;
-			z-index: -1;
-		}
 	}
 }
 
@@ -160,7 +152,7 @@
 
 	&:active {
 		background-color: #5eaa2f;
-		color: rgba(255 255 255 / 0.3);
+		color: rgb(255 255 255 / 0.3);
 	}
 }
 

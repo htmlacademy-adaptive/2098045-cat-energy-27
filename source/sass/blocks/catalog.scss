@@ -21,19 +21,19 @@
 	@media #{$desktop-only} {
 		padding: 0 0;
 	}
-}
 
-.catalog__title::after {
-	content: "";
-	position: absolute;
-	right: 0;
-	bottom: 59px;
-	top: 165px;
-	height: 1px;
-	width: 100vw;
-	background: #d9d9d9;
+	&::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 59px;
+		top: 165px;
+		height: 1px;
+		width: 100vw;
+		background: #d9d9d9;
 
-	@media #{$not-mobile} {
-		content: none;
+		@media #{$not-mobile} {
+			content: none;
+		}
 	}
 }

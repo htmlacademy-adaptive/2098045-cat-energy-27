@@ -137,11 +137,6 @@
 
 	@media #{$not-mobile} {
 		padding-block: 10px;
-
-		&[aria-current="page"] {
-			--has-link-decor: "";
-			position: relative;
-		}
 	}
 
 	@media #{$tablet-only} {
@@ -152,6 +147,13 @@
 	@media #{$desktop-only} {
 		font-size: 20px;
 		line-height: 30px;
+	}
+
+	&[aria-current="page"] {
+		@media #{$not-mobile} {
+			--has-link-decor: "";
+			position: relative;
+		}
 	}
 
 	&::after {

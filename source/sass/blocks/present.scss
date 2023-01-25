@@ -1,7 +1,5 @@
-
 .present {
 	height: 100%;
-
 	background:
 		linear-gradient(
 			rgb(105 183 56 / 0.85),
@@ -10,7 +8,6 @@
 		var(--bg-image) no-repeat center/ cover;
 
 	@include bg-image("catalog-cat");
-
 
 	@media #{$not-mobile} {
 		width: 100%;
@@ -29,25 +26,26 @@
 
 .present__icon {
 	position: relative;
-}
 
-.present__icon::before {
-	content: "";
-	display: block;
-	position: absolute;
-	width: 78px;
-	height: 80px;
-	mask: url("../../icons/stack.svg#icon-gift") no-repeat center/ cover;
-	background-color: #ffffff;
-	top: 57px;
-	left: 100px;
+	&::before {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 78px;
+		height: 80px;
+		mask: url("../../icons/stack.svg#icon-gift") no-repeat center/ cover;
+		background-color: #ffffff;
+		top: 57px;
+		left: 100px;
 
-	@media #{$not-mobile} {
-		left: 77px;
-	}
+		@media #{$not-mobile} {
+			left: 77px;
+		}
 
-	@media #{$desktop-only} {
-		left: 110px;
+		@media #{$desktop-only} {
+			left: 50%;
+			transform: translateX(-50%);
+		}
 	}
 }
 

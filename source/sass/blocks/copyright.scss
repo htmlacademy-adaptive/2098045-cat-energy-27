@@ -24,23 +24,22 @@
 	padding-top: 5px;
 	margin: 0 auto;
 	gap: 10px;
-}
 
-.copyright__logo::after {
-	content: "";
-	display: block;
-	box-sizing: border-box;
-	width: 27px;
-	height: 34px;
-	mask: url("../../icons/stack.svg#htmlacademy") no-repeat center / contain;
-	background-color: currentColor;
-}
+	&:hover {
+		color: #68b738;
+	}
 
+	&:active {
+		opacity: 0.3;
+	}
 
-.copyright__logo:hover {
-	color: #68b738;
-}
-
-.copyright__logo:active {
-	opacity: 0.3;
+	&::after {
+		content: "";
+		display: block;
+		box-sizing: border-box;
+		width: 27px;
+		height: 34px;
+		mask: url("../../icons/stack.svg#htmlacademy") no-repeat center / contain;
+		background-color: currentColor;
+	}
 }

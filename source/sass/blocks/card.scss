@@ -22,10 +22,8 @@
 		grid-row: 5/6;
 		grid-column: 1/-1;
 		text-decoration: none;
-	}
 
-	@media #{$not-mobile} {
-		&--show-all {
+		@media #{$not-mobile} {
 			grid-column: 1/-1;
 			padding: 10px 20px;
 			grid-row: 4/5;
@@ -46,8 +44,10 @@
 	@media #{$not-mobile} {
 		content: none;
 	}
-}
 
-.card__button--show-all:hover {
-	background-color: #ebebeb;
+	&--show-all {
+		&:hover {
+			background-color: #ebebeb;
+		}
+	}
 }

@@ -60,17 +60,19 @@
 }
 
 .special__item {
+	--icon-size: 60px;
 	display: grid;
 	grid-template-columns: 70px 1fr;
 	counter-increment: index;
 	align-items: center;
 	z-index: 1;
 
-
-	&::marker {
-		color: transparent;
+	@media #{$not-mobile} {
+		--icon-size: 80px;
+		--counter: counter(index);
+		grid-template-columns: 245px;
+		gap: 20px;
 	}
-
 
 	&--icon_leaf {
 		--icon: url("../../icons/stack.svg#leaf");
@@ -91,33 +93,24 @@
 	&::before {
 		content: "";
 		display: block;
-		width: 60px;
-		height: 60px;
-		background: var(--icon) no-repeat center / contain;
-		background-size: 32px 32px;
-		background-color: #68b738;
-		box-sizing: border-box;
+		width: var(--icon-size);
+		height: var(--icon-size);
+		background: #68b738 var(--icon) no-repeat center / 32px 32px;
 	}
 
-	@media #{$not-mobile} {
-		grid-template-columns: 245px;
-		gap: 20px;
+	&::marker {
+		color: transparent;
+	}
 
-		&::before {
-			width: 80px;
-			height: 80px;
-		}
-
-		&::after {
-			content: counters(index, ".", decimal);
-			position: absolute;
-			font-family: var(--accent-font);
-			font-size: 280px;
-			line-height: 280px;
-			color: #f2f2f2;
-			margin-left: 106px;
-			margin-top: -30px;
-			z-index: -1;
-		}
+	&::after {
+		content: var(--counter, none);
+		position: absolute;
+		font-family: var(--accent-font);
+		font-size: 280px;
+		line-height: 280px;
+		color: #f2f2f2;
+		margin-left: 106px;
+		margin-top: -30px;
+		z-index: -1;
 	}
 }

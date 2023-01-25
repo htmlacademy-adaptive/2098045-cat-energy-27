@@ -5,14 +5,14 @@
 }
 
 .form-comments__title {
+	--air-gap: 20px;
+	--line-color: #68b738;
+	--line-thickness: 2px;
 	font-family: var(--accent-font);
 	color: #000000;
 	font-weight: 400;
 	font-size: 24px;
 	line-height: 26px;
-	--air-gap: 20px;
-	--line-color: #68b738;
-	--line-thickness: 2px;
 	position: relative;
 	inline-size: fit-content;
 	margin-bottom: 38px;
@@ -22,17 +22,17 @@
 		line-height: 36px;
 		margin-bottom: 76px;
 	}
-}
 
-.form-comments__title::before {
-	content: "";
-	position: absolute;
-	inset-block: calc((100% - var(--line-thickness)) / 2);
-	inset-inline-end: calc(100% + var(--air-gap));
-	block-size: var(--line-thickness);
-	inline-size: calc(100vw - 100% - var(--air-gap));
-	background-color: var(--line-color);
-	box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
+	&::before {
+		content: "";
+		position: absolute;
+		inset-block: calc((100% - var(--line-thickness)) / 2);
+		inset-inline-end: calc(100% + var(--air-gap));
+		block-size: var(--line-thickness);
+		inline-size: calc(100vw - 100% - var(--air-gap));
+		background-color: var(--line-color);
+		box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
+	}
 }
 
 .form-comments__content {
@@ -47,14 +47,11 @@
 	border: none;
 	box-shadow: 0 0 1px 1px #e7e7e7;
 	margin-bottom: 65px;
+	resize: vertical;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;
 		padding: 10px 19px;
 	}
-}
-
-text-area {
-	resize: vertical;
 }

@@ -26,8 +26,10 @@
 		position: absolute;
 		margin-top: 96px;
 		margin-left: 110px;
+	}
 
-		&--bg-lighter {
+	&--bg-lighter {
+		@media #{$desktop-only} {
 			background-color: #ffffff;
 		}
 	}
@@ -70,7 +72,7 @@
 	width: 100vw;
 }
 
-.contacts__map iframe {
+.contacts__map-interactive {
 	border: none;
 	display: block;
 	width: 100%;
