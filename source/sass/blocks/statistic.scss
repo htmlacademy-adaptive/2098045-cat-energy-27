@@ -21,10 +21,10 @@
 	}
 
 	@media #{$desktop-only} {
-		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 183px 223px;
 		background-color: #f2f2f2;
 		margin: 0;
-		padding: 0 0 0 87px;
+		padding: 0 0 0 101px;
 	}
 }
 
@@ -50,6 +50,14 @@
 			align-items: end;
 			margin: 0;
 		}
+
+		@media #{$desktop-only} {
+			grid-column: 1/-1;
+			padding-top: 55px;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			align-items: center;
+		}
 	}
 
 	&--killo {
@@ -58,6 +66,11 @@
 
 		@media #{$not-mobile} {
 			padding: 14px 57px 27px 57px;
+		}
+
+		@media #{$desktop-only} {
+			grid-column: 1/2;
+			grid-row: 1/2;
 		}
 	}
 
@@ -69,6 +82,11 @@
 		@media #{$not-mobile} {
 			grid-column: 2/3;
 			padding: 14px 37px 27px 30px;
+		}
+
+		@media #{$desktop-only} {
+			grid-column: 2/-1;
+			grid-row: 1/2;
 		}
 	}
 }
@@ -95,6 +113,10 @@
 		line-height: 37px;
 	}
 
+	@media #{$desktop-only} {
+		margin-bottom: -14px;
+	}
+
 	&--expenses {
 		font-family: var(--accent-font);
 		color: #000000;
@@ -108,7 +130,14 @@
 		@media #{$not-mobile} {
 			font-size: 20px;
 			line-height: 20px;
-			padding-top: 5px;
+			padding-top: 2px;
+		}
+
+		@media #{$desktop-only} {
+			grid-column: 2/-1;
+			text-align: left;
+			padding-left: 36px;
+			padding-top: 7px;
 		}
 	}
 }
@@ -151,6 +180,8 @@
 		@media #{$desktop-only} {
 			font-size: 20px;
 			line-height: 20px;
+			grid-row: 1/2;
+			grid-column: 1/2;
 		}
 	}
 
@@ -167,7 +198,7 @@
 		@media #{$desktop-only} {
 			margin-left: -19px;
 			width: 142px;
-			margin-top: 60px;
+			margin-top: 47px;
 		}
 	}
 
@@ -184,9 +215,10 @@
 
 		@media #{$desktop-only} {
 			margin-left: -42px;
-			margin-top: 42px;
-			padding: 18px;
-			width: 96px;
+			margin-top: 28px;
+			padding: 17px;
+			padding-top: 17px;
+			width: 97px;
 		}
 	}
 }

@@ -12,11 +12,20 @@
 
 .logo__image {
 	display: block;
+	width: 34px;
+	height: 38px;
 
 	@media #{$mobile-only} {
 		padding-top: 10px;
 		padding-right: 56px;
 		padding-bottom: 17px;
+		width: 61px;
+		height: 52px;
+	}
+
+	@media #{$desktop-only} {
+		width: 71px;
+		height: 59px;
 	}
 }
 

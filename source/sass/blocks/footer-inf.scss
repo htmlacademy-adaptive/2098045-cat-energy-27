@@ -7,6 +7,10 @@
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
 	}
+
+	@media #{$desktop-only} {
+		padding: 39px 0 32px;
+	}
 }
 
 .footer-inf__logo {

@@ -70,6 +70,10 @@
 .contacts__map {
 	display: block;
 	width: 100vw;
+
+	@media #{$desktop-only} {
+		height: 400px;
+	}
 }
 
 .contacts__map-interactive {

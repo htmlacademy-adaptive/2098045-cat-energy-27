@@ -63,6 +63,15 @@
 		text-align: center;
 		grid-column: 2/-1;
 		grid-row: 1/2;
+		padding-top: 35px;
+
+		&--pro {
+			margin-left: -50px;
+		}
+
+		&--slim {
+			margin-left: -85px;
+		}
 	}
 }
 
@@ -101,6 +110,12 @@
 		width: 200px;
 		height: 211px;
 	}
+
+	@media #{$desktop-only} {
+		width: 160px;
+		height: 112px;
+		margin-left: -32px;
+	}
 }
 
 .motivation__description {
@@ -128,15 +143,19 @@
 	@media #{$desktop-only} {
 		font-size: 16px;
 		line-height: 24px;
-		margin: 0 0 23px 0;
 		grid-column: 1/-1;
+		padding: 0;
+		padding-top: 38px;
+		padding-bottom: 25px;
+		margin: -7px 0 -1px 0;
 	}
+
 
 	&--drscription-pro {
 		@media #{$desktop-only} {
 			font-size: 16px;
-			line-height: 24px;
-			margin: 0 0 23px 0;
+			padding-top: 36px;
+			margin: -6px 0 -7px;
 		}
 	}
 
@@ -175,6 +194,7 @@
 
 	@media #{$desktop-only} {
 		grid-column: 1/-1;
+		grid-template-columns: 130px 60px;
 	}
 
 	&:hover {
