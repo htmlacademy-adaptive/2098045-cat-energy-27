@@ -7,7 +7,7 @@
 		display: grid;
 		grid-template-columns: auto 1fr;
 		gap: 2em;
-		padding-block: 4px;
+		padding-block: 25px;
 	}
 
 	@media #{$tablet-only} {
@@ -16,7 +16,6 @@
 
 	@media #{$desktop-only} {
 		grid-template-columns: 1fr 1fr;
-		padding-block: 53px;
 	}
 
 	&--has-no-separator {

@@ -37,13 +37,19 @@
 }
 
 .example__title::before {
-	content: "";
-	display: block;
-	width: 100vw;
-	height: 1px;
-	background-color: #e6e6e6;
-	margin-bottom: 43px;
-	margin-left: -30px;
+	@media #{$not-mobile} {
+		content: "";
+		display: block;
+		width: 100vw;
+		height: 1px;
+		background-color: #e6e6e6;
+		margin-bottom: 43px;
+		margin-left: -30px;
+	}
+
+	@media #{$desktop-only} {
+		content: none;
+	}
 }
 
 .example__description {

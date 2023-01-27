@@ -7,6 +7,11 @@
 
 	@media #{$not-mobile} {
 		grid-template-columns: auto 1fr;
+		gap: 0;
+	}
+
+	@media #{$desktop-only} {
+		gap: 12px;
 	}
 }
 
@@ -15,11 +20,8 @@
 	width: 34px;
 	height: 38px;
 
-	@media #{$mobile-only} {
-		padding-top: 10px;
-		padding-right: 56px;
-		padding-bottom: 17px;
-		width: 61px;
+	@media #{$not-mobile} {
+		width: 89px;
 		height: 52px;
 	}
 

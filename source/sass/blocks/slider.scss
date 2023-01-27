@@ -3,6 +3,10 @@
 	display: flex;
 	justify-content: center;
 
+	@media #{$not-mobile} {
+		padding-bottom: 90px;
+	}
+
 	@media #{$desktop-only} {
 		background-color: #f2f2f2;
 	}
@@ -16,7 +20,7 @@
 	margin-top: -146px;
 
 	@media #{$not-mobile} {
-		margin-top: -120px;
+		margin-top: -144px;
 	}
 
 	@media #{$desktop-only} {
