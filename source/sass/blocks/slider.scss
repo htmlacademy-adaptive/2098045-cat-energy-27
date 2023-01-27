@@ -13,7 +13,11 @@
 	grid-template-columns: calc(var(--curtain-place) * 100%) auto calc((1 - var(--curtain-place)) * 100%);
 	width: min(100%, 560px);
 	aspect-ratio: 280/256;
-	margin-top: -120px;
+	margin-top: -146px;
+
+	@media #{$not-mobile} {
+		margin-top: -120px;
+	}
 
 	@media #{$desktop-only} {
 		margin: -375px 0 0 -62px;

@@ -36,6 +36,16 @@
 	}
 }
 
+.example__title::before {
+	content: "";
+	display: block;
+	width: 100vw;
+	height: 1px;
+	background-color: #e6e6e6;
+	margin-bottom: 43px;
+	margin-left: -30px;
+}
+
 .example__description {
 	font-family: var(--main-font);
 	color: #444444;
@@ -50,7 +60,7 @@
 		font-size: 16px;
 		line-height: 24px;
 		margin-top: 0;
-		padding: 116px 30px 0;
+		padding: 63px 30px 0;
 	}
 
 	@media #{$desktop-only} {

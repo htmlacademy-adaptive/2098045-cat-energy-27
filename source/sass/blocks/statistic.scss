@@ -17,7 +17,8 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding-right: 30px;
 		padding-left: 30px;
-		padding-bottom: 203px;
+		padding-bottom: 218px;
+		gap: 33px;
 	}
 
 	@media #{$desktop-only} {
@@ -130,7 +131,7 @@
 		@media #{$not-mobile} {
 			font-size: 20px;
 			line-height: 20px;
-			padding-top: 2px;
+			padding-top: 10px;
 		}
 
 		@media #{$desktop-only} {

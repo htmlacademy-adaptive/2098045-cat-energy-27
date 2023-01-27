@@ -62,6 +62,7 @@
 		z-index: 1;
 		display: grid;
 		padding-inline: 88px;
+		padding-top: 22px;
 	}
 
 	@media #{$desktop-only} {
@@ -104,7 +105,7 @@
 	}
 
 	@media #{$not-mobile} {
-		margin-block: 9px;
+		margin-block: 6px;
 		font-size: 20px;
 		line-height: 20px;
 		color: #000000;
@@ -133,11 +134,11 @@
 
 	@media #{$not-mobile} {
 		z-index: 1;
-		margin-top: 40px;
+		margin-top: 41px;
 		margin-right: auto;
 		font-size: 20px;
 		line-height: 20px;
-		padding: 17px 26px;
+		padding: 18px 30px;
 	}
 
 	@media #{$desktop-only} {

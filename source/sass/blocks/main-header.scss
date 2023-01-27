@@ -7,7 +7,11 @@
 		display: grid;
 		grid-template-columns: auto 1fr;
 		gap: 2em;
-		padding-block: 25px;
+		padding-block: 4px;
+	}
+
+	@media #{$tablet-only} {
+		margin-top: -24px;
 	}
 
 	@media #{$desktop-only} {

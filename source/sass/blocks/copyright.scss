@@ -9,7 +9,7 @@
 
 	@media #{$desktop-only} {
 		justify-content: right;
-		gap: 15px;
+		padding: 35px 0 23px;
 	}
 }
 
@@ -24,6 +24,12 @@
 	padding-top: 5px;
 	margin: 0 auto;
 	gap: 10px;
+
+	@media #{$desktop-only} {
+		padding: 0;
+		margin-left: 241px;
+		gap: 25px;
+	}
 
 	&:hover {
 		color: #68b738;

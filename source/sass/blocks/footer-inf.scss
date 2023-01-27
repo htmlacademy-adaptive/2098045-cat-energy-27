@@ -25,6 +25,7 @@
 
 	@media #{$desktop-only} {
 		margin: 0;
+		padding-top: 8px;
 	}
 
 	&:focus-visible {
@@ -58,4 +59,8 @@
 .footer-inf__social {
 	margin: 0;
 	padding: 0;
+
+	@media #{$desktop-only} {
+		padding-top: 8px;
+	}
 }
