@@ -10,7 +10,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 20px;
+		margin-top: 26px;
 	}
 }
 
@@ -74,7 +74,12 @@
 	&::marker {
 		color: transparent;
 	}
+
+	&:disabled {
+		opacity: 80%;
+	}
 }
+
 
 .important__title {
 	display: flex;

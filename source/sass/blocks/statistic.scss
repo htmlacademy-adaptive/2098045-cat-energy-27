@@ -64,6 +64,8 @@
 	&--killo {
 		padding: 14px 42px 27px 42px;
 		text-transform: uppercase;
+		max-width: 48px;
+		max-height: 38px;
 
 		@media #{$not-mobile} {
 			padding: 14px 57px 27px 57px;
@@ -79,6 +81,8 @@
 		padding: 14px 19px 27px 22px;
 		text-transform: uppercase;
 		grid-column: 3/-1;
+		max-width: 93px;
+		max-height: 38px;
 
 		@media #{$not-mobile} {
 			grid-column: 2/3;

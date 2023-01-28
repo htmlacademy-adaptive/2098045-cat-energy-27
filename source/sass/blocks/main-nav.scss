@@ -166,3 +166,13 @@
 		background-color: var(--link-decor-color, #68b738);
 	}
 }
+
+.main-nav__link:hover {
+	&:hover {
+		opacity: 80%;
+	}
+
+	&:active {
+		opacity: 60%;
+	}
+}

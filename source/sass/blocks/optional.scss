@@ -5,6 +5,10 @@
 	@media #{$not-mobile} {
 		padding: 0 0 57px;
 	}
+
+	@media #{$desktop-only} {
+		padding: 0 0 63px;
+	}
 }
 
 .optional__title {
@@ -64,7 +68,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		justify-content: space-between;
+		gap: 141px;
 	}
 }
 
@@ -73,6 +77,10 @@
 
 	&::marker {
 		color: transparent;
+	}
+
+	&:disabled {
+		opacity: 80%;
 	}
 }
 

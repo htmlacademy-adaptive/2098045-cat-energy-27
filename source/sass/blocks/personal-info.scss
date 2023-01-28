@@ -11,7 +11,8 @@
 	padding: 0;
 
 	@media #{$desktop-only} {
-		gap: 20px;
+		gap: 15px;
+		margin-left: -20px;
 	}
 }
 
