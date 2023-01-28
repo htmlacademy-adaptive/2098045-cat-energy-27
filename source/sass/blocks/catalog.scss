@@ -8,9 +8,8 @@
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 36px;
-	margin: 0;
-	margin-bottom: 35px;
-	padding: 27px 40px 41px 20px;
+	margin: 0 0 21px;
+	padding: 27px 12px 41px 0;
 
 	@media #{$not-mobile} {
 		font-size: 60px;
@@ -20,6 +19,7 @@
 
 	@media #{$desktop-only} {
 		padding: 0 0;
+		margin-top: 13px;
 	}
 
 	&::after {

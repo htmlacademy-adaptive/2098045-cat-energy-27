@@ -1,6 +1,8 @@
 .card-info {
 	grid-column: 2/3;
 	grid-row: 2/3;
+	margin-top: 12px;
+	margin-bottom: 14px;
 
 	@media #{$not-mobile} {
 		grid-row: 3/4;

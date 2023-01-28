@@ -24,6 +24,7 @@
 	&--show-all-different {
 		background-color: #f2f2f2;
 		color: var(--main-color);
+		margin-bottom: -3px;
 
 		&:focus-visible {
 			background-color: #ebebeb;

@@ -23,6 +23,7 @@
 	line-height: 24px;
 	position: relative;
 	inline-size: fit-content;
+	margin-bottom: 36px;
 
 	@media #{$not-mobile} {
 		font-size: 36px;

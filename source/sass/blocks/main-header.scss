@@ -16,6 +16,7 @@
 
 	@media #{$desktop-only} {
 		grid-template-columns: 1fr 1fr;
+		padding-block: 57px;
 	}
 
 	&--has-no-separator {
