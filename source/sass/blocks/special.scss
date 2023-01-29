@@ -6,7 +6,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 0 0 205px;
+		padding: 28px 0 205px;
 	}
 }
 
@@ -23,6 +23,10 @@
 		font-size: 60px;
 		line-height: 60px;
 		margin-bottom: 66px;
+	}
+
+	@media #{$desktop-only} {
+		margin-bottom: 71px;
 	}
 }
 
@@ -105,6 +109,10 @@
 		margin-left: 117px;
 		margin-top: 21px;
 		z-index: -1;
+
+		@media #{$not-mobile} {
+			margin-top: -37px;
+		}
 	}
 
 	@media #{$not-mobile} {
@@ -112,11 +120,11 @@
 		--counter: counter(index);
 		grid-template-columns: 245px;
 		grid-template-rows: 100px 1fr;
-		gap: 33px;
+		gap: 12px;
 		align-items: baseline;
 	}
 
 	@media #{$desktop-only} {
-		gap: 26px;
+		gap: 11px;
 	}
 }

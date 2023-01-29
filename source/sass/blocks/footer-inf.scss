@@ -6,6 +6,7 @@
 	@media #{$not-mobile} {
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
+		padding: 19px 0 32px;
 	}
 
 	@media #{$desktop-only} {
@@ -22,11 +23,12 @@
 	@media #{$not-mobile} {
 		width: 143px;
 		height: 26px;
+		margin: 0;
 	}
 
 	@media #{$desktop-only} {
 		margin: 0;
-		padding-top: 8px;
+		padding-top: 0;
 	}
 
 	&:focus-visible {
@@ -62,6 +64,6 @@
 	padding: 0;
 
 	@media #{$desktop-only} {
-		padding-top: 8px;
+		padding-top: 0;
 	}
 }

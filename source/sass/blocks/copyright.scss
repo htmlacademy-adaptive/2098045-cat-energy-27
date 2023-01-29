@@ -24,10 +24,17 @@
 	margin: 0 auto;
 	gap: 137px;
 
+	@media #{$not-mobile} {
+		gap: 5px;
+		margin-left: 71px;
+		margin-top: -9px;
+	}
+
 	@media #{$desktop-only} {
 		padding: 0;
 		margin-left: 241px;
-		gap: 25px;
+		gap: 6px;
+		margin-top: -20px;
 	}
 
 	&:hover {
@@ -46,5 +53,10 @@
 		height: 34px;
 		mask: url("../../icons/stack.svg#htmlacademy") no-repeat center / cover;
 		background-color: currentColor;
+
+		@media #{$not-mobile} {
+			width: 47px;
+			height: 43px;
+		}
 	}
 }

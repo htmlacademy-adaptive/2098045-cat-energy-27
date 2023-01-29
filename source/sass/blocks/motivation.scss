@@ -12,7 +12,7 @@
 
 	@media #{$desktop-only} {
 		gap: 80px;
-		padding: 64px 0 71px;
+		padding: 24px 0 43px;
 		grid-template-columns: (repeat(auto-fill, minmax(570px, 1fr)));
 		column-gap: clamp(60px, 30px + 100vw /25.6, 80px);
 	}
@@ -33,7 +33,7 @@
 		grid-template-columns: 1fr 243px;
 
 		&--slim {
-			padding: 75px 65px 20px 52px;
+			padding: 65px 65px 24px 53px;
 		}
 
 		&--pro {
@@ -43,7 +43,7 @@
 
 	@media #{$desktop-only} {
 		grid-template-columns: 110px 1fr;
-		padding: 41px 52px 55px;
+		padding: 41px 52px 27px;
 	}
 }
 
@@ -64,6 +64,10 @@
 		font-size: 36px;
 		line-height: 36px;
 		grid-column: 1/1;
+
+		&--pro {
+			padding-top: 1px;
+		}
 	}
 
 	@media #{$desktop-only} {
@@ -116,8 +120,8 @@
 	box-sizing: border-box;
 
 	@media #{$not-mobile} {
-		width: 271px;
-		height: 224px;
+		width: 268px;
+		height: 230px;
 	}
 
 	@media #{$desktop-only} {
@@ -146,7 +150,6 @@
 	@media #{$not-mobile} {
 		font-size: 16px;
 		line-height: 24px;
-		padding-right: 29px;
 		grid-column: 1/1;
 		margin: 24px 0 48px;
 	}
@@ -161,12 +164,20 @@
 		margin: -7px 0 -1px 0;
 	}
 
+	&--slim {
+		@media #{$not-mobile} {
+			padding-left: 0;
+		}
+	}
 
-	&--drscription-pro {
+	&--pro {
+		@media #{$not-mobile} {
+			padding-right: 29px;
+		}
+
 		@media #{$desktop-only} {
 			font-size: 16px;
-			padding-top: 36px;
-			margin: -6px 0 -7px;
+			padding-top: 39px;
 		}
 	}
 
@@ -179,6 +190,7 @@
 		margin-top: 20px;
 	}
 }
+
 
 .motivation__link {
 	font-family: var(--accent-font);

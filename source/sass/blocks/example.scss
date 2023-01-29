@@ -4,7 +4,7 @@
 
 	@media #{$not-mobile} {
 		background-color: #ffffff;
-		padding: 149px 0 0;
+		padding: 156px 0 0;
 	}
 
 	@media #{$desktop-only} {
@@ -31,7 +31,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: -211px;
+		margin-top: -214px;
 		padding: 0 110px 0;
 	}
 }
@@ -70,8 +70,8 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: -7px;
-		grid-column: 1 / 2;
-		padding: 0 186px 32px 111px;
+		margin-top: -8px;
+		grid-column: 1/2;
+		padding: 0 176px 32px 111px;
 	}
 }

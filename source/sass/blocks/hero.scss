@@ -62,7 +62,6 @@
 		z-index: 1;
 		display: grid;
 		padding-inline: 88px;
-		padding-top: 22px;
 	}
 
 	@media #{$desktop-only} {
@@ -89,7 +88,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-block: 53px;
+		margin-block: 50px;
 	}
 }
 
@@ -112,7 +111,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: -13px;
+		margin-top: -9px;
 	}
 }
 
@@ -134,7 +133,7 @@
 
 	@media #{$not-mobile} {
 		z-index: 1;
-		margin-top: 41px;
+		margin-top: 45px;
 		margin-right: auto;
 		font-size: 20px;
 		line-height: 20px;
@@ -142,7 +141,7 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 43px;
+		margin-top: 45px;
 		font-size: 20px;
 		line-height: 20px;
 	}

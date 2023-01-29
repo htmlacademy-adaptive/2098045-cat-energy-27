@@ -17,15 +17,17 @@
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		padding-right: 30px;
 		padding-left: 30px;
-		padding-bottom: 225px;
-		gap: 33px;
+		padding-bottom: 232px;
+		gap: 38px;
+		margin-top: 49px;
 	}
 
 	@media #{$desktop-only} {
-		grid-template-columns: 183px 223px;
+		grid-template-columns: 180px 214px;
 		background-color: #f2f2f2;
 		margin: 0;
-		padding: 0 0 0 101px;
+		padding: 48px 0 0 101px;
+		gap: 6px;
 	}
 }
 
@@ -51,11 +53,12 @@
 			flex-direction: column;
 			align-items: end;
 			margin: 0;
+			margin-top: 12px;
 		}
 
 		@media #{$desktop-only} {
 			grid-column: 1/-1;
-			padding-top: 55px;
+			padding-top: 29px;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
 			align-items: center;
@@ -69,7 +72,7 @@
 		max-height: 14px;
 
 		@media #{$not-mobile} {
-			padding: 14px 57px 27px 57px;
+			padding: 12px 57px 43px;
 		}
 
 		@media #{$desktop-only} {
@@ -87,7 +90,7 @@
 
 		@media #{$not-mobile} {
 			grid-column: 2/3;
-			padding: 14px 37px 27px 30px;
+			padding: 14px 37px 40px 30px;
 		}
 
 		@media #{$desktop-only} {
@@ -144,8 +147,8 @@
 		@media #{$desktop-only} {
 			grid-column: 2/-1;
 			text-align: left;
-			padding-left: 36px;
-			padding-top: 7px;
+			padding-left: 46px;
+			padding-top: 13px;
 		}
 	}
 }
@@ -202,7 +205,7 @@
 		@media #{$not-mobile} {
 			margin-left: -19px;
 			width: 142px;
-			margin-top: 60px;
+			margin-top: 46px;
 		}
 
 		@media #{$desktop-only} {
@@ -218,9 +221,9 @@
 		margin-top: 32px;
 
 		@media #{$not-mobile} {
-			margin-left: -42px;
+			margin-left: -30px;
 			margin-top: 42px;
-			padding: 18px;
+			padding: 5px;
 			width: 96px;
 		}
 

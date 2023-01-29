@@ -15,7 +15,7 @@
 
 	@media #{$not-mobile} {
 		grid-template-columns: 172px 160px;
-		padding: 60px 70px 62px;
+		padding: 64px 70px 62px;
 		justify-content: space-between;
 		background-color: #f2f2f2;
 	}
@@ -99,4 +99,8 @@
 	display: block;
 	width: 100%;
 	max-height: 362px;
+
+	@media #{$not-mobile} {
+		max-height: 400px;
+	}
 }
