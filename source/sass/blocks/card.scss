@@ -4,7 +4,7 @@
 	grid-row: 3/4;
 	text-decoration: none;
 	position: relative;
-	margin-bottom: 31px;
+	margin-bottom: 38px;
 
 	@media #{$not-mobile} {
 		grid-row: 4/-1;
@@ -43,7 +43,7 @@
 	right: 0;
 	left: -20px;
 	height: 1px;
-	top: 65px;
+	top: 58px;
 	background-color: #ebebeb;
 
 	@media #{$not-mobile} {
