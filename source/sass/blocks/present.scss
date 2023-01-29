@@ -63,8 +63,7 @@
 	@media #{$not-mobile} {
 		padding: 43px 47px 9px 58px;
 		text-align: left;
-		max-height: 50px;
-		overflow-y: scroll;
+		align-self: start;
 	}
 
 	@media #{$desktop-only} {

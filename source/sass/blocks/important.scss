@@ -75,6 +75,7 @@
 		color: transparent;
 	}
 
+
 	&:disabled {
 		opacity: 80%;
 	}
@@ -113,5 +114,10 @@
 		height: 40px;
 		background-color: #68b738;
 		mask: url("../../icons/stack.svg#tick-radio") no-repeat center / cover;
+	}
+
+
+	&:hover {
+		border: 1px solid #bababa;
 	}
 }

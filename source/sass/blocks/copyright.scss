@@ -21,9 +21,8 @@
 	align-items: center;
 	text-decoration: none;
 	color: var(--main-color);
-	padding-top: 5px;
 	margin: 0 auto;
-	gap: 10px;
+	gap: 137px;
 
 	@media #{$desktop-only} {
 		padding: 0;
@@ -45,7 +44,7 @@
 		box-sizing: border-box;
 		width: 27px;
 		height: 34px;
-		mask: url("../../icons/stack.svg#htmlacademy") no-repeat center / contain;
+		mask: url("../../icons/stack.svg#htmlacademy") no-repeat center / cover;
 		background-color: currentColor;
 	}
 }
