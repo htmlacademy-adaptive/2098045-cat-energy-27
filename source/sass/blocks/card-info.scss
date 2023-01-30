@@ -5,6 +5,12 @@
 	@media #{$not-mobile} {
 		grid-row: 3/4;
 		grid-column: 1/-1;
+		margin: 0;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 10px;
+		margin-left: 4px;
 	}
 }
 
@@ -24,7 +30,12 @@
 		font-size: 16px;
 		line-height: 16px;
 		border-bottom: 1px solid #cdcdcd;
-		padding-bottom: 9px;
+		padding-bottom: 3px;
+		padding-top: 14px;
+	}
+
+	@media #{$desktop-only} {
+		padding-bottom: 6px;
 		padding-top: 10px;
 	}
 

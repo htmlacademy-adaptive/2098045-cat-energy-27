@@ -15,12 +15,14 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		margin-bottom: 50px;
+		margin-top: 69px;
 	}
 
 	@media #{$desktop-only} {
 		height: 100%;
 		display: grid;
 		grid-template-columns: 1fr;
+		margin-top: 0;
 	}
 }
 
@@ -45,6 +47,7 @@
 		@media #{$desktop-only} {
 			left: 50%;
 			transform: translateX(-50%);
+			top: 57px;
 		}
 	}
 }
@@ -60,13 +63,13 @@
 	margin: 33px 0 9px 0;
 
 	@media #{$not-mobile} {
-		padding: 43px 47px 9px 58px;
+		padding: 36px 45px 9px 69px;
 		text-align: left;
 		align-self: start;
 	}
 
 	@media #{$desktop-only} {
-		padding: 113px 30px 25px 36px;
+		padding: 126px 39px 10px 36px;
 		text-align: center;
 	}
 }

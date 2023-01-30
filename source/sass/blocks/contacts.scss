@@ -23,7 +23,7 @@
 	@media #{$desktop-only} {
 		grid-template-columns: 163px 155px;
 		width: 405px;
-		padding: 60px 80px 56px;
+		padding: 41px 80px 56px;
 		position: absolute;
 		margin-top: 96px;
 		margin-left: 110px;
@@ -56,6 +56,7 @@
 
 	@media #{$desktop-only} {
 		background-color: #ffffff;
+		padding-top: 18px;
 	}
 }
 
@@ -79,7 +80,7 @@
 		margin: 0;
 		text-align: left;
 		max-height: 100px;
-		padding-bottom: 20px;
+		padding: 14px 34px 20px 0;
 		overflow-y: scroll;
 		background-color: #ffffff;
 	}
@@ -102,5 +103,9 @@
 
 	@media #{$not-mobile} {
 		max-height: 400px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 38px;
 	}
 }

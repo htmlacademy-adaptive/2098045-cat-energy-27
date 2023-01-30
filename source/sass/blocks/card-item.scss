@@ -3,14 +3,15 @@
 	grid-template-columns: 1fr 1fr;
 
 	@media #{$not-mobile} {
-		padding: 34px 38px 39px 36px;
+		padding: 37px 37px 38px;
 		background: linear-gradient(transparent 81px,
 		#f2f2f2 81px);
-		grid-template-rows: 170px 1fr 133px 40px;
+		grid-template-rows: 170px 1fr 133px 43px;
 	}
 
 	@media #{$desktop-only} {
-		grid-template-rows: 170px 1fr 133px 40px;
+		padding: 34px 38px 39px 36px;
+		grid-template-rows: 170px 1fr 142px 41px;
 	}
 
 	&--different-card {
@@ -25,7 +26,11 @@
 			background: linear-gradient(transparent 81px,
 			#ffffff 81px);
 			inline-size: fit-content;
-			grid-template-rows: 174px 90px 139px 40px;
+			grid-template-rows: 174px 90px 129px 40px;
+		}
+
+		@media #{$desktop-only} {
+			grid-template-rows: 174px 90px 129px 40px;
 		}
 	}
 
@@ -33,7 +38,7 @@
 		content: var(--border, none);
 		position: absolute;
 		inset: 0;
-		top: 82px;
+		top: 81px;
 		border: 2px solid #f2f2f2;
 	}
 
@@ -55,11 +60,15 @@
 	margin: 0 0 4px;
 
 	@media #{$not-mobile} {
-		padding: 34px 72px 21px 77px;
+		padding: 35px 48px 1px 49px;
+		font-size: 20px;
+		line-height: 24px;
 	}
 
 	@media #{$desktop-only} {
-		padding: 34px 40px 21px 50px;
+		padding: 41px 16px 1px 21px;
+		font-size: 20px;
+		line-height: 21px;
 	}
 
 	&--different-title {
@@ -68,6 +77,18 @@
 
 		@media #{$not-mobile} {
 			grid-row: 2/3;
+			margin-top: 16px;
+			padding-left: 43px;
+			padding-right: 46px;
+		}
+
+		@media #{$desktop-only} {
+			padding-left: 11px;
+			padding-right: 14px;
+			padding-top: 1px;
+			font-size: 20px;
+			line-height: 22px;
+			margin-top: 0;
 		}
 	}
 }
@@ -93,6 +114,11 @@
 			grid-row: 1/2;
 			height: 100%;
 			margin: 0;
+			margin-top: -1px;
+		}
+
+		@media #{$desktop-only} {
+			margin-top: -1px;
 		}
 	}
 
@@ -106,6 +132,8 @@
 			margin: 0 auto;
 			padding-top: 0;
 			padding-bottom: 0;
+			margin-top: 65px;
+			padding-left: 0;
 		}
 	}
 }
@@ -122,13 +150,29 @@
 	@media #{$not-mobile} {
 		margin-bottom: 109px;
 		grid-row: 3/4;
+		margin-top: 6px;
+		padding: 0 26px 0 27px;
+	}
+
+	@media #{$desktop-only} {
+		margin-top: 8px;
+		margin-left: -29px;
+		margin-bottom: 0;
+		padding: 0 18px 6px 5px;
 	}
 }
 
 .card-item__image {
 	&--different {
 		@media #{$not-mobile} {
-			margin-top: 80px;
+			margin-top: 82px;
+			object-fit: cover;
+			grid-row: 1/2;
+		}
+
+		@media #{$desktop-only} {
+			margin-top: 32px;
+			object-fit: cover;
 			grid-row: 1/2;
 		}
 	}
