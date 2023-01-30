@@ -138,8 +138,14 @@
 			padding-left: 0;
 		}
 	}
-}
 
+	&--big {
+		@media #{$desktop-only} {
+			margin-top: -39px;
+			margin-left: 5px;
+		}
+	}
+}
 
 .card-item__description {
 	grid-column: 1/-1;
