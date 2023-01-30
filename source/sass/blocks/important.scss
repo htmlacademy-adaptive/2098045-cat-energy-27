@@ -1,7 +1,7 @@
 .important {
 	border: none;
 	padding: 0;
-	padding-bottom: 19px;
+	padding-bottom: 37px;
 	margin: 0;
 	overflow: hidden;
 
@@ -16,13 +16,12 @@
 
 .important::before {
 	content: "";
-	display: block;
-	width: 1000%;
 	height: 1px;
-	background-color: #d9d9d9;
-	margin-left: -100%;
-	margin-right: -100%;
-	margin-bottom: 22px;
+	position: absolute;
+	width: 100vw;
+	background: #d9d9d9;
+	box-shadow: 100vw 0 0 0 #d9d9d9;
+	right: 0;
 
 	@media #{$not-mobile} {
 		display: none;
@@ -31,13 +30,13 @@
 
 .important::after {
 	content: "";
-	display: block;
-	width: 1000%;
 	height: 1px;
-	background-color: #d9d9d9;
-	margin-left: -100%;
-	margin-right: -100%;
-	margin-top: 22px;
+	position: absolute;
+	width: 100vw;
+	background: #d9d9d9;
+	box-shadow: 100vw 0 0 0 #d9d9d9;
+	right: 0;
+	margin-top: 15px;
 
 	@media #{$not-mobile} {
 		display: none;
@@ -56,12 +55,16 @@
 	display: flex;
 	flex-direction: column;
 	gap: 13px;
+	margin-top: 20px;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 30px;
-		box-shadow: 0 0 1px 1px #e7e7e7;
-		padding: 20px;
+		border: 1px solid #e7e7e7;
+		padding: 24px 29px 20px 28px;
+		margin-left: 38px;
+		margin-top: 48px;
+		margin-right: 35px;
 	}
 
 	@media #{$desktop-only} {
@@ -84,8 +87,12 @@
 
 .important__title {
 	display: flex;
-	gap: 19px;
+	gap: 15px;
 	align-items: center;
+
+	@media #{$not-mobile} {
+		gap: 25px;
+	}
 }
 
 .important__radio-button[type="radio"] {
@@ -93,14 +100,18 @@
 	background-color: #ffffff;
 	font: inherit;
 	color: currentColor;
-	height: 40px;
-	width: 40px;
-	margin: 0;
-	margin-bottom: 10px;
+	height: 30px;
+	width: 30px;
+	margin: 0 0 2px;
 	border-radius: 50%;
 	border: 1px solid #cdcdcd;
 	display: grid;
 	place-content: center;
+
+	@media #{$not-mobile} {
+		height: 40px;
+		width: 40px;
+	}
 
 	@media #{$desktop-only} {
 		margin: 0;
@@ -110,8 +121,8 @@
 		content: "";
 		margin: auto;
 		display: block;
-		width: 40px;
-		height: 40px;
+		width: 30px;
+		height: 30px;
 		background-color: #68b738;
 		mask: url("../../icons/stack.svg#tick-radio") no-repeat center / cover;
 	}

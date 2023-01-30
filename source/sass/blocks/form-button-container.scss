@@ -1,7 +1,7 @@
 .form-button-container {
 	display: grid;
 	grid-template-columns: 1fr;
-	padding-bottom: 72px;
+	padding-bottom: 32px;
 
 	@media #{$not-mobile} {
 		grid-template-columns: 1fr 1fr;
@@ -24,10 +24,14 @@
 	border: none;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 7px 44px;
+	padding: 10px 44px;
+
+	@media #{$not-mobile} {
+		margin-left: 42px;
+		padding: 15px 44px;
+	}
 
 	@media #{$desktop-only} {
-		padding: 14px 44px;
 		font-size: 20px;
 		line-height: 20px;
 	}
