@@ -8,10 +8,6 @@
 	@media #{$not-mobile} {
 		padding: 0;
 	}
-
-	@media #{$desktop-only} {
-		margin-top: 26px;
-	}
 }
 
 .important::before {
@@ -68,8 +64,8 @@
 	}
 
 	@media #{$desktop-only} {
-		border: 1px solid #e7e7e7;
-		padding: 25px 39px;
+		padding: 24px 35px;
+		margin: 29px 4px;
 	}
 }
 
@@ -92,6 +88,10 @@
 
 	@media #{$not-mobile} {
 		gap: 25px;
+	}
+
+	@media #{$desktop-only} {
+		gap: 19px;
 	}
 }
 
@@ -125,6 +125,11 @@
 		height: 30px;
 		background-color: #68b738;
 		mask: url("../../icons/stack.svg#tick-radio") no-repeat center / cover;
+
+		@media #{$not-mobile} {
+			height: 40px;
+			width: 40px;
+		}
 	}
 
 

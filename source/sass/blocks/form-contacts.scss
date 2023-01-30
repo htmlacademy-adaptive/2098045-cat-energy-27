@@ -31,7 +31,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 51px 0 52px;
+		padding: 40px 0 52px;
 	}
 
 	&::before {
@@ -63,8 +63,8 @@
 	@media #{$desktop-only} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		gap: 78px;
-		margin-bottom: 67px;
+		gap: 77px;
+		margin-bottom: 64px;
 	}
 }
 
@@ -82,10 +82,24 @@
 	@media #{$desktop-only} {
 		display: grid;
 		grid-template-columns: 70px 1fr;
+		margin-left: 0;
+		margin-right: 0;
 	}
 
 	&::marker {
 		color: transparent;
+	}
+
+	&--email {
+		@media #{$desktop-only} {
+			grid-template-columns: 69px 1fr;
+		}
+	}
+
+	&--phone {
+		@media #{$desktop-only} {
+			grid-template-columns: 89px 1fr;
+		}
 	}
 }
 
@@ -109,6 +123,7 @@
 		font-size: 20px;
 		line-height: 30px;
 		padding-top: 20px;
+		padding-left: 0;
 	}
 }
 
@@ -128,6 +143,7 @@
 	@media #{$desktop-only} {
 		font-size: 20px;
 		line-height: 30px;
+		padding-top: 19px;
 	}
 
 	&--phone {

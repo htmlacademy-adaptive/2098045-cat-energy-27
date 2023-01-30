@@ -30,6 +30,10 @@
 		padding: 41px 41px 2px 38px;
 	}
 
+	@media #{$desktop-only} {
+		padding: 0;
+	}
+
 	&::before {
 		content: "";
 		position: absolute;
@@ -70,7 +74,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		flex-direction: row;
-		gap: 141px;
+		gap: 150px;
+		padding-top: 55px;
+		padding-left: 0;
 	}
 }
 
@@ -128,5 +134,16 @@
 	@media #{$not-mobile} {
 		grid-template-columns: 57px 1fr;
 		padding-top: 1px;
+	}
+
+	@media #{$desktop-only} {
+		&--water {
+			margin-left: -44px;
+		}
+
+		&--milk {
+			margin-right: 52px;
+			margin-left: -6px;
+		}
 	}
 }

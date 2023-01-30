@@ -11,6 +11,7 @@
 
 	@media #{$desktop-only} {
 		gap: 84px;
+		padding-bottom: 84px;
 	}
 }
 
@@ -34,6 +35,7 @@
 	@media #{$desktop-only} {
 		font-size: 20px;
 		line-height: 20px;
+		margin-left: 0;
 	}
 }
 

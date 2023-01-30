@@ -7,6 +7,10 @@
 		padding-left: 38px;
 		padding-top: 6px;
 	}
+
+	@media #{$desktop-only} {
+		padding: 0;
+	}
 }
 
 .form-comments__title {
@@ -60,5 +64,14 @@
 		padding: 10px 19px;
 		height: 153px;
 		margin-right: 37px;
+	}
+
+	@media #{$desktop-only} {
+		font-size: 20px;
+		line-height: 30px;
+		padding: 10px 21px;
+		height: 154px;
+		margin-right: 2px;
+		margin-bottom: 68px;
 	}
 }
