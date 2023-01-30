@@ -3,6 +3,10 @@
 	display: grid;
 	grid-template-columns: 1fr;
 
+	@media #{$mobile-only} {
+		margin-block: 0;
+	}
+
 	@media #{$not-mobile} {
 		display: grid;
 		gap: 63px;

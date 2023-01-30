@@ -9,6 +9,10 @@
 
 	@include bg-image("catalog-cat");
 
+	@media #{$mobile-only} {
+		position: relative;
+	}
+
 	@media #{$not-mobile} {
 		width: 100%;
 		height: 200px;
@@ -27,7 +31,9 @@
 }
 
 .present__icon {
-	position: relative;
+	@media #{$not-mobile} {
+		position: relative;
+	}
 
 	&::before {
 		content: "";
@@ -39,6 +45,12 @@
 		background-color: #ffffff;
 		top: 60px;
 		left: 102px;
+
+		@media #{$mobile-only} {
+			top: 60px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 
 		@media #{$not-mobile} {
 			left: 77px;

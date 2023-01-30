@@ -6,7 +6,7 @@
 	@media #{$not-mobile} {
 		grid-template-columns: 1fr 1fr 1fr;
 		align-items: center;
-		padding: 19px 0 32px;
+		padding: 29px 0 32px;
 	}
 
 	@media #{$desktop-only} {
@@ -53,6 +53,10 @@
 	margin-top: 20px;
 	margin-bottom: 19px;
 	box-shadow: 1px 63px #d9d9d9;
+
+	@media #{$mobile-only} {
+		// margin-block: 10px;
+	}
 
 	@media #{$not-mobile} {
 		display: none;

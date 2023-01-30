@@ -106,6 +106,10 @@
 
 	&--icon-slim {
 		--icon: url("../../icons/stack.svg#cat-slim");
+
+		@media #{$tablet-only} {
+			transform: translate(6px, 2px);
+		}
 	}
 
 	&--icon-pro {
@@ -169,13 +173,17 @@
 
 	&--slim {
 		@media #{$not-mobile} {
-			padding-left: 0;
+			padding-left: 1px;
+		}
+
+		@media #{$tablet-only} {
+			// margin-right: -3px;
 		}
 	}
 
 	&--pro {
 		@media #{$not-mobile} {
-			padding-right: 29px;
+			padding-right: 22px;
 		}
 
 		@media #{$desktop-only} {

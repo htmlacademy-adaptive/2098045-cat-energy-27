@@ -2,6 +2,11 @@
 	grid-column: 2/3;
 	grid-row: 2/3;
 
+	@media #{$mobile-only} {
+		margin-bottom: 9px;
+		align-self: end;
+	}
+
 	@media #{$not-mobile} {
 		grid-row: 3/4;
 		grid-column: 1/-1;

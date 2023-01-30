@@ -4,12 +4,14 @@
 	padding: 40px 0 23px;
 
 	@media #{$not-mobile} {
+		justify-self: end;
 		justify-content: space-around;
+		padding-top: 35px;
 	}
 
 	@media #{$desktop-only} {
 		justify-content: right;
-		padding: 35px 0 23px;
+		padding: 40px 0 23px;
 	}
 }
 
@@ -25,20 +27,18 @@
 	gap: 137px;
 
 	@media #{$not-mobile} {
-		gap: 5px;
-		margin-left: 71px;
+		gap: 28px;
+		margin-left: 0;
 		margin-top: -9px;
 	}
 
 	@media #{$desktop-only} {
 		padding: 0;
-		margin-left: 241px;
-		gap: 6px;
 		margin-top: -20px;
 	}
 
 	&:hover {
-		color: #68b738;
+		--icon-color: #68b738;
 	}
 
 	&:active {
@@ -52,11 +52,11 @@
 		width: 27px;
 		height: 34px;
 		mask: url("../../icons/stack.svg#htmlacademy") no-repeat center / cover;
-		background-color: currentColor;
+		background-color: var(--icon-color, #666666);
 
 		@media #{$not-mobile} {
-			width: 47px;
-			height: 43px;
+			// width: 47px;
+			// height: 43px;
 		}
 	}
 }

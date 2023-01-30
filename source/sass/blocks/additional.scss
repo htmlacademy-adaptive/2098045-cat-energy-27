@@ -3,6 +3,10 @@
 	background-color: #ffffff;
 	padding: 19px 0 26px;
 
+	@media #{$mobile-only} {
+		padding-top: 10px;
+	}
+
 	@media #{$not-mobile} {
 		padding: 32px 0 26px;
 	}

@@ -4,6 +4,9 @@
 
 	@media #{$mobile-only} {
 		margin-bottom: -1px;
+		padding-top: 21px;
+		padding-bottom: 24px;
+		row-gap: 13px;
 	}
 
 	@media #{$not-mobile} {
@@ -85,6 +88,11 @@
 		padding: 0;
 		margin-top: -34px;
 
+		@media #{$mobile-only} {
+			margin: 0;
+			transform: translateX(-2px);
+		}
+
 		@media #{$not-mobile} {
 			grid-row: 2/3;
 			margin-top: 16px;
@@ -101,19 +109,11 @@
 			margin-top: -33px;
 		}
 	}
-
-	&--big {
-		@media #{$mobile-only} {
-			margin-top: 6px;
-			margin-bottom: -20px;
-		}
-	}
 }
 
 .card-item__link {
 	text-decoration: none;
 	grid-column: 2/-1;
-
 
 	@media #{$not-mobile} {
 		grid-column: 1 / -1;
@@ -127,7 +127,7 @@
 		margin: 16px auto 18px;
 
 		@media #{$mobile-only} {
-			margin: 17px auto 18px;
+			margin: 0 auto;
 		}
 
 		@media #{$not-mobile} {
@@ -151,6 +151,7 @@
 
 		@media #{$mobile-only} {
 			padding-top: 2px;
+			grid-row: initial;
 		}
 
 		@media #{$desktop-only} {
@@ -162,12 +163,12 @@
 		}
 	}
 
-	&--big {
-		@media #{$mobile-only} {
-			margin-top: 18px;
-			margin-bottom: 17px;
-		}
+	&--image-different {
+		order: -1;
+		padding: 4px 2px 7px 0;
+	}
 
+	&--big {
 		@media #{$not-mobile} {
 			margin-top: -29px;
 			margin-left: -2px;
@@ -188,6 +189,14 @@
 	padding-right: 5px;
 	padding-bottom: 6px;
 
+	@media #{$mobile-only} {
+		margin: 0;
+		font-size: 12px;
+		line-height: 16px;
+		padding: 0;
+		transform: translate(-1px, -5px);
+	}
+
 	@media #{$not-mobile} {
 		margin-bottom: 109px;
 		grid-row: 3/4;
@@ -204,7 +213,16 @@
 }
 
 .card-item__image {
+	@media #{$mobile-only} {
+		display: block;
+	}
+
 	&--different {
+		@media #{$mobile-only} {
+			width: 30px;
+			height: 30px;
+		}
+
 		@media #{$not-mobile} {
 			margin-top: 82px;
 			object-fit: cover;

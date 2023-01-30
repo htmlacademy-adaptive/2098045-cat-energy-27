@@ -7,7 +7,7 @@
 	margin-bottom: 38px;
 
 	@media #{$mobile-only} {
-		margin-bottom: 41px;
+		margin-bottom: 0;
 	}
 
 	@media #{$not-mobile} {
@@ -34,6 +34,11 @@
 		grid-column: 1/-1;
 		text-decoration: none;
 
+		@media #{$mobile-only} {
+			grid-row: initial;
+			margin-top: 3px;
+		}
+
 		@media #{$not-mobile} {
 			grid-column: 1/-1;
 			padding: 10px 20px;
@@ -44,24 +49,17 @@
 			margin-top: 4px;
 		}
 	}
-
-	&--big {
-		@media #{$mobile-only} {
-			margin-top: -8px;
-			margin-bottom: 53px;
-		}
-	}
 }
 
 .card__button::after {
 	content: "";
 	position: absolute;
-	width: 100vw;
 	right: 0;
-	left: -20px;
+	width: 100vw;
 	height: 1px;
-	top: 58px;
-	background-color: #ebebeb;
+	bottom: -24px;
+	background: #ebebeb;
+	box-shadow: 100vw 0 0 0 #ebebeb;
 
 	@media #{$not-mobile} {
 		content: none;

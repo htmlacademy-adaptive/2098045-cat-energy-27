@@ -11,6 +11,11 @@
 	margin: 0 0 21px;
 	padding: 27px 12px 41px 0;
 
+	@media #{$mobile-only} {
+		position: relative;
+		margin-bottom: 0;
+	}
+
 	@media #{$not-mobile} {
 		font-size: 60px;
 		line-height: 60px;
@@ -27,11 +32,11 @@
 		content: "";
 		position: absolute;
 		right: 0;
-		bottom: 59px;
-		top: 165px;
+		bottom: -1px;
 		height: 1px;
 		width: 100vw;
 		background: #d9d9d9;
+		box-shadow: 100vw 0 0 0 #d9d9d9;
 
 		@media #{$not-mobile} {
 			content: none;

@@ -71,7 +71,7 @@
 .form-contacts__item {
 	position: relative;
 	display: flex;
-	gap: 20px;
+	gap: 10px;
 
 	@media #{$not-mobile} {
 		gap: 20px;
@@ -111,6 +111,7 @@
 	font-size: 16px;
 	line-height: 18px;
 	text-transform: uppercase;
+	flex-shrink: 0;
 
 	@media #{$not-mobile} {
 		font-size: 20px;
