@@ -10,10 +10,12 @@
 		grid-row: 4/-1;
 		margin-bottom: 0;
 		max-height: 20px;
+		padding: 13px 25px;
 	}
 
 	@media #{$desktop-only} {
 		grid-row: 4/-1;
+		padding: 10px 20px;
 	}
 
 	&--show-all {

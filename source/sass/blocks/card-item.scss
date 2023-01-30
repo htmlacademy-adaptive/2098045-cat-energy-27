@@ -120,7 +120,7 @@
 		}
 
 		@media #{$desktop-only} {
-			margin-top: -1px;
+			margin-top: -4px;
 		}
 	}
 
@@ -140,9 +140,14 @@
 	}
 
 	&--big {
+		@media #{$not-mobile} {
+			margin-top: -29px;
+			margin-left: -2px;
+		}
+
 		@media #{$desktop-only} {
-			margin-top: -39px;
-			margin-left: 5px;
+			margin-top: -33px;
+			margin-left: 7px;
 		}
 	}
 }

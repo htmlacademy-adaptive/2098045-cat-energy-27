@@ -94,7 +94,7 @@
 		display: block;
 		padding: 14px 20px;
 		border: none;
-		box-shadow: 0 0 1px 1px #e7e7e7;
+		outline: 1px solid #e7e7e7;
 		appearance: textfield;
 		box-sizing: border-box;
 
@@ -107,5 +107,18 @@
 
 	&::marker {
 		color: transparent;
+	}
+}
+
+
+input {
+	outline-offset: -2px;
+
+	&:focus-visible {
+		outline: 2px solid #000000;
+	}
+
+	&--error {
+		outline: 2px solid #ff0000; // красный, но не этот
 	}
 }
