@@ -4,11 +4,11 @@
 	padding: 19px 0 26px;
 
 	@media #{$not-mobile} {
-		padding: 25px 0 26px;
+		padding: 32px 0 26px;
 	}
 
 	@media #{$desktop-only} {
-		padding: 44px 0 87px;
+		padding: 48px 0 87px;
 	}
 }
 

@@ -12,7 +12,7 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 66px 0 6px;
+		padding: 66px 0 0;
 		grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
 		column-gap: clamp(60px, 30px + 100vw / 25.6, 80px);
 		margin-top: 0;

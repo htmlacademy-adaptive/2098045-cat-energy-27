@@ -6,6 +6,10 @@
 	position: relative;
 	margin-bottom: 38px;
 
+	@media #{$mobile-only} {
+		margin-bottom: 41px;
+	}
+
 	@media #{$not-mobile} {
 		grid-row: 4/-1;
 		margin-bottom: 0;
@@ -38,6 +42,13 @@
 
 		@media #{$desktop-only} {
 			margin-top: 4px;
+		}
+	}
+
+	&--big {
+		@media #{$mobile-only} {
+			margin-top: -8px;
+			margin-bottom: 53px;
 		}
 	}
 }

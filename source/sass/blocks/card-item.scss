@@ -2,8 +2,12 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 
+	@media #{$mobile-only} {
+		margin-bottom: -1px;
+	}
+
 	@media #{$not-mobile} {
-		padding: 37px 37px 38px;
+		padding: 37px 37px 32px;
 		background: linear-gradient(transparent 81px,
 		#f2f2f2 81px);
 		grid-template-rows: 170px 1fr 133px 43px;
@@ -12,7 +16,7 @@
 	@media #{$desktop-only} {
 		padding: 34px 38px 39px 36px;
 		grid-template-rows: 170px 1fr 142px 41px;
-		margin-top: 17px;
+		margin-top: 14px;
 		margin-bottom: -20px;
 	}
 
@@ -28,7 +32,7 @@
 			background: linear-gradient(transparent 81px,
 			#ffffff 81px);
 			inline-size: fit-content;
-			grid-template-rows: 174px 90px 129px 40px;
+			grid-template-rows: 179px 90px 129px 40px;
 		}
 
 		@media #{$desktop-only} {
@@ -59,7 +63,11 @@
 	grid-column: 2/3;
 	grid-row: 1/2;
 	padding-right: 65px;
-	margin: 0 0 4px;
+	margin: 0 0 8px;
+
+	@media #{$mobile-only} {
+		margin: 0 0 -19px;
+	}
 
 	@media #{$not-mobile} {
 		padding: 35px 48px 1px 49px;
@@ -93,6 +101,13 @@
 			margin-top: -33px;
 		}
 	}
+
+	&--big {
+		@media #{$mobile-only} {
+			margin-top: 6px;
+			margin-bottom: -20px;
+		}
+	}
 }
 
 .card-item__link {
@@ -109,7 +124,11 @@
 	&--product-image {
 		grid-column: 1/2;
 		grid-row: 1/3;
-		margin: 15px auto 20px;
+		margin: 16px auto 18px;
+
+		@media #{$mobile-only} {
+			margin: 17px auto 18px;
+		}
 
 		@media #{$not-mobile} {
 			grid-column: 1 / -1;
@@ -130,6 +149,10 @@
 		padding-left: 4px;
 		margin-top: 1px;
 
+		@media #{$mobile-only} {
+			padding-top: 2px;
+		}
+
 		@media #{$desktop-only} {
 			margin: 0 auto;
 			padding-top: 0;
@@ -140,6 +163,11 @@
 	}
 
 	&--big {
+		@media #{$mobile-only} {
+			margin-top: 18px;
+			margin-bottom: 17px;
+		}
+
 		@media #{$not-mobile} {
 			margin-top: -29px;
 			margin-left: -2px;
