@@ -1,0 +1,11 @@
+.line-feed {
+	@media #{$not-mobile} {
+		--a: "\A";
+		grid-template-rows: 2/3;
+	}
+
+	&::before {
+		content: var(--a, none);
+		white-space: pre;
+	}
+}
