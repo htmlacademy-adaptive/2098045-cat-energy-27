@@ -12,6 +12,8 @@
 	@media #{$desktop-only} {
 		padding: 34px 38px 39px 36px;
 		grid-template-rows: 170px 1fr 142px 41px;
+		margin-top: 17px;
+		margin-bottom: -20px;
 	}
 
 	&--different-card {
@@ -83,12 +85,12 @@
 		}
 
 		@media #{$desktop-only} {
-			padding-left: 11px;
+			padding-left: 16px;
 			padding-right: 14px;
-			padding-top: 1px;
+			padding-top: 2px;
 			font-size: 20px;
 			line-height: 22px;
-			margin-top: 0;
+			margin-top: -33px;
 		}
 	}
 }
@@ -155,10 +157,10 @@
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 8px;
-		margin-left: -29px;
+		margin-top: 9px;
+		margin-left: -2px;
 		margin-bottom: 0;
-		padding: 0 18px 6px 5px;
+		padding: 0 0 6px 1px;
 	}
 }
 

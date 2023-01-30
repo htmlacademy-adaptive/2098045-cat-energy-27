@@ -35,8 +35,9 @@
 	}
 
 	@media #{$desktop-only} {
-		padding-bottom: 6px;
+		padding-bottom: 5px;
 		padding-top: 10px;
+		padding-right: 3px;
 	}
 
 	&--number {
